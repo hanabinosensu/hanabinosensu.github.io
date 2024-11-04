@@ -1,9 +1,10 @@
 services:
   serve:
     image: jekyll/jekyll:4.2.2
-    command: sh -c "mkdir -p _site && jekyll serve"
+    command: sh -c "mkdir -p _site && jekyll serve --livereload --livereload_port 4001"
     ports:
       - "127.0.0.1:4000:4000"
+      - "127.0.0.1:4001:4001"
     volumes:
       # There are a large number of dependency packages behind jekyll, so
       # dependency pollution attack is possible. In other words, we can't
