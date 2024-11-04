@@ -1,0 +1,23 @@
+services:
+  serve:
+    image: jekyll/jekyll:4.2.2
+    command: sh -c "mkdir -p _site && jekyll serve"
+    ports:
+      - "127.0.0.1:4000:4000"
+    volumes:
+      # There are a large number of dependency packages behind jekyll, so
+      # dependency pollution attack is possible. In other words, we can't
+      # trust jekyll image. To prevent container escape, files related to
+      # git and docker are mounted read only.
+      - type: bind
+        source: .
+        target: /srv/jekyll
+        read_only: false
+      - type: bind
+        source: ./.git
+        target: /srv/jekyll/.git
+        read_only: true
+      - type: bind
+        source: ./docker-compose.yml
+        target: /srv/jekyll/docker-compose.yml
+        read_only: true
