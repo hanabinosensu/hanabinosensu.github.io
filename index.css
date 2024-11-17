@@ -1,0 +1,182 @@
+html {
+  font-family: serif;
+  font-feature-settings: "palt";
+  font-size: 1.0rem;
+  scroll-padding-top: 70px;
+  -webkit-text-size-adjust: 100%;
+}
+
+#unofficial {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 9px max(30px, calc(50% - 300px)) 11px;
+}
+#unofficial a {
+  color: inherit;
+}
+
+#nav {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  display: flex;
+  fill: black;
+  height: 70px;
+  padding: 0 max(30px, calc(50% - 300px));
+  position: sticky;
+  top: 0;
+  transition: all 100ms linear;
+  width: 100%;
+  z-index: 1;
+}
+#nav.transparent {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  color: white;
+  fill: white;
+  text-shadow: 2px 2px 0 black;
+}
+#nav a {
+  color: inherit;
+  padding: 21px 8px 25px;
+  text-decoration: none;
+}
+#nav a:hover {
+  opacity: 0.5;
+}
+
+#firstview {
+  border-bottom: 1px solid #d0d0d0;
+  color: white;
+  font-size: 3.0rem;
+  line-height: 1;
+  margin-top: -70px;
+  padding: 450px 30px 40px;
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+  width: 100%;
+}
+#firstview::before {
+  background-color: #d0d0d0;
+  background-image: url("/assets/firstview.webp");
+  background-position: 50% 30%;
+  background-size: cover;
+  content: "";
+  filter: brightness(0.5);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+#firstview small {
+  display: block;
+  font-size: 1.0rem;
+  font-weight: normal;
+  transform: translate(-40px, -5px);
+}
+
+#about {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+
+#schedule {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#schedule a {
+  color: inherit;
+}
+
+#amatsukasa {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#amatsukasa > * {
+  margin-bottom: 1rem;
+}
+#amatsukasa .prologue {
+  padding: 10px calc(min(300px, 50%) - 2.7rem) 40px;
+  writing-mode: vertical-rl;
+}
+#amatsukasa .prologue p {
+  height: 160px;
+  position: relative;
+}
+#amatsukasa .prologue p:nth-child(2) {
+  top: 20px;
+}
+#amatsukasa .prologue p:nth-child(3) {
+  background-clip: text;
+  background-image: linear-gradient(#40548a, #0d7da8 70%);
+  color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  top: 40px;
+}
+#amatsukasa iframe {
+  background-color: #d0d0d0;
+  border: 0;
+  width: 100%;
+}
+#amatsukasa .epilogue {
+  padding: 10px calc(min(300px, 50%) - 1.55rem) 20px;
+  writing-mode: vertical-rl;
+}
+#amatsukasa .epilogue p {
+  height: 195px;
+  position: relative;
+}
+#amatsukasa .epilogue p:nth-child(2) {
+  background-image: linear-gradient(#40548a, #0d7da8);
+  background-clip: text;
+  color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  top: 20px;
+}
+
+#discography {
+  background-color: white;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#discography > * {
+  margin-bottom: 1rem;
+}
+#discography ul {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 140px);  /* applied for small devices and printers */
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+@media screen and (min-width: 380px) { #discography ul { grid-template-columns: repeat(auto-fill, 100px); } }
+@media screen and (min-width: 440px) { #discography ul { grid-template-columns: repeat(auto-fill, 120px); } }
+@media screen and (min-width: 490px) { #discography ul { grid-template-columns: repeat(auto-fill, 100px); } }
+@media screen and (min-width: 550px) { #discography ul { grid-template-columns: repeat(auto-fill, 115px); } }
+@media screen and (min-width: 600px) { #discography ul { grid-template-columns: repeat(auto-fill, 100px); } }
+@media screen and (min-width: 660px) { #discography ul { grid-template-columns: repeat(auto-fill, 112px); } }
+#discography li a {
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  color: inherit;
+  display: block;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+#discography li a:hover {
+  background-color: #00000010;
+}
