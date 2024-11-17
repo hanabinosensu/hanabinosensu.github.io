@@ -47,30 +47,19 @@ html {
 }
 
 #firstview {
+  background-color: #d0d0d0;
+  background-image: url("/assets/firstview.webp");
+  background-position: 50% 30%;
+  background-size: cover;
   border-bottom: 1px solid #d0d0d0;
   color: white;
   font-size: 3.0rem;
   line-height: 1;
   margin-top: -70px;
   padding: 450px 30px 40px;
-  position: relative;
   text-align: center;
   text-shadow: 2px 2px 0 black;
   width: 100%;
-}
-#firstview::before {
-  background-color: #d0d0d0;
-  background-image: url("/assets/firstview.webp");
-  background-position: 50% 30%;
-  background-size: cover;
-  content: "";
-  filter: brightness(0.5);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
 }
 #firstview small {
   display: block;
