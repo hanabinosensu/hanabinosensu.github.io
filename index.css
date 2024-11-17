@@ -137,6 +137,7 @@ html {
 
 #discography {
   background-color: white;
+  border-bottom: 1px solid #d0d0d0;
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
@@ -168,4 +169,17 @@ html {
 }
 #discography li a:hover {
   background-color: #00000010;
+}
+
+#hanabi-sanka {
+  background-color: white;
+  color: black;
+  padding: 30px calc(50% - 4.3rem) 30px;
+  width: 100%;
+  writing-mode: vertical-rl;
+}
+#hanabi-sanka h2 {
+  font-size: 1.0rem;
+  line-height: 2.6;
+  font-weight: normal;
 }
