@@ -147,17 +147,11 @@ html {
 #discography ul {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill, 140px);  /* applied for small devices and printers */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
 }
-@media screen and (min-width: 380px) { #discography ul { grid-template-columns: repeat(auto-fill, 100px); } }
-@media screen and (min-width: 440px) { #discography ul { grid-template-columns: repeat(auto-fill, 120px); } }
-@media screen and (min-width: 490px) { #discography ul { grid-template-columns: repeat(auto-fill, 100px); } }
-@media screen and (min-width: 550px) { #discography ul { grid-template-columns: repeat(auto-fill, 115px); } }
-@media screen and (min-width: 600px) { #discography ul { grid-template-columns: repeat(auto-fill, 100px); } }
-@media screen and (min-width: 660px) { #discography ul { grid-template-columns: repeat(auto-fill, 112px); } }
 #discography li a {
   border-radius: 4px;
   box-shadow: 0 0 0 1px #d0d0d0;
