@@ -153,16 +153,21 @@ html {
   padding: 0;
 }
 #discography li a {
+  align-items: center;
   border-radius: 4px;
   box-shadow: 0 0 0 1px #d0d0d0;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 10px 5px;
-  text-align: center;
   text-decoration: none;
 }
 #discography li a:hover {
   background-color: #00000010;
+}
+#discography li img {
+  height: 65px;
+  width: 65px;
 }
 
 #hanabi-sanka {
