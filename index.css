@@ -81,6 +81,9 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
+#schedule > * {
+  margin-bottom: 1rem;
+}
 #schedule a {
   color: inherit;
 }
