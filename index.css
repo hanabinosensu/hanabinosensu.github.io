@@ -88,6 +88,28 @@ html {
   color: inherit;
 }
 
+#release {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#release > * {
+  margin-bottom: 1rem;
+}
+#release a {
+  color: inherit;
+}
+#release audio {
+  background-image: url("/assets/amatsukasa.webp");
+  background-size: cover;
+  border-radius: 10px;
+  display: block;
+  height: 250px;
+  margin: 30px auto 10px;
+  width: 250px;
+}
+
 #amatsukasa {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
