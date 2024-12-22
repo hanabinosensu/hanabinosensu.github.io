@@ -81,7 +81,7 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#schedule > * {
+#schedule > :not(:last-child) {
   margin-bottom: 1rem;
 }
 #schedule a {
@@ -94,7 +94,7 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#release > * {
+#release > :not(:last-child) {
   margin-bottom: 1rem;
 }
 #release a {
@@ -116,7 +116,7 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#amatsukasa > * {
+#amatsukasa > :not(:last-child) {
   margin-bottom: 1rem;
 }
 #amatsukasa .prologue {
@@ -167,7 +167,7 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#discography > * {
+#discography > :not(:last-child) {
   margin-bottom: 1rem;
 }
 #discography ul {
