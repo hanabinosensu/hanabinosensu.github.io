@@ -197,8 +197,8 @@ html {
 }
 
 #hanabi-sanka {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 30px calc(50% - 4.3rem) 30px;
   width: 100%;
   writing-mode: vertical-rl;
