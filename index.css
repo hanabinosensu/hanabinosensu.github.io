@@ -6,13 +6,13 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-#unofficial {
+#notice {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
   padding: 9px max(30px, calc(50% - 300px)) 11px;
 }
-#unofficial a {
+#notice a {
   color: inherit;
 }
 
@@ -167,7 +167,7 @@ html {
   width: 250px;
 }
 
-#hanabi-sanka {
+#anthem {
   background-color: black;
   border-bottom: 1px solid #d0d0d0;
   color: white;
@@ -175,25 +175,25 @@ html {
   width: 100%;
   writing-mode: vertical-rl;
 }
-#hanabi-sanka h2 {
+#anthem h2 {
   font-size: 1.0rem;
   line-height: 2.6;
   font-weight: normal;
 }
 
-#line-stickers {
+#stickers {
   background-color: white;
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#line-stickers > :not(:last-child) {
+#stickers > :not(:last-child) {
   margin-bottom: 1rem;
 }
-#line-stickers img {
+#stickers img {
   margin: 10px auto 10px;
   width: min(100%, 300px);
 }
-#line-stickers a {
+#stickers a {
   background-color: #06c755;
   border-radius: 4px;
   color: white;
@@ -202,6 +202,6 @@ html {
   text-align: center;
   text-decoration: none;
 }
-#line-stickers a:hover {
+#stickers a:hover {
   opacity: 0.7;
 }
