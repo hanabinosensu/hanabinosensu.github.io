@@ -169,6 +169,7 @@ html {
 
 #hanabi-sanka {
   background-color: black;
+  border-bottom: 1px solid #d0d0d0;
   color: white;
   padding: 30px calc(50% - 4.3rem) 30px;
   width: 100%;
