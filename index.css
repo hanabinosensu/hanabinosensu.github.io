@@ -179,3 +179,28 @@ html {
   line-height: 2.6;
   font-weight: normal;
 }
+
+#line-stickers {
+  background-color: white;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#line-stickers > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#line-stickers img {
+  margin: 10px auto 10px;
+  width: min(100%, 300px);
+}
+#line-stickers a {
+  background-color: #06c755;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+#line-stickers a:hover {
+  opacity: 0.7;
+}
