@@ -205,3 +205,18 @@ html {
 #stickers a:hover {
   opacity: 0.7;
 }
+
+#goto-stickers {
+  bottom: -100px;
+  display: block;
+  position: fixed;
+  right: max(20px, calc(50% - 380px));
+  transition: bottom 200ms ease-out;
+  width: 60px;
+}
+#goto-stickers:hover {
+  opacity: 0.7;
+}
+#goto-stickers.shown {
+  bottom: 20px;
+}
