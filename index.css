@@ -171,14 +171,16 @@ html {
   background-color: black;
   border-bottom: 1px solid #d0d0d0;
   color: white;
-  padding: 30px calc(50% - 4.3rem) 30px;
-  width: 100%;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#anthem > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#anthem blockquote {
   writing-mode: vertical-rl;
 }
-#anthem h2 {
-  font-size: 1.0rem;
-  line-height: 2.6;
-  font-weight: normal;
+#anthem a {
+  color: inherit;
 }
 
 #stickers {
