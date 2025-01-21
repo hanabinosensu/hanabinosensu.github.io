@@ -210,6 +210,30 @@ html {
   list-style-type: none;
   padding: 0;
 }
+#channels .videos a {
+  display: block;
+  position: relative;
+}
+#channels .videos a::before {
+  background-color: #00000080;
+  clip-path: circle(14%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#channels .videos a::after {
+  background-color: white;
+  clip-path: polygon(46% 40%, 46% 60%, 55% 50%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 #channels .videos a:hover {
   opacity: 0.7;
 }
