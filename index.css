@@ -216,23 +216,25 @@ html {
 }
 #channels .videos a::before {
   background-color: #00000080;
-  clip-path: circle(14%);
+  border-radius: 50%;
   content: "";
-  height: 100%;
-  left: 0;
+  height: 28px;
+  left: 50%;
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
 }
 #channels .videos a::after {
   background-color: white;
-  clip-path: polygon(46% 40%, 46% 60%, 55% 50%);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
   content: "";
-  height: 100%;
-  left: 0;
+  height: 12px;
+  left: 50%;
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  width: 10px;
 }
 #channels .videos a:hover {
   opacity: 0.7;
