@@ -87,6 +87,7 @@ html {
 }
 #schedule a {
   color: inherit;
+  word-break: break-all;
 }
 
 #ironowa {
@@ -116,6 +117,7 @@ html {
 }
 #release a {
   color: inherit;
+  word-break: break-all;
 }
 #release audio {
   background-image: url("/assets/amatsukasa-artwork.webp");
