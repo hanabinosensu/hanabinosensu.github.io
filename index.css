@@ -213,63 +213,6 @@ html {
   width: 10px;
 }
 
-#channels {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-}
-#channels .channel {
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
-}
-#channels .channel:not(:last-child) {
-  border-bottom: 1px dashed #d0d0d0;
-}
-#channels .channel h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.7rem;
-}
-#channels .channel p {
-  margin-bottom: 1rem;
-}
-#channels .videos {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 0;
-}
-#channels .videos a {
-  display: block;
-  position: relative;
-}
-#channels .videos a::before {
-  background-color: #00000080;
-  border-radius: 50%;
-  content: "";
-  height: 28px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 28px;
-}
-#channels .videos a::after {
-  background-color: white;
-  clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
-  content: "";
-  height: 12px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-40%, -50%);
-  width: 10px;
-}
-#channels .videos a:hover {
-  opacity: 0.7;
-}
-
 #anthem {
   background-color: black;
   border-bottom: 1px solid #d0d0d0;
