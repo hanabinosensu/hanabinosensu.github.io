@@ -171,11 +171,20 @@ html {
 }
 #discography .tiles {
   display: grid;
-  gap: 2px;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
 }
 #discography .tile {
   aspect-ratio: 1 / 1;
+
+  /*
+   * "border: 1px solid transparent" has similar effect to "gap: 2px".
+   * However, the gap property yields broken grid when rectangular tiles
+   * are present. Indeed, the aspect ratio of a tile spanning over three
+   * columns and two rows is not 3:2 due to gaps. The border property is
+   * free of this problem.
+   */
+  border: 1px solid transparent;
+
   display: block;
   overflow: hidden;
 }
