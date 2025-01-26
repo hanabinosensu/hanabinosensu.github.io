@@ -191,26 +191,26 @@ html {
   position: relative;
 }
 #discography .reel::before {
-  background-color: #00000080;
+  background-color: black;
   border-radius: 50%;
   content: "";
-  height: 28px;
+  height: 40px;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 28px;
+  width: 40px;
 }
 #discography .reel::after {
   background-color: white;
   clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
   content: "";
-  height: 12px;
+  height: 18px;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-40%, -50%);
-  width: 10px;
+  width: 15px;
 }
 
 #anthem {
