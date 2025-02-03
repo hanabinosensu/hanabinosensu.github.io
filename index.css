@@ -159,6 +159,9 @@ html {
 #discography .opus {
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
+#discography .opus:not(:last-child) {
+  border-bottom: 1px dashed #d0d0d0;
+}
 #discography .opus > * {
   margin-bottom: 1rem;
 }
