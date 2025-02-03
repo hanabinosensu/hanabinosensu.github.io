@@ -2,7 +2,7 @@ html {
   font-family: serif;
   font-feature-settings: "palt";
   font-size: 1.0rem;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 200px;
   text-align: justify;
   -webkit-text-size-adjust: 100%;
 }
