@@ -7,6 +7,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+@keyframes flash {
+  from { background-color: #d0d0d0; }
+  to { background-color: white; }
+}
+
 #notice {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
@@ -82,6 +87,9 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
+#schedule:target {
+  animation: 400ms linear 200ms "flash";
+}
 #schedule > :not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -111,6 +119,9 @@ html {
   border-bottom: 1px solid #d0d0d0;
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#release:target {
+  animation: 400ms linear 200ms "flash";
 }
 #release > :not(:last-child) {
   margin-bottom: 1rem;
@@ -157,6 +168,9 @@ html {
   color: black;
   overflow: hidden;
   position: relative;
+}
+#discography:target {
+  animation: 400ms linear 200ms "flash";
 }
 #discography.collapsed {
   height: 800px;
@@ -270,10 +284,6 @@ html {
   background-color: white;
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
-}
-@keyframes flash {
-  from { background-color: #d0d0d0; }
-  to { background-color: white; }
 }
 #stickers:target {
   animation: 400ms linear 200ms "flash";
