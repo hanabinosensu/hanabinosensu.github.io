@@ -28,3 +28,10 @@ new IntersectionObserver((entries, _) => {
     document.getElementById("goto-stickers").classList.remove("shown");
   }
 }, { rootMargin: "0px 0px -200px 0px" }).observe(document.getElementById("stickers"));
+
+/* Collapsible #discography */
+document.getElementById("expand").addEventListener("click", _ => {
+  document.getElementById("discography").classList.remove("collapsed");
+});
+
+document.getElementById("discography").classList.add("collapsed");

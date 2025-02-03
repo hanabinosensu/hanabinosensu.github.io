@@ -155,6 +155,11 @@ html {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
+  overflow: hidden;
+  position: relative;
+}
+#discography.collapsed {
+  height: 800px;
 }
 #discography .opus {
   padding: 30px max(30px, calc(50% - 300px)) 30px;
@@ -224,6 +229,25 @@ html {
   top: 50%;
   transform: translate(-40%, -50%);
   width: 15px;
+}
+#discography button {
+  background: black;
+  border: 1px solid #d0d0d0;
+  border-radius: 21px;
+  bottom: 10px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  left: 50%;
+  padding: 8px 20px 8px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+#discography button:hover {
+  background: #404040;
+}
+#discography.collapsed #expand {
+  display: block;
 }
 
 #anthem {
