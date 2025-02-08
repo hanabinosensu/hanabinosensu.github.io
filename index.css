@@ -263,6 +263,10 @@ html {
 #discography.collapsed #expand {
   display: block;
 }
+#discography .harebiyori-music {
+  margin: 10px auto 10px;
+  width: min(100%, 300px);
+}
 
 #anthem {
   background-color: black;
