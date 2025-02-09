@@ -130,14 +130,13 @@ html {
   color: inherit;
   word-break: break-all;
 }
-#release audio {
-  background-image: url("/assets/amatsukasa-artwork.webp");
-  background-size: cover;
-  border-radius: 10px;
+#release iframe {
+  background-color: #d0d0d0;
+  border: 0;
+  border-radius: 12px;
   display: block;
-  height: 250px;
-  margin: 30px auto 10px;
-  width: 250px;
+  height: 80px;
+  width: 100%;
 }
 
 #amatsukasa {
