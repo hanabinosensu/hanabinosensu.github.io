@@ -3,12 +3,12 @@ url: ""
 
 exclude:
   - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
   - README.md
 # - .sass-cache/
 # - .jekyll-cache/
 # - gemfiles/
-# - Gemfile
-# - Gemfile.lock
 # - node_modules/
 # - vendor/bundle/
 # - vendor/cache/
