@@ -55,7 +55,7 @@ html {
 #firstview {
   background-color: #d0d0d0;
   background-image: url("/assets/firstview.webp");
-  background-position: 50% 30%;
+  background-position: 10% 30%;
   background-size: cover;
   border-bottom: 1px solid #d0d0d0;
   color: white;
