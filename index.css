@@ -107,11 +107,34 @@ html {
 #ironowa > :not(:last-child) {
   margin-bottom: 1rem;
 }
-#ironowa iframe {
-  background-color: #d0d0d0;
-  border: 0;
-  margin-left: clamp(-30px, 50% - 300px, 0px);
-  width: min(600px, 100vw);
+#ironowa .youtube {
+  display: block;
+  position: relative;
+}
+#ironowa .youtube::before {
+  background-color: black;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+}
+#ironowa .youtube::after {
+  background-color: white;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+  content: "";
+  height: 18px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  width: 15px;
+}
+#ironowa .youtube:hover {
+  opacity: 0.85;
 }
 
 #release {
@@ -151,11 +174,34 @@ html {
 #amatsukasa .prologue {
   writing-mode: vertical-rl;
 }
-#amatsukasa iframe {
-  background-color: #d0d0d0;
-  border: 0;
-  margin-left: clamp(-30px, 50% - 300px, 0px);
-  width: min(600px, 100vw);
+#amatsukasa .youtube {
+  display: block;
+  position: relative;
+}
+#amatsukasa .youtube::before {
+  background-color: black;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+}
+#amatsukasa .youtube::after {
+  background-color: white;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+  content: "";
+  height: 18px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  width: 15px;
+}
+#amatsukasa .youtube:hover {
+  opacity: 0.85;
 }
 #amatsukasa .epilogue {
   writing-mode: vertical-rl;
