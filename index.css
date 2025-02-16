@@ -81,19 +81,19 @@ html {
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
 
-#schedule {
+#events {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#schedule:target {
+#events:target {
   animation: 400ms linear 200ms "flash";
 }
-#schedule > :not(:last-child) {
+#events > :not(:last-child) {
   margin-bottom: 1rem;
 }
-#schedule a {
+#events a {
   color: inherit;
   word-break: break-all;
 }
