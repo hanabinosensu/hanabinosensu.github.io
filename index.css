@@ -93,9 +93,19 @@ html {
 #events > :not(:last-child) {
   margin-bottom: 1rem;
 }
-#events a {
-  color: inherit;
-  word-break: break-all;
+#events .tiles {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+#events .tile {
+  aspect-ratio: 1 / 1;
+  border: 1px solid transparent;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
 }
 
 #ironowa {
