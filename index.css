@@ -259,6 +259,16 @@ html {
 #discography .tile:hover {
   opacity: 0.7;
 }
+#discography .tile3x2 {
+  aspect-ratio: 3 / 2;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+#discography .tile2x2 {
+  aspect-ratio: 2 / 2;
+  grid-column: span 2;
+  grid-row: span 2;
+}
 #discography .tile img {
   height: 100%;
   object-fit: cover;
