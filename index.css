@@ -117,11 +117,12 @@ html {
 #ironowa > :not(:last-child) {
   margin-bottom: 1rem;
 }
-#ironowa .youtube {
+#ironowa .yt-facade {
   display: block;
+  overflow: hidden;
   position: relative;
 }
-#ironowa .youtube::before {
+#ironowa .yt-facade::before {
   background-color: black;
   border-radius: 50%;
   content: "";
@@ -132,7 +133,7 @@ html {
   transform: translate(-50%, -50%);
   width: 40px;
 }
-#ironowa .youtube::after {
+#ironowa .yt-facade::after {
   background-color: white;
   clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
   content: "";
@@ -143,8 +144,19 @@ html {
   transform: translate(-40%, -50%);
   width: 15px;
 }
-#ironowa .youtube:hover {
+#ironowa .yt-facade:hover {
   opacity: 0.85;
+}
+#ironowa .yt-facade img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+#ironowa .yt-player {
+  background-color: #d0d0d0;
+  border: 0;
+  display: block;
+  width: 100%;
 }
 
 #release {
@@ -184,11 +196,12 @@ html {
 #amatsukasa .prologue {
   writing-mode: vertical-rl;
 }
-#amatsukasa .youtube {
+#amatsukasa .yt-facade {
   display: block;
+  overflow: hidden;
   position: relative;
 }
-#amatsukasa .youtube::before {
+#amatsukasa .yt-facade::before {
   background-color: black;
   border-radius: 50%;
   content: "";
@@ -199,7 +212,7 @@ html {
   transform: translate(-50%, -50%);
   width: 40px;
 }
-#amatsukasa .youtube::after {
+#amatsukasa .yt-facade::after {
   background-color: white;
   clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
   content: "";
@@ -210,8 +223,19 @@ html {
   transform: translate(-40%, -50%);
   width: 15px;
 }
-#amatsukasa .youtube:hover {
+#amatsukasa .yt-facade:hover {
   opacity: 0.85;
+}
+#amatsukasa .yt-facade img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+#amatsukasa .yt-player {
+  background-color: #d0d0d0;
+  border: 0;
+  display: block;
+  width: 100%;
 }
 #amatsukasa .epilogue {
   writing-mode: vertical-rl;
