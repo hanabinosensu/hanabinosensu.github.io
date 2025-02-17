@@ -80,6 +80,12 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
+#about > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#about h2 {
+  font-size: 1.3rem;
+}
 
 #events {
   background-color: white;
@@ -92,6 +98,9 @@ html {
 }
 #events > :not(:last-child) {
   margin-bottom: 1rem;
+}
+#events h2 {
+  font-size: 1.3rem;
 }
 #events .tiles {
   display: grid;
@@ -117,6 +126,9 @@ html {
 #ironowa > :not(:last-child) {
   margin-bottom: 1rem;
 }
+#ironowa h2 {
+  font-size: 1.3rem;
+}
 #ironowa iframe {
   background-color: #d0d0d0;
   border: 0;
@@ -136,6 +148,9 @@ html {
 }
 #release > :not(:last-child) {
   margin-bottom: 1rem;
+}
+#release h2 {
+  font-size: 1.3rem;
 }
 #release a {
   color: inherit;
@@ -186,11 +201,13 @@ html {
 #discography.collapsed {
   height: 800px;
 }
-#discography .opus {
+#discography h2 {
+  font-size: 1.3rem;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#discography .opus:not(:last-child) {
-  border-bottom: 1px dashed #d0d0d0;
+#discography .opus {
+  border-top: 1px dashed #d0d0d0;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
 #discography .opus > * {
   margin-bottom: 1rem;
