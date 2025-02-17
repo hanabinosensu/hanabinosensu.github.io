@@ -171,6 +171,9 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
+#amatsukasa:target {
+  animation: 400ms linear 200ms "flash";
+}
 #amatsukasa > :not(:last-child) {
   margin-bottom: 1rem;
 }
