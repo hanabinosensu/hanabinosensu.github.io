@@ -196,6 +196,7 @@ html {
   border-bottom: 1px solid #d0d0d0;
   color: black;
   overflow: hidden;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
   position: relative;
 }
 #discography:target {
@@ -204,29 +205,28 @@ html {
 #discography.collapsed {
   height: 800px;
 }
+#discography > :not(hr, button) {
+  margin-bottom: 1rem;
+}
 #discography h2 {
   font-size: 1.3rem;
-  padding: 30px max(30px, calc(50% - 300px)) 0.5rem;
+  font-weight: bold;
+}
+#discography h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 #discography a {
   color: inherit;
 }
-#discography > p {
-  padding: 0.5rem max(30px, calc(50% - 300px)) 30px;
-}
-#discography .opus {
-  border-top: 1px dashed #d0d0d0;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
-}
-#discography .opus > * {
-  margin-bottom: 1rem;
-}
-#discography .opus h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-#discography .opus ul {
+#discography ul {
   padding-left: 25px;
+}
+#discography hr {
+  border: 0;
+  border-bottom: 1px dashed #d0d0d0;
+  margin: 30px -30px 24px;
+  width: calc(100% + 60px);
 }
 #discography .tiles {
   display: grid;
