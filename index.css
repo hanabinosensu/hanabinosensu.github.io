@@ -310,9 +310,6 @@ html {
 #anthem blockquote {
   writing-mode: vertical-rl;
 }
-#anthem a {
-  color: inherit;
-}
 
 #stickers {
   background-color: white;
