@@ -41,7 +41,7 @@ html {
   border-bottom: 1px solid transparent;
   color: white;
   fill: white;
-  text-shadow: 2px 2px 0 black;
+  text-shadow: 0 0 4px black;
 }
 #nav a {
   color: inherit;
@@ -64,7 +64,7 @@ html {
   margin-top: -70px;
   padding: 450px 30px 40px;
   text-align: center;
-  text-shadow: 2px 2px 0 black;
+  text-shadow: 0 0 4px black;
   width: 100%;
 }
 #firstview small {
