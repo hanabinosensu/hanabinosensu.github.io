@@ -31,7 +31,9 @@ new IntersectionObserver((entries, _) => {
 
 /* Collapsible #discography */
 document.getElementById("expand").addEventListener("click", _ => {
-  document.getElementById("discography").classList.remove("collapsed");
+  document.getElementById("discography").style.height = "";
+  document.getElementById("expand").style.display = "";
 });
 
-document.getElementById("discography").classList.add("collapsed");
+document.getElementById("discography").style.height = "800px";
+document.getElementById("expand").style.display = "block";

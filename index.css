@@ -202,9 +202,6 @@ html {
 #discography:target {
   animation: 400ms linear 200ms "flash";
 }
-#discography.collapsed {
-  height: 800px;
-}
 #discography > :not(hr, button) {
   margin-bottom: 1rem;
 }
@@ -295,9 +292,6 @@ html {
 }
 #discography button:hover {
   background: #404040;
-}
-#discography.collapsed #expand {
-  display: block;
 }
 #discography .harebiyori-music {
   margin: 10px auto 10px;
