@@ -86,6 +86,9 @@ html {
 #about h2 {
   font-size: 1.3rem;
 }
+#about b {
+  font-weight: bold;
+}
 
 #events {
   background-color: white;
