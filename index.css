@@ -181,6 +181,7 @@ html {
   margin-bottom: 1rem;
 }
 #amatsukasa .prologue {
+  font-feature-settings: normal;
   writing-mode: vertical-rl;
 }
 #amatsukasa iframe {
@@ -191,6 +192,7 @@ html {
   width: min(600px, 100vw);
 }
 #amatsukasa .epilogue {
+  font-feature-settings: normal;
   writing-mode: vertical-rl;
 }
 
@@ -311,6 +313,7 @@ html {
   margin-bottom: 1rem;
 }
 #anthem blockquote {
+  font-feature-settings: normal;
   writing-mode: vertical-rl;
 }
 
