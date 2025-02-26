@@ -99,11 +99,25 @@ html {
 #news:target {
   animation: 400ms linear 200ms "flash";
 }
-#news > :not(:last-child) {
+#news > :not(hr) {
   margin-bottom: 1rem;
 }
 #news h2 {
   font-size: 1.3rem;
+  font-weight: bold;
+}
+#news h3 {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+#news a {
+  color: inherit;
+}
+#news hr {
+  border: 0;
+  border-bottom: 1px dashed #d0d0d0;
+  margin: 24px -30px 24px;
+  width: calc(100% + 60px);
 }
 #news .tiles {
   display: grid;
@@ -114,9 +128,14 @@ html {
   aspect-ratio: 1 / 1;
   border: 1px solid transparent;
   display: block;
+  overflow: hidden;
+}
+#news a.tile:hover {
+  opacity: 0.7;
+}
+#news .tile img {
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
   width: 100%;
 }
 
