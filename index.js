@@ -12,12 +12,12 @@ new IntersectionObserver((entries, _) => {
   }
 }, {}).observe(document.getElementById("notice"));
 
-/* Show #goto-stickers button when #events section enters viewport */
+/* Show #goto-stickers button when #news section enters viewport */
 new IntersectionObserver((entries, _) => {
   if (entries[0].isIntersecting) {
     document.getElementById("goto-stickers").classList.add("shown");
   }
-}, {}).observe(document.getElementById("events"));
+}, {}).observe(document.getElementById("news"));
 
 /*
  * Hide #goto-stickers button when upper 200px of the #stickers section
