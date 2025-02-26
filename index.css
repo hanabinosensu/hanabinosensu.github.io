@@ -112,6 +112,7 @@ html {
 }
 #news a {
   color: inherit;
+  word-break: break-all;
 }
 #news hr {
   border: 0;
