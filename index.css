@@ -74,6 +74,23 @@ html {
   transform: translate(-40px, -5px);
 }
 
+#join {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#join > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#join h2 {
+  font-size: 1.3rem;
+}
+#join a {
+  color: inherit;
+  word-break: break-all;
+}
+
 #about {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
