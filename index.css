@@ -90,6 +90,9 @@ html {
   color: inherit;
   word-break: break-all;
 }
+#join ol {
+  padding-left: 25px;
+}
 
 #about {
   background-color: white;
