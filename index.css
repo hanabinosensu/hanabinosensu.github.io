@@ -90,8 +90,17 @@ html {
   color: inherit;
   word-break: break-all;
 }
+#join hr {
+  border: 0;
+  border-bottom: 1px dashed #d0d0d0;
+  margin: 24px -30px 24px;
+  width: calc(100% + 60px);
+}
+#join ul {
+  padding-left: 20px;
+}
 #join ol {
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 #about {
@@ -262,7 +271,7 @@ html {
   color: inherit;
 }
 #discography ul {
-  padding-left: 25px;
+  padding-left: 20px;
 }
 #discography hr {
   border: 0;
@@ -340,7 +349,7 @@ html {
 }
 #discography .harebiyori-music {
   margin: 10px auto 10px;
-  width: min(100%, 300px);
+  width: min(100%, 330px);
 }
 
 #anthem {
