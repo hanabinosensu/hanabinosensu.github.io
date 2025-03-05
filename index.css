@@ -347,10 +347,6 @@ html {
 #discography button:hover {
   background: #404040;
 }
-#discography .harebiyori-music {
-  margin: 10px auto 10px;
-  width: min(100%, 330px);
-}
 
 #anthem {
   background-color: black;
@@ -377,10 +373,6 @@ html {
 #stickers > :not(:last-child) {
   margin-bottom: 1rem;
 }
-#stickers img {
-  margin: 10px auto 10px;
-  width: min(100%, 300px);
-}
 #stickers a {
   background-color: #06c755;
   border-radius: 4px;
@@ -400,7 +392,6 @@ html {
   position: fixed;
   right: max(20px, calc(50% - 380px));
   transition: bottom 200ms ease-out;
-  width: 60px;
 }
 #goto-stickers:hover {
   opacity: 0.7;
