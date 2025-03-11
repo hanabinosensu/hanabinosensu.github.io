@@ -74,6 +74,26 @@ html {
   transform: translate(-40px, -5px);
 }
 
+#recommend {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#recommend > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#recommend h2 {
+  font-size: 1.3rem;
+}
+#recommend iframe {
+  background-color: #d0d0d0;
+  border: 0;
+  display: block;
+  margin-left: clamp(-30px, 50% - 300px, 0px);
+  width: min(600px, 100vw);
+}
+
 #join {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
@@ -101,13 +121,6 @@ html {
 }
 #join ol {
   padding-left: 20px;
-}
-#join iframe {
-  background-color: #d0d0d0;
-  border: 0;
-  display: block;
-  margin-left: clamp(-30px, 50% - 300px, 0px);
-  width: min(600px, 100vw);
 }
 
 #about {
