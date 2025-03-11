@@ -394,15 +394,11 @@ html {
 }
 
 #goto-stickers {
-  bottom: -100px;
+  bottom: 20px;
   display: block;
   position: fixed;
   right: max(20px, calc(50% - 380px));
-  transition: bottom 200ms ease-out;
 }
 #goto-stickers:hover {
   opacity: 0.7;
-}
-#goto-stickers.shown {
-  bottom: 20px;
 }
