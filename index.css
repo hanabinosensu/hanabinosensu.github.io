@@ -102,6 +102,13 @@ html {
 #join ol {
   padding-left: 20px;
 }
+#join iframe {
+  background-color: #d0d0d0;
+  border: 0;
+  display: block;
+  margin-left: clamp(-30px, 50% - 300px, 0px);
+  width: min(600px, 100vw);
+}
 
 #about {
   background-color: white;
