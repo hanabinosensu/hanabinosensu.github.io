@@ -6,9 +6,9 @@ new IntersectionObserver((entries, _) => {
   const nav = document.getElementById("nav");
 
   if (entries[0].isIntersecting) {
-    nav.classList.add("transparent");
+    nav.classList.add("off");
   } else {
-    nav.classList.remove("transparent");
+    nav.classList.remove("off");
   }
 }, {}).observe(document.getElementById("notice"));
 

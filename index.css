@@ -30,18 +30,23 @@ html {
   fill: black;
   height: 70px;
   padding: 0 max(30px, calc(50% - 300px));
-  position: sticky;
+  position: relative;
   top: 0;
   transition: all 100ms linear;
   width: 100%;
   z-index: 1;
 }
-#nav.transparent {
-  background-color: transparent;
-  border-bottom: 1px solid transparent;
-  color: white;
-  fill: white;
-  text-shadow: 0 0 4px black;
+@media (min-height: 420px) {
+  #nav {
+    position: sticky;
+  }
+  #nav.off {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    color: white;
+    fill: white;
+    text-shadow: 0 0 4px black;
+  }
 }
 #nav a {
   color: inherit;
