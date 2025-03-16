@@ -85,11 +85,14 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#recommend > :not(:last-child) {
+#recommend > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
 #recommend h2 {
   font-size: 1.3rem;
+  font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
 }
 #recommend iframe {
   background-color: #d0d0d0;
@@ -105,11 +108,18 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#join > :not(:last-child) {
+#join > :not(h2, hr, :last-child) {
   margin-bottom: 1rem;
 }
 #join h2 {
   font-size: 1.3rem;
+  font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
+}
+#join h2 b {
+  display: block;
+  font-size: 4rem;
 }
 #join a {
   color: inherit;
@@ -131,11 +141,14 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#about > :not(:last-child) {
+#about > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
 #about h2 {
   font-size: 1.3rem;
+  font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
 }
 #about b {
   font-weight: bold;
@@ -150,12 +163,14 @@ html {
 #news:target {
   animation: 400ms linear 200ms "flash";
 }
-#news > :not(hr) {
+#news > :not(h2, hr, :last-child) {
   margin-bottom: 1rem;
 }
 #news h2 {
   font-size: 1.3rem;
   font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
 }
 #news h3 {
   font-size: 1.0rem;
@@ -197,11 +212,14 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#ironowa > :not(:last-child) {
+#ironowa > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
 #ironowa h2 {
   font-size: 1.3rem;
+  font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
 }
 #ironowa iframe {
   background-color: #d0d0d0;
@@ -220,11 +238,14 @@ html {
 #release:target {
   animation: 400ms linear 200ms "flash";
 }
-#release > :not(:last-child) {
+#release > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
 #release h2 {
   font-size: 1.3rem;
+  font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
 }
 #release a {
   color: inherit;
@@ -278,12 +299,14 @@ html {
 #discography:target {
   animation: 400ms linear 200ms "flash";
 }
-#discography > :not(hr, button) {
+#discography > :not(h2, hr, button) {
   margin-bottom: 1rem;
 }
 #discography h2 {
   font-size: 1.3rem;
   font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
 }
 #discography h3 {
   font-size: 1.2rem;
