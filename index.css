@@ -121,6 +121,9 @@ html {
   display: block;
   font-size: 4rem;
 }
+#join b {
+  font-weight: bold;
+}
 #join a {
   color: inherit;
   word-break: break-all;
