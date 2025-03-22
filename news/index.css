@@ -35,10 +35,7 @@ html {
 }
 #nav a[href="/"] {
   padding: 0;
-  img {
-    height: 69px;
-    width: 69px;
-  }
+  width: 69px;  /* Set width explicitly so hanabi symbol can appear */
 }
 
 h1 {
