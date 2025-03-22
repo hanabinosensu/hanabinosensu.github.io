@@ -28,6 +28,7 @@ html {
 
   color: black;
   display: flex;
+  fill: black;
   height: 70px;
   padding: 0 max(30px, calc(50% - 300px));
   width: 100%;
