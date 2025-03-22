@@ -19,6 +19,13 @@ html {
 
 #nav {
   background-color: transparent;
+
+  /*
+   * Reduce box height to 69px because the following "#nav a[href="/"]" rule
+   * expects that.
+   */
+  border-bottom: 1px solid transparent;
+
   color: black;
   display: flex;
   height: 70px;
