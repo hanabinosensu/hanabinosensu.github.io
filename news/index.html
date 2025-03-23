@@ -39,10 +39,12 @@
       {% if year != "2025" %}
         {% continue %}
       {% endif %}
-      <h3>
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m/%d" }}</time>
-        <span>{{ post.title }}</span>
-      </h3>
+      <a href="{{ post.url }}">
+        <h3>
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m/%d" }}</time>
+          <span>{{ post.title }}</span>
+        </h3>
+      </a>
     {% endfor %}
   </section>
 
@@ -53,10 +55,12 @@
       {% if year != "2024" %}
         {% continue %}
       {% endif %}
-      <h3>
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m/%d" }}</time>
-        <span>{{ post.title }}</span>
-      </h3>
+      <a href="{{ post.url }}">
+        <h3>
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m/%d" }}</time>
+          <span>{{ post.title }}</span>
+        </h3>
+      </a>
     {% endfor %}
   </section>
 </body>
