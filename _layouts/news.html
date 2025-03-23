@@ -13,7 +13,7 @@
   <meta property="og:description" content="{{ page.ogp.description }}">
   {% endif %}
   {% if page.ogp.image %}
-  <meta property="og:image" content="{{ page.ogp.image }}">
+  <meta property="og:image" content="https://hanabinosensu.github.io/{{ page.ogp.image }}">
   {% else %}
   <meta property="og:image" content="https://hanabinosensu.github.io/assets/ogp.jpg">
   {% endif %}
@@ -28,7 +28,7 @@
   {% if page.ogp.image %}
   <style>
     h1 {
-      background-image: url("{{ page.ogp.image }}");
+      background-image: url("/{{ page.ogp.image }}");
     }
   </style>
   {% endif %}
