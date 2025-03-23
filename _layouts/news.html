@@ -8,14 +8,14 @@
   <meta name="robots" content="noindex">
   {% endif %}
   <meta property="og:title" content="{{ page.title }} - 東京花火のファンサイト">
-  <meta property="og:url" content="https://hanabinosensu.github.io{{ page.url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
   {% if page.ogp.description %}
   <meta property="og:description" content="{{ page.ogp.description }}">
   {% endif %}
   {% if page.ogp.image %}
-  <meta property="og:image" content="https://hanabinosensu.github.io{{ page.ogp.image }}">
+  <meta property="og:image" content="{{ page.ogp.image | absolute_url }}">
   {% else %}
-  <meta property="og:image" content="https://hanabinosensu.github.io/assets/ogp.jpg">
+  <meta property="og:image" content="{{ '/assets/ogp.jpg' | absolute_url }}">
   {% endif %}
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
