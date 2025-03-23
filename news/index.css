@@ -68,34 +68,31 @@ section {
 section + section {
   margin-top: -30px;
 }
-
-h2 {
+section h2 {
   color: black;
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-
-h3 {
+section h3 {
   color: black;
   display: flex;
   font-size: 1rem;
   font-weight: normal;
   margin-bottom: 4px;
 }
-h3 time {
+section h3 time {
   color: #707070;
   display: block;
   width: 55px;
 }
-h3 span {
+section h3 span {
   flex: 1;
 }
-
-a {
+section a {
   color: inherit;
   text-decoration: none;
 }
-a:hover {
+section a:hover {
   opacity: 0.5;
 }
