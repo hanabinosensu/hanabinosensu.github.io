@@ -32,8 +32,10 @@ html {
   fill: white;
   height: 70px;
   padding: 0 max(30px, calc(50% - 300px));
+  position: relative;
   text-shadow: 0 0 4px black;
   width: 100%;
+  z-index: 1;
 }
 #nav a {
   color: inherit;
