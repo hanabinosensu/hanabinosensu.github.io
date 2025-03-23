@@ -39,12 +39,16 @@
       {% if year != "2025" %}
         {% continue %}
       {% endif %}
+      {% unless post.stub %}
       <a href="{{ post.url }}">
+      {% endunless %}
         <h3>
           <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m/%d" }}</time>
           <span>{{ post.title }}</span>
         </h3>
+      {% unless post.stub %}
       </a>
+      {% endunless %}
     {% endfor %}
   </section>
 
@@ -55,12 +59,16 @@
       {% if year != "2024" %}
         {% continue %}
       {% endif %}
+      {% unless post.stub %}
       <a href="{{ post.url }}">
+      {% endunless %}
         <h3>
           <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m/%d" }}</time>
           <span>{{ post.title }}</span>
         </h3>
+      {% unless post.stub %}
       </a>
+      {% endunless %}
     {% endfor %}
   </section>
 </body>
