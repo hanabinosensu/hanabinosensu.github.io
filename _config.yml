@@ -1,5 +1,5 @@
+url: https://hanabinosensu.github.io  # no trailing slash
 baseurl: ""
-url: ""
 
 exclude:
   - docker-compose.yml
