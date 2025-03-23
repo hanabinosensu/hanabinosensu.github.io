@@ -19,4 +19,5 @@ defaults:
   - scope:
       path: news/_posts
     values:
+      layout: news
       permalink: /news/:title
