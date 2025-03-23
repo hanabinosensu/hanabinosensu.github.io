@@ -27,11 +27,12 @@ html {
    */
   border-bottom: 1px solid transparent;
 
-  color: black;
+  color: white;
   display: flex;
-  fill: black;
+  fill: white;
   height: 70px;
   padding: 0 max(30px, calc(50% - 300px));
+  text-shadow: 0 0 4px black;
   width: 100%;
 }
 #nav a {
@@ -48,14 +49,17 @@ html {
 }
 
 h1 {
-  background-color: #f0f0f0;
+  background-color: #619bb7;
+  background-position: center;
+  background-size: cover;
   border-bottom: 1px solid #d0d0d0;
-  color: black;
+  color: white;
   font-size: 2rem;
   line-height: 1.3;
   margin-top: -70px;
   padding: 450px 30px 30px;
   text-align: center;
+  text-shadow: 0 0 4px black;
   width: 100%;
 }
 
