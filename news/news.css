@@ -1,0 +1,138 @@
+html {
+  background-color: white;
+  font-family: serif;
+  font-feature-settings: "palt";
+  font-size: 1.0rem;
+  scroll-padding-top: 200px;
+  text-align: justify;
+  -webkit-text-size-adjust: 100%;
+}
+
+#notice {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 9px max(30px, calc(50% - 300px)) 11px;
+}
+#notice a {
+  color: inherit;
+}
+
+#nav {
+  background-color: transparent;
+
+  /*
+   * Reduce box height to 69px because the following "#nav a[href="/"]" rule
+   * expects that.
+   */
+  border-bottom: 1px solid transparent;
+
+  color: black;
+  display: flex;
+  fill: black;
+  height: 70px;
+  padding: 0 max(30px, calc(50% - 300px));
+  width: 100%;
+}
+#nav a {
+  color: inherit;
+  padding: 21px 8px 25px;
+  text-decoration: none;
+}
+#nav a:hover {
+  opacity: 0.5;
+}
+#nav a[href="/"] {
+  padding: 0;
+  width: 69px;  /* Set width explicitly so hanabi symbol can appear */
+}
+
+h1 {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-top: -70px;
+  padding: 450px 30px 30px;
+  text-align: center;
+  width: 100%;
+}
+
+main {
+  background-color: white;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+main > * {
+  margin-bottom: 1rem;
+}
+main h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+main h3 {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+main a {
+  color: inherit;
+}
+main b {
+  font-weight: bold;
+}
+main ul {
+  padding-left: 20px;
+}
+main ol {
+  padding-left: 20px;
+}
+main hr {
+  border: 0;
+  border-bottom: 1px dashed #d0d0d0;
+  margin: 30px -30px 24px;
+  width: calc(100% + 60px);
+}
+main .tiles {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+main .tile {
+  aspect-ratio: 1 / 1;
+  border: 1px solid transparent;
+  display: block;
+  overflow: hidden;
+}
+main .tile3x2 {
+  aspect-ratio: 3 / 2;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+main .tile2x2 {
+  aspect-ratio: 2 / 2;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+main a.tile:hover {
+  opacity: 0.7;
+}
+main .tile img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+main .youtube {
+  position: relative;
+}
+main .youtube::before {
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' viewBox='0 0 68 48' xmlns='http://www.w3.org/2000/svg'><path d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='%23f03'/><path d='M 45,24 27,14 27,34' fill='%23fff'/></svg>");
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 8px;
+  content: "";
+  height: 24px;  /* Keep aspect ratio to 68:48 */
+  position: absolute;
+  right: 8px;
+  width: 34px;
+}

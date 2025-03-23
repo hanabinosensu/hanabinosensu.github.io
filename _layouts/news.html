@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="{{ page.title }} - 東京花火のファンサイト">
+  <meta property="og:url" content="https://hanabinosensu.github.io/">
+  <meta property="og:image" content="https://hanabinosensu.github.io/assets/ogp.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>{{ page.title }} - 東京花火のファンサイト</title>
+  <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/news/news.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+  <div id="notice">
+    このウェブサイトは非公式のものです。東京花火さんに魅了されたファンが個人的に運営しています。公式サイトは<a href="http://www.tokyohanabi.com/" rel="noreferrer" target="_blank">こちら</a>です。
+  </div>
+
+  <nav id="nav">
+    <a href="/">{% include tokyohanabi-symbol.svg %}</a>
+    <div style="flex: 1"></div>
+    <a href="/news/">ニュース一覧へ戻る</a>
+  </nav>
+
+  <h1>{{ page.title }}</h1>
+
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
