@@ -9,7 +9,14 @@
   {% endif %}
   <meta property="og:title" content="{{ page.title }} - 東京花火のファンサイト">
   <meta property="og:url" content="https://hanabinosensu.github.io/">
+  {% if page.ogp.description %}
+  <meta property="og:description" content="{{ page.ogp.description }}">
+  {% endif %}
+  {% if page.ogp.image %}
+  <meta property="og:image" content="{{ page.ogp.image }}">
+  {% else %}
   <meta property="og:image" content="https://hanabinosensu.github.io/assets/ogp.jpg">
+  {% endif %}
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <title>{{ page.title }} - 東京花火のファンサイト</title>
