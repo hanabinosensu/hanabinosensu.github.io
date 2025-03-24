@@ -134,6 +134,26 @@ main .tile2x2 {
 main a.tile:hover {
   opacity: 0.7;
 }
+main .tile3x2 {
+  aspect-ratio: 3 / 2;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+main .tile2x2 {
+  aspect-ratio: 2 / 2;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+main .tile1x2 {
+  aspect-ratio: 1 / 2;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+main .tile2x1 {
+  aspect-ratio: 2 / 1;
+  grid-column: span 2;
+  grid-row: span 1;
+}
 main .tile img {
   height: 100%;
   object-fit: cover;
