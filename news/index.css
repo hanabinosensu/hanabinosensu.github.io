@@ -59,7 +59,7 @@ html {
 
 h1 {
   background-color: #619bb7;
-  background-image: url("/assets/news/hero.avif");
+  background-image: url("/news/hero.avif");
   background-position: center;
   background-size: cover;
   border-bottom: 1px solid #d0d0d0;
