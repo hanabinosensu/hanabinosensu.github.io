@@ -57,7 +57,7 @@ html {
   opacity: 0.5;
 }
 
-#firstview {
+h1 {
   background-color: #619bb7;
   background-image: url("/hero.avif");
   background-position: 100% 25%;
@@ -72,7 +72,7 @@ html {
   text-shadow: 0 0 4px black;
   width: 100%;
 }
-#firstview small {
+h1 small {
   display: block;
   font-size: 1.0rem;
   font-weight: normal;
