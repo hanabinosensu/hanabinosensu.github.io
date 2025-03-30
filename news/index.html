@@ -34,38 +34,149 @@
 
   <section id="2025">
     <h2>2025</h2>
-    {% for post in site.categories.news %}
-      {% assign year = post.date | date: "%Y" %}
-      {% if year != "2025" %}
-        {% continue %}
-      {% endif %}
-      <h3>
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m/%d" }}</time>
-        {% if post.stub %}
-        <span>{{ post.title }}</span>
-        {% else %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-    {% endfor %}
+
+    <article id="sakuyosa-25">
+      <h3><time class="date" datetime="2025-04-05">04/05</time>第 21 回京都さくらよさこい出演決定 🌸</h3>
+      <dl>
+        <dt><img src="/assets/date.svg" loading="lazy" alt="日程"></dt>
+        <dd>04/05–06</dd>
+        <dt><img src="/assets/area.svg" loading="lazy" alt="場所"></dt>
+        <dd>京都</dd>
+        <dt><img src="/assets/time.svg" loading="lazy" alt="タイムテーブル"></dt>
+        <dd>
+          <time class="date" datetime="2025-04-05">04/05</time>
+          <ul>
+            <li>11:36 神宮道</li>
+            <li>12:36 神宮道南</li>
+            <li>13:42 二条城</li>
+            <li>14:48 京都駅前</li>
+          </ul>
+          <time class="date" datetime="2025-04-06">04/06</time>
+          <ul>
+            <li>11:42 神宮道パレード</li>
+            <li>13:30 神宮道南</li>
+            <li>15:00 二条城</li>
+          </ul>
+        </dd>
+        <dt><img src="/assets/link.svg" loading="lazy" alt="リンク"></dt>
+        <dd>
+          <ul>
+            <li><a href="https://www.instagram.com/tokyo_hanabi/p/DHJIhVAyJ02/" rel="noreferrer" target="_blank">東京花火公式 Instagram</a></li>
+            <li><a href="https://www.sakuyosa.com/archives/15128" rel="noreferrer" target="_blank">サクヨサ公式サイト</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <p>
+        天つかさはこのお祭りにて納めとなります。来年度のとこ祭までしばしのお別れです。
+      </p>
+    </article>
+
+    <article id="minatomirai-25">
+      <h3><time datetime="2025-03-22">03/22</time>横浜舞踏会 in みなとみらい出演 ⚓</h3>
+      <p>
+        日本丸メモリアルパークで開催された横浜舞踏会を見に行きました。ランドマークタワーのお膝下という最高のロケーションに，桜満開の春日和という最高のタイミングでした。サクヨサには行けないので，個人的には天つかさ見納めです。纏のお二人が初見の総踊り曲を頑張って踊っていたのが印象に残っています。
+      </p>
+      <div class="tiles">
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/landmark-2872f86e.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/parade-490cec9e.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/towerside-c9a3f97f.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/towerside-e58cf2bb.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/towerside-61ca9284.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/mainstage-77946686.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/mainstage-29bfbaf4.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/mainstage-8bdc2aee.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/mainstage-64c8a07e.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/mainstage-3e1d2b3f.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/mainstage-71479339.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/mainstage-1a16b1dd.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/matoi-247d61b7.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/minatomirai-25/souodori-f3534691.avif" loading="lazy" alt=""></div>
+      </div>
+    </article>
+
+    <article id="honolulu-25">
+      <h3><time datetime="2025-03-07">03/07</time>ホノルルフェスティバル 2025 出演 🇺🇸</h3>
+      <p>
+        なんとなんと東京花火アメリカ初上陸となります。最後の Grand Parade の長さは一般的なよさこい祭りの数倍の 1.6 km！ ぞっこんめでた（ぞっこん町田 ’98 さんと七福よさこい連祝禧さんの合同チーム）さんや，おどりんちゅさん等も遠征に参加したようです。
+      </p>
+    </article>
+
+    <article id="ichigofutae">
+      <h3><time datetime="2025-02-23">02/23</time>二十周年記念祭り “一期二会” 開催</h3>
+      <img src="/assets/news/2025/ichigofutae/symbol-6c822528.avif" style="float: right; height: 96px; margin: 0 0 0 12px; width: 96px" loading="lazy" alt="">
+      <p>
+        今年で東京花火の設立から 20 年となるのを記念して，現役生と OBOG 向けのリユニオンイベント “一期二会” が開催されました。参加者はなんと 200 人を超えていたそうです。イベントの様子は特設 X アカウント <a href="https://x.com/hanabi_20th" rel="noreferrer" target="_blank">@hanabi_20th</a> にて見ることができます。さらに同日，ベトナム在住の熱烈な花火ファンの方々が，応援イベント “Spark of Eternity” を開いたようです✨
+      </p>
+    </article>
+
+    <article id="kisaragisai-25">
+      <h3><time datetime="2025-02-15">02/15</time>如月祭 ’25 開催 🎪</h3>
+      <p>
+        2025 年の如月祭が江戸川区総合文化センターにて開催されました。OBOG や保護者の方はもちろん，おどりんちゅの踊り子さんやカメラマンの方々，さらに私のような一般のファンも大勢来場しており，大変な賑わいを見せていました。この如月祭にてオリジナルの総踊り曲『夢花火』がお披露目されました。
+      </p>
+      <div class="tiles">
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/amatsukasa-f787eaac.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/chitose-8f85f0db.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/harebiyori-2ce1bcd3.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/amatsukasa-8f7dec32.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/amatsukasa-be641ea9.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/amatsukasa-005ecfd7.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/1kaisei-83aa4830.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/urara-48a9312e.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/kamihakari-9b5ca4f3.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2025/kisaragisai-25/closing-04a17262.avif" loading="lazy" alt=""></div>
+      </div>
+    </article>
+
+    <article id="20th-title">
+      <h3><time datetime="2025-01-01">01/01</time>新演舞タイトル『彩の輪』公開</h3>
+    </article>
   </section>
 
   <section id="2024">
     <h2>2024</h2>
-    {% for post in site.categories.news %}
-      {% assign year = post.date | date: "%Y" %}
-      {% if year != "2024" %}
-        {% continue %}
-      {% endif %}
-      <h3>
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%m/%d" }}</time>
-        {% if post.stub %}
-        <span>{{ post.title }}</span>
-        {% else %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-    {% endfor %}
+
+    <article id="vajra-24">
+      <h3><time datetime="2024-12-14">12/14</time>第 25 回バサラカーニバルに “東京踊りっぱーず” として出演 💃</h3>
+    </article>
+
+    <article id="kuroshio-24">
+      <h3><time datetime="2024-11-24">11/24</time>第 21 回黒潮よさこい祭り出演 🌊</h3>
+    </article>
+
+    <article id="19th-retire">
+      <h3><time datetime="2024-11-03">11/03</time>19 代目天つかさ代引退</h3>
+    </article>
+
+    <article id="wasedasai-24">
+      <h3><time datetime="2024-11-03">11/03</time>早稲田祭 2024 出演</h3>
+      <p>
+        2024 年の早稲田祭が 11/02–03 の二日間に渡って開催されました。初日は冷たい雨が降りましたが，翌日は雲一つない晴天でした。このお祭りの日を以って天つかさ代は引退しました。また 2019 年度の演舞『あそばせ』は納めとなりました。
+      </p>
+      <div class="tiles">
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/asobase-bfe7d690.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/harebiyori-7316f87a.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/kamihakari-97737583.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/chitose-40cf5a27.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/amatsukasa-8325e3f1.avif" loading="lazy" alt=""></div>
+        <div class="tile tile2x1"><img src="/assets/news/2024/wasedasai-24/kuramae-51ee193f.avif" loading="lazy" alt=""></div>
+        <div class="tile tile2x1"><img src="/assets/news/2024/wasedasai-24/rikoten-719512f3.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/uchiage-d703d7e8.avif" loading="lazy" alt=""></div>
+        <div class="tile tile1x2"><img src="/assets/news/2024/wasedasai-24/matoi-c4a1a550.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/kamihakari-a8c57e05.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/amatsukasa-ed72ca49.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/harebiyori-c63543cf.avif" loading="lazy" alt=""></div>
+        <div class="tile tile2x1"><img src="/assets/news/2024/wasedasai-24/asobase-f4a73c8c.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/chitose-567e5135.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/amatsukasa-13a973db.avif" loading="lazy" alt=""></div>
+        <div class="tile tile2x1"><img src="/assets/news/2024/wasedasai-24/rikoten-419c93da.avif" loading="lazy" alt=""></div>
+        <div class="tile"><img src="/assets/news/2024/wasedasai-24/night-42497b5c.avif" loading="lazy" alt=""></div>
+      </div>
+    </article>
+
+    <article id="tokyo-24">
+      <h3><time datetime="2024-10-12">10/12</time>🦉 第 25 回東京よさこい祭り出演</h3>
+    </article>
   </section>
 </body>
 </html>

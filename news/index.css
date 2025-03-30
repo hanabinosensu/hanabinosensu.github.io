@@ -1,4 +1,5 @@
 html {
+  background-color: #f0f0f0;
   font-family: serif;
   font-feature-settings: "palt";
   font-size: 1.0rem;
@@ -63,33 +64,117 @@ h1 b {
 }
 
 section {
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
-}
-section + section {
-  margin-top: -30px;
+  background-color: transparent;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(10px, calc(50% - 300px)) 30px;
 }
 section h2 {
-  color: black;
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  text-align: center;
 }
-section h3 {
-  color: black;
-  display: flex;
-  font-size: 1rem;
-  font-weight: normal;
-  margin-bottom: 4px;
+
+article {
+  background-color: white;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  padding: 20px;
+  position: relative;
 }
-section h3 time {
+article::before {
+  background-color: #d0d0d0;
+  content: "";
+  height: 1rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: -1rem;
+  width: 1px;
+  z-index: -1;
+}
+article > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+article h3 {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+article h3 time {
   color: #707070;
-  display: block;
-  width: 55px;
+  font-weight: normal;
+  margin-right: 8px;
 }
-section h3 span {
-  flex: 1;
-}
-section h3 a {
+article a {
   color: inherit;
-  flex: 1;
+  word-break: break-all;
+}
+article dl {
+  display: grid;
+  column-gap: 4px;
+  grid-template-columns: 24px 1fr;
+  row-gap: 4px;
+}
+article dt {
+  grid-column: 1;
+}
+article dt img {
+  height: 24px;
+  padding: 2px;
+  width: 24px;
+}
+article dd {
+  grid-column: 2;
+}
+article dd .date {
+  color: #707070;
+}
+article dd ul {
+  margin-bottom: 0.1rem;
+  padding-left: 0;
+  list-style: none;
+}
+article dd li {
+  line-height: 1.3;
+}
+article .tiles {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+article .tile {
+  aspect-ratio: 1 / 1;
+  border: 1px solid transparent;
+  display: block;
+  overflow: hidden;
+}
+article a.tile:hover {
+  opacity: 0.7;
+}
+article .tile3x2 {
+  aspect-ratio: 3 / 2;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+article .tile2x2 {
+  aspect-ratio: 2 / 2;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+article .tile1x2 {
+  aspect-ratio: 1 / 2;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+article .tile2x1 {
+  aspect-ratio: 2 / 1;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+article .tile img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
