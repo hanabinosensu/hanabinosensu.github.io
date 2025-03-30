@@ -19,21 +19,30 @@ html {
 }
 
 #nav {
-  background-color: transparent;
-
-  /*
-   * Reduce box height to 69px because the following "#nav a[href="/"]" rule
-   * expects that.
-   */
-  border-bottom: 1px solid transparent;
-
-  color: white;
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
   display: flex;
-  fill: white;
+  fill: black;
   height: 70px;
   padding: 0 max(30px, calc(50% - 300px));
-  text-shadow: 0 0 4px black;
+  position: relative;
+  top: 0;
+  transition: all 100ms linear;
   width: 100%;
+  z-index: 1;
+}
+@media (min-height: 420px) {
+  #nav {
+    position: sticky;
+  }
+  #nav.off {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    color: white;
+    fill: white;
+    text-shadow: 0 0 4px black;
+  }
 }
 #nav a {
   color: inherit;
