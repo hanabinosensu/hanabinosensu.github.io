@@ -108,7 +108,7 @@ html {
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#join > :not(h2, hr, :last-child) {
+#join > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
 #join h2 {
@@ -127,12 +127,6 @@ html {
 #join a {
   color: inherit;
   word-break: break-all;
-}
-#join hr {
-  border: 0;
-  border-bottom: 1px dashed #d0d0d0;
-  margin: 24px -30px 24px;
-  width: calc(100% + 60px);
 }
 #join ul {
   padding-left: 20px;
