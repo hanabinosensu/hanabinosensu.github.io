@@ -14,10 +14,3 @@ exclude:
 # - vendor/cache/
 # - vendor/gems/
 # - vendor/ruby/
-
-defaults:
-  - scope:
-      path: news/_posts
-    values:
-      layout: news
-      permalink: /news/:title
