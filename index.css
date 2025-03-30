@@ -151,12 +151,12 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 1rem;
+  padding: 30px max(10px, calc(50% - 300px)) 30px;
 }
 #news:target {
   animation: 400ms linear 200ms "flash";
 }
-#news > :not(h2, hr, :last-child) {
+#news > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
 #news h2 {
@@ -164,6 +164,27 @@ h1 small {
   font-weight: bold;
   margin: 8px auto 32px;
   text-align: center;
+}
+#news article {
+  background-color: white;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  padding: 20px;
+  position: relative;
+}
+#news article::after {
+  background-color: #d0d0d0;
+  content: "";
+  height: 1rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: -1rem;
+  width: 1px;
+}
+#news article > :not(:last-child) {
+  margin-bottom: 1rem;
 }
 #news h3 {
   font-size: 1.0rem;
@@ -173,11 +194,10 @@ h1 small {
   color: inherit;
   word-break: break-all;
 }
-#news hr {
-  border: 0;
-  border-bottom: 1px dashed #d0d0d0;
-  margin: 24px -30px 24px;
-  width: calc(100% + 60px);
+#news h3 time {
+  color: #707070;
+  font-weight: normal;
+  margin-right: 8px;
 }
 #news dl {
   display: grid;
@@ -248,8 +268,8 @@ h1 small {
 }
 #news .more {
   background-color: white;
-  border: 1px solid #d0d0d0;
-  border-radius: 21px;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  border-radius: 20px;
   display: block;
   margin: 0 auto;
   padding: 8px 20px 8px;
