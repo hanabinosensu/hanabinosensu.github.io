@@ -59,7 +59,7 @@ html {
 
 #firstview {
   background-color: #619bb7;
-  background-image: url("/assets/firstview.avif");
+  background-image: url("/hero.avif");
   background-position: 100% 25%;
   background-size: cover;
   border-bottom: 1px solid #d0d0d0;
