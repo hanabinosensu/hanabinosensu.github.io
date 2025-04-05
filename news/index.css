@@ -136,7 +136,7 @@ article dt img {
 article dd {
   grid-column: 2;
 }
-article dd .date {
+article dd .mmdd {
   color: #707070;
 }
 article dd ul {

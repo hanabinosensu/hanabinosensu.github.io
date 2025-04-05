@@ -216,7 +216,7 @@ h1 small {
 #news dd {
   grid-column: 2;
 }
-#news dd .date {
+#news dd .mmdd {
   color: #707070;
 }
 #news dd ul {
