@@ -102,38 +102,6 @@ h1 small {
   width: min(600px, 100vw);
 }
 
-#join {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
-}
-#join > :not(h2, hr, :last-child) {
-  margin-bottom: 1rem;
-}
-#join h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin: 8px auto 32px;
-  text-align: center;
-}
-#join b {
-  font-weight: bold;
-}
-#join a {
-  color: inherit;
-  word-break: break-all;
-}
-#join ul {
-  padding-left: 20px;
-}
-#join hr {
-  border: 0;
-  border-bottom: 1px dashed #d0d0d0;
-  margin: 30px -30px 24px;
-  width: calc(100% + 60px);
-}
-
 #about {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
