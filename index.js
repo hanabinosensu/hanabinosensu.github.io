@@ -12,21 +12,6 @@ new IntersectionObserver((entries, _) => {
   }
 }, {}).observe(document.getElementById("notice"));
 
-/* Expand #discography in phases */
-document.getElementById("discography").style.height = "800px";
-document.getElementById("expand800").style.display = "block";
-
-document.getElementById("expand800").addEventListener("click", _ => {
-  document.getElementById("discography").style.height = "3000px";
-  document.getElementById("expand800").style.display = "";
-  document.getElementById("expand3000").style.display = "block";
-});
-
-document.getElementById("expand3000").addEventListener("click", _ => {
-  document.getElementById("discography").style.height = "";
-  document.getElementById("expand3000").style.display = "";
-});
-
 /* Choose a video for #random */
 document.getElementById("random").src = [
   "https://www.youtube.com/embed/RwByT1_VnTo",  // 天つかさ（湘南よさこい）
