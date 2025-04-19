@@ -17,6 +17,26 @@ html {
   color: inherit;
 }
 
+h1 {
+  background-color: #d0d0d0;
+  background-image: url("/harebiyori/hero.avif");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 600px 30px 40px;
+  text-align: center;
+  width: 100%;
+}
+h1 small {
+  display: block;
+  font-size: 1.0rem;
+  font-weight: normal;
+  transform: translate(-40px, -5px);
+}
+
 #nav {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
@@ -25,19 +45,15 @@ html {
   fill: black;
   height: 70px;
   padding: 0 max(30px, calc(50% - 300px));
-  position: relative;
-  top: 0;
-  transition: all 100ms linear;
+  position: fixed;
+  top: -70px;
+  transition: all 200ms ease-out;
   width: 100%;
   z-index: 1;
 }
 @media (min-height: 420px) {
-  #nav {
-    position: sticky;
-  }
-  #nav.off {
-    background-color: transparent;
-    border-bottom: 1px solid transparent;
+  #nav.on {
+    top: 0;
   }
 }
 #nav a {
@@ -51,27 +67,6 @@ html {
 #nav a[href="/"] {
   padding: 0;
   width: 69px;  /* Set width explicitly so hanabi symbol can appear */
-}
-
-h1 {
-  background-color: #d0d0d0;
-  background-image: url("/harebiyori/hero.avif");
-  background-position: center;
-  background-size: cover;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-  font-size: 2rem;
-  line-height: 1;
-  margin-top: -70px;
-  padding: 600px 30px 40px;
-  text-align: center;
-  width: 100%;
-}
-h1 small {
-  display: block;
-  font-size: 1.0rem;
-  font-weight: normal;
-  transform: translate(-40px, -5px);
 }
 
 #synopsis {
