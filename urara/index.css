@@ -89,16 +89,16 @@ h1 small {
   color: inherit;
 }
 
-#motif {
+#gmadd9 {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#motif > :not(h2, :last-child) {
+#gmadd9 > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
-#motif h2 {
+#gmadd9 h2 {
   font-size: 1.3rem;
   font-weight: bold;
   margin: 8px auto 32px;
