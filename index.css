@@ -297,6 +297,12 @@ h1 small {
   margin-left: clamp(-30px, 50% - 300px, 0px);
   width: min(600px, 100vw);
 }
+#ironowa .spoiler {
+  color: transparent;
+}
+#ironowa .spoiler:active {
+  color: inherit;
+}
 
 #release {
   background-color: white;
