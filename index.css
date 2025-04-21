@@ -303,6 +303,19 @@ h1 small {
 #ironowa .spoiler:active {
   color: inherit;
 }
+#ironowa ruby {
+  display: inline-flex;
+}
+#ironowa ruby rt {
+  font-size: 1rem;
+  line-height: inherit;
+}
+#ironowa ruby rt::before {
+  content: " （";
+}
+#ironowa ruby rt::after {
+  content: "） ";
+}
 
 #release {
   background-color: white;
