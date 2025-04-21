@@ -376,6 +376,45 @@ h1 small {
   writing-mode: vertical-rl;
 }
 
+#discography {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#discography:target {
+  animation: 400ms linear 200ms "flash";
+}
+#discography > :not(h2, h3, hr, :last-child) {
+  margin-bottom: 1rem;
+}
+#discography h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
+}
+#discography h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+#discography h3 span {
+  background-clip: text;
+  background-color: black;  /* fallback in case inline styling is missing */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+#discography a {
+  color: inherit;
+}
+#discography hr {
+  border: 0;
+  border-bottom: 1px dashed #d0d0d0;
+  margin: 24px -30px 19px;
+  width: calc(100% + 60px);
+}
+
 #anthem {
   background-color: black;
   border-bottom: 1px solid #d0d0d0;
