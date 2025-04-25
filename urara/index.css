@@ -125,6 +125,7 @@ h1 small {
 }
 #lyrics ruby rt {
   font-size: 1rem;
+  font-variant: normal;
   line-height: inherit;
 }
 #lyrics ruby rt::before {
