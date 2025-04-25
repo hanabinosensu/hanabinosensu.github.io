@@ -9,6 +9,14 @@ new IntersectionObserver((entries, _) => {
   }
 }, {}).observe(document.getElementById("notice"));
 
+/* Replay animation when #hero image is clicked */
+document.getElementById("hero").addEventListener("click", function (_) {
+  this.getAnimations({ subtree: true }).forEach(animation => {
+    animation.cancel();
+    animation.play();
+  });
+});
+
 /* Choose a video for #random */
 document.getElementById("random").src = [
   "https://www.youtube.com/embed/RwByT1_VnTo",  // 天つかさ（湘南よさこい）
