@@ -308,6 +308,7 @@ h1 small {
 }
 #ironowa ruby rt {
   font-size: 1rem;
+  font-variant: normal;
   line-height: inherit;
 }
 #ironowa ruby rt::before {
