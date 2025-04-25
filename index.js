@@ -12,7 +12,6 @@ new IntersectionObserver((entries, _) => {
 /* Replay animation when #hero image is clicked */
 document.getElementById("hero").addEventListener("click", function (_) {
   this.getAnimations({ subtree: true }).forEach(animation => {
-    animation.cancel();
     animation.play();
   });
 });
