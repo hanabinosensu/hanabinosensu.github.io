@@ -36,7 +36,7 @@ html {
 }
 #nav a[href="/"] {
   padding: 0;
-  width: 69px;  /* Set width explicitly so hanabi symbol can appear */
+  width: 69px;  /* Set width explicitly to prevent overflow */
 }
 
 #unofficial {
