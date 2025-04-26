@@ -1,4 +1,4 @@
-/* Show #nav bar only after #notice banner leaves the viewport */
+/* Show #nav bar only after #unofficial banner leaves the viewport */
 new IntersectionObserver((entries, _) => {
   const nav = document.getElementById("nav");
 
@@ -7,4 +7,4 @@ new IntersectionObserver((entries, _) => {
   } else {
     nav.classList.add("on");
   }
-}, {}).observe(document.getElementById("notice"));
+}, {}).observe(document.getElementById("unofficial"));
