@@ -12,16 +12,6 @@ html {
   to { background-color: white; }
 }
 
-#unofficial {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-  padding: 9px max(30px, calc(50% - 300px)) 11px;
-}
-#unofficial a {
-  color: inherit;
-}
-
 #nav {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
@@ -30,22 +20,15 @@ html {
   fill: black;
   height: 70px;
   padding: 0 max(30px, calc(50% - 300px));
-  position: relative;
-  top: 0;
-  transition: all 100ms linear;
+  position: fixed;
+  top: -70px;
+  transition: all 200ms ease-out;
   width: 100%;
   z-index: 1;
 }
 @media (min-height: 420px) {
-  #nav {
-    position: sticky;
-  }
-  #nav.off {
-    background-color: transparent;
-    border-bottom: 1px solid transparent;
-    color: white;
-    fill: white;
-    text-shadow: 0 0 4px black;
+  #nav.on {
+    top: 0;
   }
 }
 #nav a {
@@ -61,6 +44,16 @@ html {
   width: 69px;  /* Set width explicitly so hanabi symbol can appear */
 }
 
+#unofficial {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 9px max(30px, calc(50% - 300px)) 11px;
+}
+#unofficial a {
+  color: inherit;
+}
+
 h1 {
   background-color: #619bb7;
   background-image: url("/news/hero.avif");
@@ -70,7 +63,6 @@ h1 {
   color: white;
   font-size: 2rem;
   line-height: 1;
-  margin-top: -70px;
   padding: 300px 30px 30px;
   text-align: center;
   text-shadow: 0 0 4px black;
