@@ -39,7 +39,7 @@ html {
 }
 #nav a {
   color: inherit;
-  padding: 24px 8px 22px;
+  padding: 23px 8px 23px;
   text-decoration: none;
 }
 #nav a:hover {
@@ -51,7 +51,7 @@ html {
   border-bottom: 1px solid #d0d0d0;
   color: black;
   display: none;
-  padding: 11px max(30px, calc(50% - 300px)) 9px;
+  padding: 10px max(30px, calc(50% - 300px)) 10px;
 }
 #i18n a {
   color: inherit;
@@ -61,7 +61,7 @@ html {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 11px max(30px, calc(50% - 300px)) 9px;
+  padding: 10px max(30px, calc(50% - 300px)) 10px;
 }
 #unofficial a {
   color: inherit;
@@ -101,9 +101,10 @@ h1 {
   color: black;
   font-size: 2rem;
   font-variant: small-caps;
-  height: 132px;  /* 30px + 3rem + 1.5rem + 30px */
-  margin-top: -132px;
-  padding: 30px 10px;
+  height: 128px;  /* 40px + 2rem + 1rem + 40px */
+  line-height: 1;
+  margin-top: -128px;
+  padding: 40px 10px;
   text-align: center;
   width: 100%;
 }
@@ -111,6 +112,7 @@ h1 small {
   display: block;
   font-size: 1rem;
   font-weight: normal;
+  transform: translateY(-3px);
 }
 
 #mustsee {
@@ -164,7 +166,7 @@ h1 small {
   max-width: 100%;
 }
 #about figure img {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 #about figure figcaption {
   text-align: center;
@@ -211,8 +213,7 @@ h1 small {
 }
 #amatsukasa h2 {
   background-image: linear-gradient(90deg, #40548a, #0d7da8);
-  background-position-x: center;
-  background-position-y: bottom 2px;
+  background-position: bottom;
   background-size: 80px 3px;
   background-repeat: no-repeat;
   font-size: 1.3rem;
@@ -269,7 +270,7 @@ h1 small {
   border-radius: 4px;
   color: white;
   display: block;
-  padding: 9px 10px 7px;
+  padding: 8px 10px 8px;
   text-align: center;
   text-decoration: none;
 }
