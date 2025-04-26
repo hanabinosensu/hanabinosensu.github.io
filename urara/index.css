@@ -39,13 +39,13 @@ html {
   width: 69px;  /* Set width explicitly so hanabi symbol can appear */
 }
 
-#notice {
+#unofficial {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
   padding: 9px max(30px, calc(50% - 300px)) 11px;
 }
-#notice a {
+#unofficial a {
   color: inherit;
 }
 

@@ -1,6 +1,6 @@
 /*
  * Make #nav bar opaque when it hits the top border of the viewport, or
- * in other words, when #notice banner leaves the viewport.
+ * in other words, when #unofficial banner leaves the viewport.
  */
 new IntersectionObserver((entries, _) => {
   const nav = document.getElementById("nav");
@@ -10,4 +10,4 @@ new IntersectionObserver((entries, _) => {
   } else {
     nav.classList.remove("off");
   }
-}, {}).observe(document.getElementById("notice"));
+}, {}).observe(document.getElementById("unofficial"));
