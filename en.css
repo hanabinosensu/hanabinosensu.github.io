@@ -39,6 +39,17 @@ html {
   opacity: 0.5;
 }
 
+#i18n {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  display: none;
+  padding: 11px max(30px, calc(50% - 300px)) 9px;
+}
+#i18n a {
+  color: inherit;
+}
+
 #notice {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;

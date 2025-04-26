@@ -9,6 +9,11 @@ new IntersectionObserver((entries, _) => {
   }
 }, {}).observe(document.getElementById("notice"));
 
+/* Show #i18n banner if user does not understand Japanese at all */
+if (!navigator.languages.includes("ja")) {
+  document.getElementById("i18n").style.display = "block";
+}
+
 /* Replay animation when #hero image is clicked */
 document.getElementById("hero").addEventListener("click", function (_) {
   this.getAnimations({ subtree: true }).forEach(animation => {
