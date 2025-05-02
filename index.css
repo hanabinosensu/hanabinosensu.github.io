@@ -465,12 +465,12 @@ h1 small {
   opacity: 0.7;
 }
 
-#goto-stickers {
+#fab {
   bottom: 20px;
   display: block;
   position: fixed;
   right: max(20px, calc(50% - 380px));
 }
-#goto-stickers:hover {
+#fab:hover {
   opacity: 0.7;
 }
