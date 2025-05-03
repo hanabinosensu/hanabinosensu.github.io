@@ -71,7 +71,6 @@ h1 {
 
 section {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
   color: black;
   padding: 30px max(10px, calc(50% - 300px)) 30px;
 }
@@ -90,16 +89,6 @@ article {
   padding: 20px;
   position: relative;
 }
-article::before {
-  background-color: #d0d0d0;
-  content: "";
-  height: 1rem;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  top: -1rem;
-  width: 1px;
-}
 article:target {
   animation: 400ms linear 200ms "flash";
 }
@@ -114,6 +103,12 @@ article h3 time {
   color: #707070;
   font-weight: normal;
   margin-right: 8px;
+}
+article hr {
+  border: 0;
+  border-bottom: 1px dashed #d0d0d0;
+  margin-inline: -20px;
+  width: calc(100% + 40px);
 }
 article a {
   color: inherit;
