@@ -130,6 +130,14 @@ h1 small {
   margin: 8px auto 24px;
   text-align: center;
 }
+#mustsee select {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  padding: 0;
+  width: 100%;
+}
 #mustsee iframe {
   background-color: #d0d0d0;
   border: 0;
