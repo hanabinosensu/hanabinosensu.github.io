@@ -51,7 +51,7 @@ html {
 h1 {
   background-color: #d0d0d0;
   background-image: url("/chitose/hero.avif");
-  background-position: center;
+  background-position: 50% 30%;
   background-size: cover;
   border-bottom: 1px solid #d0d0d0;
   color: black;
