@@ -89,6 +89,35 @@ h1 small {
   color: inherit;
 }
 
+#fanart {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#fanart > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#fanart h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 8px auto 32px;
+  text-align: center;
+}
+#fanart .carousel {
+  display: flex;
+  gap: 1rem;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  overflow-x: scroll;
+  padding-inline: clamp(0px, 300px - 50%, 30px);
+  width: min(600px, 100vw);
+}
+#fanart .carousel img {
+  border: 1px solid #d0d0d0;
+  border-radius: 12px;
+  height: 300px;
+}
+
 #gmadd9 {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
