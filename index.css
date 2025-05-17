@@ -1,7 +1,7 @@
 html {
   font-family: serif;
   font-feature-settings: "palt";
-  font-size: 1.0rem;
+  font-size: 1rem;
   scroll-padding-top: 200px;
   text-align: justify;
   -webkit-text-size-adjust: 100%;
@@ -93,8 +93,8 @@ html {
 h1 {
   background-color: transparent;
   color: black;
-  font-size: 3.0rem;
-  height: 144px;  /* 40px + 3.0rem + 1.0rem + 40px */
+  font-size: 3rem;
+  height: 144px;  /* 40px + 3rem + 1rem + 40px */
   line-height: 1;
   margin-top: -144px;
   padding: 40px 30px;
@@ -103,7 +103,7 @@ h1 {
 }
 h1 small {
   display: block;
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: normal;
   transform: translate(-40px, -5px);
 }
@@ -191,7 +191,7 @@ h1 small {
   margin-bottom: 1rem;
 }
 #news h3 {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 #news h3 time {

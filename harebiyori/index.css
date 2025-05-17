@@ -1,7 +1,7 @@
 html {
   font-family: serif;
   font-feature-settings: "palt";
-  font-size: 1.0rem;
+  font-size: 1rem;
   scroll-padding-top: 200px;
   text-align: justify;
   -webkit-text-size-adjust: 100%;
@@ -64,7 +64,7 @@ h1 {
 }
 h1 small {
   display: block;
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: normal;
   transform: translate(-40px, -5px);
 }
@@ -233,7 +233,7 @@ h1 small {
   text-align: center;
 }
 #credit h3 {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 2px;
 }
