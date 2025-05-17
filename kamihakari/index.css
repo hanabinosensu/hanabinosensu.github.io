@@ -8,6 +8,7 @@ html {
 }
 
 #nav {
+  align-items: center;
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
@@ -29,12 +30,13 @@ html {
   opacity: 0.5;
 }
 #nav a.top {
-  width: 69px;
+  aspect-ratio: 1 / 1;
+  height: 100%;
 }
 #nav a.prev,
 #nav a.next {
   color: inherit;
-  padding: 21px 8px 25px;
+  padding: 20px 8px;
   text-decoration: none;
 }
 #nav a.prev::before {
