@@ -1,7 +1,7 @@
 html {
   font-family: serif;
   font-feature-settings: "palt";
-  font-size: 1.0rem;
+  font-size: 1rem;
   scroll-padding-top: 200px;
   text-align: justify;
   -webkit-text-size-adjust: 100%;
@@ -96,7 +96,7 @@ article > :not(:last-child) {
   margin-bottom: 1rem;
 }
 article h3 {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 article h3 time {
