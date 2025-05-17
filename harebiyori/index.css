@@ -12,7 +12,6 @@ html {
   border-bottom: 1px solid #d0d0d0;
   color: black;
   display: flex;
-  fill: black;
   height: 70px;
   padding: 0 max(30px, calc(50% - 300px));
   position: fixed;
