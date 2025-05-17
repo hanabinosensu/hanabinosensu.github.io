@@ -21,7 +21,7 @@ html {
   padding: 0 max(30px, calc(50% - 300px));
   position: fixed;
   top: -70px;
-  transition: all 200ms ease-out;
+  transition: top 200ms ease-out;
   width: 100%;
   z-index: 1;
 }
