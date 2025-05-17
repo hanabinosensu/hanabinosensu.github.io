@@ -135,7 +135,7 @@ h1 small {
   background-color: #d0d0d0;
   border: 0;
   display: block;
-  margin-left: clamp(-30px, 50% - 300px, 0px);
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
   width: min(600px, 100vw);
 }
 
@@ -309,7 +309,7 @@ h1 small {
   background-color: #d0d0d0;
   border: 0;
   display: block;
-  margin-left: clamp(-30px, 50% - 300px, 0px);
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
   width: min(600px, 100vw);
 }
 #ironowa .spoiler {
@@ -384,7 +384,7 @@ h1 small {
   background-color: #d0d0d0;
   border: 0;
   display: block;
-  margin-left: clamp(-30px, 50% - 300px, 0px);
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
   width: min(600px, 100vw);
 }
 #amatsukasa .epilogue {
