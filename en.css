@@ -19,6 +19,7 @@ html {
 }
 
 #nav {
+  align-items: center;
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
@@ -36,9 +37,12 @@ html {
     top: 0;
   }
 }
+#nav img {
+  height: 100%;
+}
 #nav a {
   color: inherit;
-  padding: 23px 8px 23px;
+  padding: 20px 8px;
   text-decoration: none;
 }
 #nav a:hover {

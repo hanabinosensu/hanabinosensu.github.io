@@ -8,6 +8,7 @@ html {
 }
 
 #nav {
+  align-items: center;
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
@@ -25,17 +26,24 @@ html {
     top: 0;
   }
 }
-#nav a {
-  color: inherit;
-  padding: 21px 8px 25px;
-  text-decoration: none;
-}
 #nav a:hover {
   opacity: 0.5;
 }
-#nav a[href="/"] {
-  padding: 0;
-  width: 69px;  /* Set width explicitly to prevent overflow */
+#nav a.top {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+}
+#nav a.prev,
+#nav a.next {
+  color: inherit;
+  padding: 20px 8px;
+  text-decoration: none;
+}
+#nav a.prev::before {
+  content: "〈 ";
+}
+#nav a.next::after {
+  content: " 〉";
 }
 
 #unofficial {
