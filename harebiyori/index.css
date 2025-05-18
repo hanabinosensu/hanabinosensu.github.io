@@ -105,7 +105,7 @@ h1 small {
 #catchy h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 
@@ -121,7 +121,7 @@ h1 small {
 #lyrics h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 
@@ -137,7 +137,7 @@ h1 small {
 #album h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #album a {
@@ -218,7 +218,7 @@ h1 small {
 #prizes h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #prizes ul {
@@ -236,7 +236,7 @@ h1 small {
 #credit h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #credit h3 {

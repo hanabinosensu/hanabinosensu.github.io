@@ -123,7 +123,7 @@ h1 small {
 #mustsee h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #mustsee select {
@@ -154,7 +154,7 @@ h1 small {
 #about h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #about b {
@@ -176,7 +176,7 @@ h1 small {
 #news h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #news article {
@@ -305,7 +305,7 @@ h1 small {
 #ironowa h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #ironowa iframe {
@@ -351,7 +351,7 @@ h1 small {
 #release h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #release a {
@@ -410,7 +410,7 @@ h1 small {
 #discography h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 32px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #discography h3 {
