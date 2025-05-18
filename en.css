@@ -130,7 +130,7 @@ h1 small {
 #mustsee h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 24px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #mustsee select {
@@ -164,7 +164,7 @@ h1 small {
 #about h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 24px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #about a {
@@ -198,7 +198,7 @@ h1 small {
 #release h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 24px;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 #release a {
@@ -229,7 +229,7 @@ h1 small {
   background-repeat: no-repeat;
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 8px auto 24px;
+  margin-bottom: 1.3rem;
   position: relative;
   text-align: center;
 }
