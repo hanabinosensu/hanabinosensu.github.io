@@ -74,10 +74,13 @@ section {
   color: black;
   padding: 30px max(10px, calc(50% - 300px)) 30px;
 }
+section > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
 section h2 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
   text-align: center;
 }
 
@@ -85,7 +88,6 @@ article {
   background-color: white;
   box-shadow: 0 0 0 1px #d0d0d0;
   border-radius: 12px;
-  margin-bottom: 1rem;
   padding: 20px;
   position: relative;
 }
