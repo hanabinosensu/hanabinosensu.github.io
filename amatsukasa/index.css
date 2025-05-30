@@ -60,12 +60,12 @@ html {
   0% {
     fill: transparent;
     stroke-dashoffset: 2500;
-    stroke-width: 1.7px;
+    stroke-width: 2px;
   }
   75% {
     fill: transparent;
     stroke-dashoffset: 0;
-    stroke-width: 1.7px;
+    stroke-width: 2px;
   }
   100% {
     fill: black;
