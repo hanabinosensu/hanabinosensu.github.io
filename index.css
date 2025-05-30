@@ -366,34 +366,6 @@ h1 small {
   width: 100%;
 }
 
-#amatsukasa {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
-}
-#amatsukasa:target {
-  animation: 400ms linear 200ms "flash";
-}
-#amatsukasa > :not(:last-child) {
-  margin-bottom: 1rem;
-}
-#amatsukasa .prologue {
-  font-feature-settings: normal;
-  writing-mode: vertical-rl;
-}
-#amatsukasa iframe {
-  background-color: #d0d0d0;
-  border: 0;
-  display: block;
-  margin-inline: clamp(-30px, 50% - 300px, 0px);
-  width: min(600px, 100vw);
-}
-#amatsukasa .epilogue {
-  font-feature-settings: normal;
-  writing-mode: vertical-rl;
-}
-
 #discography {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
