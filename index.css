@@ -102,6 +102,13 @@ h1 small {
   margin-bottom: 1.3rem;
   text-align: center;
 }
+#ironowa img {
+  margin-inline: auto;
+  width: 350px;
+}
+#ironowa a {
+  color: inherit;
+}
 #ironowa ruby {
   display: inline-flex;
 }
@@ -115,40 +122,6 @@ h1 small {
 }
 #ironowa ruby rt::after {
   content: "） ";
-}
-#ironowa hr {
-  border: 0;
-  border-bottom: 1px dashed #d0d0d0;
-  margin-inline: -30px;
-  width: calc(100% + 60px);
-}
-#ironowa a {
-  color: inherit;
-}
-#ironowa dl {
-  display: grid;
-  column-gap: 4px;
-  grid-template-columns: 24px 1fr;
-  row-gap: 4px;
-}
-#ironowa dt {
-  grid-column: 1;
-}
-#ironowa dt img {
-  height: 24px;
-  padding: 2px;
-  width: 24px;
-}
-#ironowa dd {
-  grid-column: 2;
-}
-#ironowa dd ul {
-  margin-bottom: 0.1rem;
-  padding-left: 0;
-  list-style: none;
-}
-#ironowa dd li {
-  line-height: 1.3;
 }
 
 #mustsee {
