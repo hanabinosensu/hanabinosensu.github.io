@@ -91,6 +91,66 @@ h1 small {
   transform: translateY(-3px);
 }
 
+#ironowa {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#ironowa > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#ironowa h2 {
+  background-image: linear-gradient(90deg, #d72e45, #68373f);
+  background-position: bottom;
+  background-size: 60px 3px;
+  background-repeat: no-repeat;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  position: relative;
+  text-align: center;
+}
+#ironowa .tiles {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+#ironowa .tile {
+  aspect-ratio: 1 / 1;
+  border: 1px solid transparent;
+  display: block;
+  overflow: hidden;
+}
+#ironowa a.tile:hover {
+  opacity: 0.7;
+}
+#ironowa .tile3x2 {
+  aspect-ratio: 3 / 2;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+#ironowa .tile2x2 {
+  aspect-ratio: 2 / 2;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#ironowa .tile1x2 {
+  aspect-ratio: 1 / 2;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#ironowa .tile2x1 {
+  aspect-ratio: 2 / 1;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+#ironowa .tile img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 #mustsee {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
