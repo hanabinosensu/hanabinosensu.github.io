@@ -118,10 +118,10 @@ h1 small {
   line-height: inherit;
 }
 #ironowa ruby rt::before {
-  content: " （";
+  content: "（";
 }
 #ironowa ruby rt::after {
-  content: "） ";
+  content: "）";
 }
 
 #mustsee {

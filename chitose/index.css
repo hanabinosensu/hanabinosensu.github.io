@@ -117,10 +117,10 @@ h1 small {
   line-height: inherit;
 }
 #lyrics ruby rt::before {
-  content: " （";
+  content: "（";
 }
 #lyrics ruby rt::after {
-  content: "） ";
+  content: "）";
 }
 
 #album {
