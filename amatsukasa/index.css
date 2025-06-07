@@ -200,6 +200,7 @@ h1 small {
   display: block;
   margin-right: 4px;
   height: 24px;
+  transform-origin: 50% 55%;
   width: 24px;
 }
 #translation details[open] summary::before {
