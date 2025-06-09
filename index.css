@@ -102,12 +102,12 @@ h1 small {
   margin-bottom: 1.3rem;
   text-align: center;
 }
-#ironowa img {
-  margin-inline: auto;
-  width: 350px;
-}
-#ironowa a {
-  color: inherit;
+#ironowa iframe {
+  background-color: #d0d0d0;
+  border: 0;
+  display: block;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  width: min(600px, 100vw);
 }
 #ironowa ruby {
   display: inline-flex;
