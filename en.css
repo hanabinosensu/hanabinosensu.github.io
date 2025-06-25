@@ -92,24 +92,21 @@ h1 small {
 }
 
 #ironowa {
-  background-color: white;
+  background-color: #fff8f8;
   border-bottom: 1px solid #d0d0d0;
-  color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  color: #600000;
+  padding: 2rem max(30px, calc(50% - 300px)) 3rem;
 }
-#ironowa > :not(h2, :last-child) {
+#ironowa > :not(:last-child) {
   margin-bottom: 1rem;
 }
 #ironowa h2 {
-  background-image: linear-gradient(90deg, #d72e45, #68373f);
-  background-position: bottom;
-  background-size: 60px 3px;
-  background-repeat: no-repeat;
-  font-size: 1.3rem;
+  background-clip: text;
+  background-image: linear-gradient(90deg, #d72e45 0px, #68373f 135px);
+  color: transparent;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.3rem;
-  position: relative;
-  text-align: center;
+  -webkit-text-fill-color: transparent;
 }
 #ironowa iframe {
   background-color: #d0d0d0;
@@ -123,16 +120,14 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 2rem max(30px, calc(50% - 300px)) 3rem;
 }
-#mustsee > :not(h2, :last-child) {
+#mustsee > :not(:last-child) {
   margin-bottom: 1rem;
 }
 #mustsee h2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
 }
 #mustsee select {
   background-color: transparent;
@@ -154,19 +149,17 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 2rem max(30px, calc(50% - 300px)) 2rem;
 }
 #about:target {
   animation: 400ms linear 200ms "flash";
 }
-#about > :not(h2, :last-child) {
+#about > :not(:last-child) {
   margin-bottom: 1rem;
 }
 #about h2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
 }
 #about a {
   color: inherit;
@@ -188,19 +181,17 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 2rem max(30px, calc(50% - 300px)) 3rem;
 }
 #release:target {
   animation: 400ms linear 200ms "flash";
 }
-#release > :not(h2, :last-child) {
+#release > :not(:last-child) {
   margin-bottom: 1rem;
 }
 #release h2 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
 }
 #release a {
   color: inherit;
@@ -215,29 +206,26 @@ h1 small {
 }
 
 #amatsukasa {
-  background-color: white;
+  background-color: #f8faff;
   border-bottom: 1px solid #d0d0d0;
-  color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  color: #001050;
+  padding: 2rem max(30px, calc(50% - 300px)) 2rem;
 }
-#amatsukasa > :not(h2, h3, h4, :last-child) {
+#amatsukasa > :not(h4, :last-child) {
   margin-bottom: 1rem;
 }
 #amatsukasa h2 {
-  background-image: linear-gradient(90deg, #40548a, #0d7da8);
-  background-position: bottom;
-  background-size: 80px 3px;
-  background-repeat: no-repeat;
-  font-size: 1.3rem;
+  background-clip: text;
+  background-image: linear-gradient(90deg, #40548a 0px, #0d7da8 200px);
+  color: transparent;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.3rem;
-  position: relative;
-  text-align: center;
+  -webkit-text-fill-color: transparent;
 }
 #amatsukasa h3 {
-  font-size: 1.17rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  margin: 40px 0 8px;
+  margin-top: 3rem;
   text-align: center;
 }
 #amatsukasa h4 {
@@ -269,7 +257,7 @@ h1 small {
 #stickers {
   background-color: white;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 2rem max(30px, calc(50% - 300px)) 2rem;
 }
 #stickers:target {
   animation: 400ms linear 200ms "flash";
