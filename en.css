@@ -94,7 +94,7 @@ h1 small {
 #ironowa {
   background-color: #fff8f8;
   border-bottom: 1px solid #d0d0d0;
-  color: #600000;
+  color: #623239;
   padding: 2rem max(30px, calc(50% - 300px)) 3rem;
 }
 #ironowa > :not(:last-child) {
@@ -102,7 +102,7 @@ h1 small {
 }
 #ironowa h2 {
   background-clip: text;
-  background-image: linear-gradient(90deg, #d72e45 0px, #68373f 135px);
+  background-image: linear-gradient(90deg, #d72e45 0px, #623239 135px);
   color: transparent;
   font-size: 2rem;
   font-weight: bold;
@@ -208,7 +208,7 @@ h1 small {
 #amatsukasa {
   background-color: #f8faff;
   border-bottom: 1px solid #d0d0d0;
-  color: #001050;
+  color: #00125b;
   padding: 2rem max(30px, calc(50% - 300px)) 2rem;
 }
 #amatsukasa > :not(h4, :last-child) {
@@ -216,7 +216,7 @@ h1 small {
 }
 #amatsukasa h2 {
   background-clip: text;
-  background-image: linear-gradient(90deg, #40548a 0px, #0d7da8 200px);
+  background-image: linear-gradient(90deg, #00125b 0px, #0d7da8 200px);
   color: transparent;
   font-size: 2rem;
   font-weight: bold;
