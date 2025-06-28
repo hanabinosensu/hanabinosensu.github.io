@@ -102,7 +102,7 @@ h1 small {
 }
 #ironowa h2 {
   background-clip: text;
-  background-image: linear-gradient(90deg, #d72e45 0px, #623239 135px);
+  background-image: linear-gradient(90deg, #623239 0px, #d72e45 135px);
   color: transparent;
   font-size: 2rem;
   font-weight: bold;
