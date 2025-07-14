@@ -60,12 +60,12 @@ html {
   0% {
     fill: transparent;
     stroke-dashoffset: 2500;
-    stroke-width: 2px;
+    stroke-width: 2.5px;
   }
   75% {
     fill: transparent;
     stroke-dashoffset: 0;
-    stroke-width: 2px;
+    stroke-width: 2.5px;
   }
   100% {
     fill: black;
@@ -76,7 +76,7 @@ html {
 #hero {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
-  height: 690px;
+  height: 500px;
   width: 100%;
 }
 #hero path {
