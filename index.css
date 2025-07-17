@@ -123,6 +123,9 @@ h1 small {
 #ironowa ruby rt::after {
   content: "）";
 }
+#ironowa a {
+  color: inherit;
+}
 
 #mustsee {
   background-color: white;
