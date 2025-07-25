@@ -57,16 +57,17 @@ html {
 }
 
 h1 {
-  background-color: #d0d0d0;
+  background-color: #365569;
   background-image: url("/asobase/hero.avif");
-  background-position: 50% 30%;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: 150px 150px;
   border-bottom: 1px solid #d0d0d0;
-  color: black;
+  color: white;
   font-size: 2rem;
   line-height: 1;
   padding: 410px 30px 40px;
   text-align: center;
+  text-shadow: 0 0 10px #365569;
   width: 100%;
 }
 h1 small {
