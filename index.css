@@ -363,6 +363,7 @@ h1 small {
   height: 40px;
   padding: 0;
   position: absolute;
+  touch-action: manipulation;
   width: 40px;
 }
 #quiz .prev:hover,
