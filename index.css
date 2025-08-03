@@ -347,7 +347,7 @@ h1 small {
 #discography:target {
   animation: 400ms linear 200ms "flash";
 }
-#discography > :not(h2, h3, hr, :last-child) {
+#discography > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
 #discography h2 {
@@ -356,25 +356,46 @@ h1 small {
   margin-bottom: 1.3rem;
   text-align: center;
 }
-#discography h3 {
+#discography .carousel {
+  display: flex;
+  gap: 1rem;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  overflow-x: scroll;
+  padding: 1px clamp(1px, 300px - 50%, 30px);
+  width: min(600px, 100vw);
+}
+#discography a {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  color: inherit;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-decoration: none;
+  width: 300px;
+}
+#discography a img {
+  border-bottom: 1px solid #d0d0d0;
+  width: 100%;
+}
+#discography a h3 {
   font-size: 1.1rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin: 1rem 20px;
 }
-#discography h3 span {
+#discography a h3 span {
   background-clip: text;
   background-color: black;  /* fallback in case inline styling is missing */
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
-#discography a {
-  color: inherit;
-}
-#discography hr {
-  border: 0;
-  border-bottom: 1px dashed #d0d0d0;
-  margin: 24px -30px 19px;
-  width: calc(100% + 60px);
+#discography a p {
+  display: -webkit-box;
+  line-clamp: 4;
+  margin: 1rem 20px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 #verse {
