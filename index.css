@@ -374,6 +374,9 @@ h1 small {
   text-decoration: none;
   width: 300px;
 }
+#discography a:hover {
+  opacity: 0.5;
+}
 #discography a img {
   border-bottom: 1px solid #d0d0d0;
   width: 100%;
