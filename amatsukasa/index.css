@@ -111,13 +111,17 @@ h1 small {
 #synopsis > :not(:last-child) {
   margin-bottom: 1rem;
 }
-#synopsis .prologue,
-#synopsis .epilogue {
+#synopsis blockquote {
   /*
-   * "palt" inherited from html tag result in ugly typesetting in vertical text
-   * so reset it to normal here.
+   * "font-feature-settings: palt" inherited from html tag result in ugly
+   * typesetting in vertical text so reset to normal.
    */
   font-feature-settings: normal;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   writing-mode: vertical-rl;
 }
 #synopsis iframe {
