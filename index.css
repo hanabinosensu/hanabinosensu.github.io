@@ -200,7 +200,6 @@ h1 small {
   box-shadow: 0 0 0 1px #d0d0d0;
   border-radius: 12px;
   padding: 20px;
-  position: relative;
 }
 #news article:target {
   animation: 400ms linear 200ms "flash";
@@ -388,8 +387,17 @@ h1 small {
   margin-bottom: 1rem;
 }
 #verse blockquote {
+  display: flex;
+  flex-direction: column;
   font-feature-settings: normal;
+  justify-content: center;
+  width: 100%;
   writing-mode: vertical-rl;
+}
+#verse h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 2.6;
 }
 
 #stickers {
