@@ -375,7 +375,7 @@ h1 small {
   opacity: 0.5;
 }
 #discography a img {
-  filter: opacity(0.3);
+  filter: opacity(0.4);
   height: 100%;
   left: 0;
   object-fit: cover;
