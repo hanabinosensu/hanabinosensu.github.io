@@ -356,47 +356,45 @@ h1 small {
   margin-bottom: 1.3rem;
   text-align: center;
 }
+#discography .tiles {
+  display: grid;
+  gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
 #discography a {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 0 0 1px #d0d0d0;
   color: inherit;
-  display: grid;
-  grid-template-columns: 100px 1rem auto 1rem;
-  grid-template-rows: 1rem auto 8px auto 1rem;
   overflow: hidden;
+  position: relative;
   text-decoration: none;
 }
 #discography a:hover {
   opacity: 0.5;
 }
 #discography a img {
-  grid-column: 1 / 2;
-  grid-row: 1 / 6;
+  filter: opacity(0.3);
   height: 100%;
+  left: 0;
   object-fit: cover;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
+#discography a small {
+  bottom: 30px;
+  font-size: 0.9rem;
+  left: 16px;
+  position: absolute;
+}
 #discography a h3 {
-  font-size: 1.1rem;
+  bottom: 8px;
+  font-size: 1rem;
   font-weight: bold;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-#discography a h3 span {
-  background-clip: text;
-  background-color: black;  /* fallback in case inline styling is missing */
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-#discography a p {
-  display: -webkit-box;
-  grid-column: 3 / 4;
-  grid-row: 4 / 5;
-  line-clamp: 4;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  left: 16px;
+  position: absolute;
 }
 
 #verse {
