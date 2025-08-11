@@ -118,7 +118,7 @@ article a {
 article dl {
   display: grid;
   column-gap: 4px;
-  grid-template-columns: 24px 1fr;
+  grid-template-columns: 24px auto auto;
   row-gap: 4px;
 }
 article dt {
@@ -128,9 +128,6 @@ article dt img {
   height: 24px;
   padding: 2px;
   width: 24px;
-}
-article dd {
-  grid-column: 2;
 }
 article dd .mmdd {
   color: #707070;
