@@ -240,8 +240,9 @@ h1 small {
   padding: 2px;
   width: 24px;
 }
-#news dd .mmdd {
+#news dd h4 {
   color: #707070;
+  font-weight: normal;
 }
 #news dd ul {
   margin-bottom: 4px;
