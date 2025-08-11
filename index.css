@@ -229,7 +229,7 @@ h1 small {
 #news dl {
   display: grid;
   column-gap: 4px;
-  grid-template-columns: 24px 1fr;
+  grid-template-columns: 24px auto auto;
   row-gap: 4px;
 }
 #news dt {
@@ -239,9 +239,6 @@ h1 small {
   height: 24px;
   padding: 2px;
   width: 24px;
-}
-#news dd {
-  grid-column: 2;
 }
 #news dd .mmdd {
   color: #707070;
