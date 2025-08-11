@@ -129,8 +129,9 @@ article dt img {
   padding: 2px;
   width: 24px;
 }
-article dd .mmdd {
+article dd h4 {
   color: #707070;
+  font-weight: normal;
 }
 article dd ul {
   margin-bottom: 4px;
