@@ -119,6 +119,7 @@ h1 small {
   margin-inline: clamp(-30px, 50% - 300px, 0px);
   overflow-x: scroll;
   padding: 1px clamp(1px, 300px - 50%, 30px);
+  scroll-snap-type: x mandatory;
   width: min(600px, 100vw);
 }
 #fanart .carousel::scroll-button(*) {
@@ -159,6 +160,7 @@ h1 small {
   flex-grow: 0;
   flex-shrink: 0;
   height: 300px;
+  scroll-snap-align: center;
 }
 
 #gmadd9d {
