@@ -152,7 +152,7 @@ h1 small {
   padding: 2rem max(30px, calc(50% - 300px)) 2rem;
 }
 #about:target {
-  animation: 400ms linear 200ms "flash";
+  animation: 400ms linear 200ms flash;
 }
 #about > :not(:last-child) {
   margin-bottom: 1rem;
@@ -184,7 +184,7 @@ h1 small {
   padding: 2rem max(30px, calc(50% - 300px)) 3rem;
 }
 #release:target {
-  animation: 400ms linear 200ms "flash";
+  animation: 400ms linear 200ms flash;
 }
 #release > :not(:last-child) {
   margin-bottom: 1rem;
@@ -260,7 +260,7 @@ h1 small {
   padding: 2rem max(30px, calc(50% - 300px)) 2rem;
 }
 #stickers:target {
-  animation: 400ms linear 200ms "flash";
+  animation: 400ms linear 200ms flash;
 }
 #stickers > :not(:last-child) {
   margin-bottom: 1rem;

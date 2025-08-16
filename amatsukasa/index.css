@@ -80,7 +80,7 @@ html {
   width: 100%;
 }
 #hero path {
-  animation: 4s ease-in 0s both "hero-animation";
+  animation: 4s ease-in 0s both hero-animation;
   stroke-dasharray: 2500;
   stroke: black;
 }

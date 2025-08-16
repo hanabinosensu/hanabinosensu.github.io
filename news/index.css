@@ -91,7 +91,7 @@ article {
   padding: 20px;
 }
 article:target {
-  animation: 400ms linear 200ms "flash";
+  animation: 400ms linear 200ms flash;
 }
 article > :not(:last-child) {
   margin-bottom: 1rem;
