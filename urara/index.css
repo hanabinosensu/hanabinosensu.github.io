@@ -233,6 +233,8 @@ h1 small {
 }
 #album .tile {
   aspect-ratio: 1 / 1;
+  background-clip: padding-box;
+  background-color: #d0d0d0;
 
   /*
    * "border: 1px solid transparent" has similar effect to "gap: 2px".

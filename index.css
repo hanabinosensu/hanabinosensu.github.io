@@ -259,6 +259,8 @@ h1 small {
 }
 #news .tile {
   aspect-ratio: 1 / 1;
+  background-clip: padding-box;
+  background-color: #d0d0d0;
   border: 1px solid transparent;
   display: block;
   overflow: hidden;
