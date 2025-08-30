@@ -111,6 +111,20 @@ h1 small {
 #synopsis > :not(:last-child) {
   margin-bottom: 1rem;
 }
+#synopsis ruby {
+  display: inline-flex;
+}
+#synopsis ruby rt {
+  font-size: 1rem;
+  font-variant: normal;
+  line-height: inherit;
+}
+#synopsis ruby rt::before {
+  content: "（";
+}
+#synopsis ruby rt::after {
+  content: "）";
+}
 #synopsis blockquote {
   /*
    * "font-feature-settings: palt" inherited from html tag result in ugly
@@ -121,6 +135,7 @@ h1 small {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 1.5rem;
   width: 100%;
   writing-mode: vertical-rl;
 }
