@@ -168,6 +168,7 @@ h1 small {
   font-style: italic;
 }
 #about figure {
+  margin-inline: auto;
   max-width: 100%;
 }
 #about figure img {
