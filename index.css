@@ -176,6 +176,16 @@ h1 small {
 #about b {
   font-weight: bold;
 }
+#about figure {
+  margin-inline: auto;
+  max-width: 100%;
+}
+#about figure img {
+  margin-bottom: 4px;
+}
+#about figure figcaption {
+  text-align: center;
+}
 
 #news {
   background-color: white;
