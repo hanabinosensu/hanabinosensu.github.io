@@ -191,13 +191,67 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
+  /*
+   * Why not "overflow: hidden"? That's because it creates scroll
+   * container and breaks scroll driven animation.
+   */
+  overflow: clip;
   padding: 30px max(10px, calc(50% - 300px)) 30px;
+  position: relative;
 }
 #news:target {
   animation: 400ms linear 200ms flash;
 }
+#news > * {
+  position: relative;
+}
 #news > :not(h2, :last-child) {
   margin-bottom: 1rem;
+}
+@keyframes bd-animation {
+  from { rotate: 45deg; }
+  to { rotate: 135deg; }
+}
+#news .bd {
+  animation: 1ms linear both bd-animation;
+  animation-timeline: view();
+  background-color: #6274be;
+  clip-path: path("M0,0 h60 a60,60,0,0,1,0,120 h-60 z");
+  height: 120px;
+  position: absolute;
+  right: 20%;
+  top: 70px;
+  width: 120px;
+}
+@keyframes rd-animation {
+  from { rotate: 90deg; }
+  to { rotate: 0deg; }
+}
+#news .rd {
+  animation: 1ms linear both rd-animation;
+  animation-timeline: view();
+  background-color: #d54640;
+  clip-path: path("M0,0 h50 a50,50,0,0,1,0,100 h-50 z");
+  height: 100px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  width: 100px;
+}
+@keyframes yo-animation {
+  from { scale: 0; }
+  to { scale: 1; }
+}
+#news .yo {
+  animation: 1ms linear both yo-animation;
+  animation-timeline: view();
+  background-color: #f0c637;
+  clip-path: circle(50%);
+  height: 120px;
+  position: absolute;
+  left: 60%;
+  bottom: 20%;
+  width: 120px;
 }
 #news h2 {
   font-size: 1.3rem;
@@ -206,13 +260,10 @@ h1 small {
   text-align: center;
 }
 #news article {
-  background-color: white;
+  background-color: #ffffffc0;
   box-shadow: 0 0 0 1px #d0d0d0;
   border-radius: 12px;
   padding: 20px;
-}
-#news article:target {
-  animation: 400ms linear 200ms flash;
 }
 #news article > :not(:last-child) {
   margin-bottom: 1rem;
