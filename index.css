@@ -208,48 +208,48 @@ h1 small {
 #news > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
-@keyframes bd-animation {
+@keyframes blue-d {
   from { rotate: 45deg; }
   to { rotate: 135deg; }
 }
-#news .bd {
-  animation: 1ms linear both bd-animation;
+#news .blue-d {
+  animation: 1ms linear both blue-d;
   animation-timeline: view();
   background-color: #6274be;
-  clip-path: path("M0,0 h60 a60,60,0,0,1,0,120 h-60 z");
-  height: 120px;
+  clip-path: path("M0,0 h50 a50,50,0,0,1,0,100 h-50 z");
+  height: 100px;
   position: absolute;
-  right: 20%;
-  top: 70px;
-  width: 120px;
+  right: max(50px, calc(50% - 350px));
+  top: 75px;
+  width: 100px;
 }
-@keyframes rd-animation {
-  from { rotate: 90deg; }
-  to { rotate: 0deg; }
+@keyframes red-d {
+  from { rotate: 105deg; }
+  to { rotate: 15deg; }
 }
-#news .rd {
-  animation: 1ms linear both rd-animation;
+#news .red-d {
+  animation: 1ms linear both red-d;
   animation-timeline: view();
   background-color: #d54640;
   clip-path: path("M0,0 h50 a50,50,0,0,1,0,100 h-50 z");
   height: 100px;
   position: absolute;
-  left: 20%;
+  left: max(50px, calc(50% - 350px));
   top: 50%;
   width: 100px;
 }
-@keyframes yo-animation {
+@keyframes yellow-o {
   from { scale: 0; }
   to { scale: 1; }
 }
-#news .yo {
-  animation: 1ms linear both yo-animation;
+#news .yellow-o {
+  animation: 1ms linear both yellow-o;
   animation-timeline: view();
   background-color: #f0c637;
   clip-path: circle(50%);
   height: 120px;
   position: absolute;
-  left: 60%;
+  right: max(20%, calc(50% - 350px));
   bottom: 20%;
   width: 120px;
 }
