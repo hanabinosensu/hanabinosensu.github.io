@@ -213,8 +213,8 @@ h1 small {
   to { rotate: 30deg; }
 }
 #news .d {
-  animation: 1ms linear both news-d-animation;
-  animation-timeline: view(65% 0%);
+  animation: 1ms ease-out both news-d-animation;
+  animation-timeline: view(55% 0%);
   background-color: #6274be;
   clip-path: path("M0,0 h50 a50,50,0,0,1,0,100 h-50 z");
   height: 100px;
@@ -224,12 +224,12 @@ h1 small {
   width: 100px;
 }
 @keyframes news-o-animation {
-  from { scale: 0; }
-  to { scale: 1; }
+  from { scale: 0.5; }
+  to { scale: 1.0; }
 }
 #news .o {
-  animation: 1ms linear both news-o-animation;
-  animation-timeline: view(65% 0%);
+  animation: 1ms ease-out both news-o-animation;
+  animation-timeline: view(55% 0%);
   background-color: #d54640;
   clip-path: circle(50%);
   height: 100px;
