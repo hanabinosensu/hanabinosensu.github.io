@@ -214,7 +214,7 @@ h1 small {
 }
 #news .d {
   animation: 1ms linear both news-d-animation;
-  animation-timeline: view();
+  animation-timeline: view(65% 0%);
   background-color: #6274be;
   clip-path: path("M0,0 h50 a50,50,0,0,1,0,100 h-50 z");
   height: 100px;
@@ -229,7 +229,7 @@ h1 small {
 }
 #news .o {
   animation: 1ms linear both news-o-animation;
-  animation-timeline: view();
+  animation-timeline: view(65% 0%);
   background-color: #d54640;
   clip-path: circle(50%);
   height: 100px;
