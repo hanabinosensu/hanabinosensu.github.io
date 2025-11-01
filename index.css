@@ -209,8 +209,8 @@ h1 small {
   margin-bottom: 1rem;
 }
 @keyframes news-d-animation {
-  from { rotate: -15deg; }
-  to { rotate: 30deg; }
+  from { translate: -30px -17px; }
+  to { translate: 0px 0px; }
 }
 #news .d {
   animation: 1ms ease-out both news-d-animation;
@@ -218,9 +218,11 @@ h1 small {
   background-color: #d54640;
   clip-path: path("M0,0 h50 a50,50,0,0,1,0,100 h-50 z");
   height: 100px;
-  left: calc(50% - 50px - 50px);
+  left: calc(50% - 50px - 30px);
+  mix-blend-mode: multiply;
   position: absolute;
-  top: calc(50% - 50px - 29px);
+  rotate: 30deg;
+  top: calc(50% - 50px - 17px);
   width: 100px;
 }
 @keyframes news-o-animation {
@@ -233,9 +235,10 @@ h1 small {
   background-color: #6274be;
   clip-path: circle(50%);
   height: 100px;
-  left: calc(50% - 50px + 50px);
+  left: calc(50% - 50px + 30px);
+  mix-blend-mode: multiply;
   position: absolute;
-  top: calc(50% - 50px + 29px);
+  top: calc(50% - 50px + 17px);
   width: 100px;
 }
 #news h2 {
