@@ -24,7 +24,7 @@ html {
   top: -70px;
   transition: top 200ms ease-out;
   width: 100%;
-  z-index: 1;
+  z-index: 9;
 }
 @media (min-height: 420px) {
   #nav.on {
@@ -82,6 +82,274 @@ h1 small {
   font-size: 1rem;
   font-weight: normal;
   transform: translate(-40px, -5px);
+}
+
+#wasedasai-25 {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  position: relative;
+}
+#wasedasai-25:target {
+  animation: 400ms linear 200ms flash;
+}
+#wasedasai-25 > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#wasedasai-25 h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#wasedasai-25 h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+#wasedasai-25 time {
+  border-radius: 12px;
+  color: white;
+  display: inline-block;
+  font-size: 0.9rem;
+  line-height: inherit;
+  margin-inline-end: 8px;
+  padding-inline: 8px;
+  &.mon, &.tue, &.wed, &.thu, &.fri { background-color: black; }
+  &.sat { background-color: #6274be; }
+  &.sun { background-color: #d54640; }
+}
+#wasedasai-25 hr {
+  border: 0;
+  border-bottom: 1px dashed #d0d0d0;
+  margin-inline: -30px;
+  width: calc(100% + 60px);
+}
+#wasedasai-25 a {
+  color: inherit;
+  word-break: break-all;
+}
+#wasedasai-25 blockquote {
+  display: flex;
+  flex-direction: column;
+  font-feature-settings: normal;
+  justify-content: center;
+  margin-top: 1.5rem;
+  position: relative;
+  width: 100%;
+  writing-mode: vertical-rl;
+  z-index: 1;
+}
+#wasedasai-25 img {
+  background-color: #d0d0d0;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+#wasedasai-25 figure {
+  margin-inline: auto;
+  max-width: 100%;
+  width: 400px;
+}
+#wasedasai-25 .subfigure2,
+#wasedasai-25 .subfigure3,
+#wasedasai-25 .subfigure4
+{
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr 1fr;
+}
+#wasedasai-25 figcaption {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  text-align: center;
+}
+/* <subfigure> is not a W3C HTML5 standard tag. */
+#wasedasai-25 subfigure {
+  border: 1px solid transparent;
+  display: block;
+  overflow: hidden;
+}
+#wasedasai-25 .subfigure2 subfigure {
+  aspect-ratio: 7 / 8;
+}
+#wasedasai-25 .subfigure3 subfigure {
+  aspect-ratio: 7 / 4;
+  &.tall {
+    aspect-ratio: 7 / 8;
+    grid-row: span 2;
+  }
+}
+#wasedasai-25 .subfigure4 subfigure {
+  aspect-ratio: 2 / 1;
+}
+@keyframes wasedasai-25-d {
+  from { translate: -20px -12px; }
+  to { translate: 0px 0px; }
+}
+#wasedasai-25 .d {
+  animation: 1ms ease-in-out both wasedasai-25-d;
+  animation-timeline: view(40% 0%);
+  background-color: #d5464060;
+  bottom: calc(120px + 12px);
+  clip-path: path("M0,0 h30 a30,30,0,0,1,0,60 h-30 z");
+  height: 60px;
+  left: calc(50% - 30px - 20px);
+  margin: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  rotate: 30deg;
+  width: 60px;
+  z-index: 0;
+}
+@keyframes wasedasai-25-o {
+  from { scale: 0.5; }
+  to { scale: 1.0; }
+}
+#wasedasai-25 .o {
+  animation: 1ms ease-in-out both wasedasai-25-o;
+  animation-timeline: view(40% 0%);
+  background-color: #6274be60;
+  bottom: calc(120px - 12px);
+  clip-path: circle(50%);
+  height: 60px;
+  left: calc(50% - 30px + 20px);
+  margin: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  rotate: 30deg;
+  width: 60px;
+  z-index: 0;
+}
+
+#news {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(10px, calc(50% - 300px)) 30px;
+}
+#news:target {
+  animation: 400ms linear 200ms flash;
+}
+#news > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#news h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#news article {
+  background-color: white;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  border-radius: 12px;
+  padding: 20px;
+}
+#news article:target {
+  animation: 400ms linear 200ms flash;
+}
+#news article > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#news h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+#news h3 time {
+  color: #707070;
+  font-weight: normal;
+  margin-right: 8px;
+}
+#news hr {
+  border: 0;
+  border-bottom: 1px dashed #d0d0d0;
+  margin-inline: -20px;
+  width: calc(100% + 40px);
+}
+#news a {
+  color: inherit;
+  word-break: break-all;
+}
+#news dl {
+  display: grid;
+  column-gap: 4px;
+  grid-template-columns: 24px auto auto;
+  row-gap: 4px;
+}
+#news dt {
+  grid-column: 1;
+}
+#news dt img {
+  height: 24px;
+  padding: 2px;
+  width: 24px;
+}
+#news dd h4 {
+  color: #707070;
+  font-weight: normal;
+}
+#news dd ul {
+  margin-bottom: 4px;
+  padding-left: 0;
+  list-style: none;
+}
+#news dd li {
+  margin-bottom: -4px;
+}
+#news .tiles {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+#news .tile {
+  aspect-ratio: 1 / 1;
+  background-clip: padding-box;
+  background-color: #d0d0d0;
+  border: 1px solid transparent;
+  display: block;
+  overflow: hidden;
+}
+#news a.tile:hover {
+  opacity: 0.7;
+}
+#news .tile3x2 {
+  aspect-ratio: 3 / 2;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+#news .tile2x2 {
+  aspect-ratio: 2 / 2;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#news .tile1x2 {
+  aspect-ratio: 1 / 2;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#news .tile2x1 {
+  aspect-ratio: 2 / 1;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+#news .tile img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+#news .more {
+  background-color: white;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  padding: 8px 20px 8px;
+  text-decoration: none;
+  width: fit-content;
+}
+#news .more:hover {
+  background-color: #f0f0f0;
 }
 
 #ironowa {
@@ -185,175 +453,6 @@ h1 small {
 }
 #about figure figcaption {
   text-align: center;
-}
-
-#news {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-  /*
-   * Why not "overflow: hidden"? That's because it creates scroll
-   * container and breaks scroll driven animation.
-   */
-  overflow: clip;
-  padding: 30px max(10px, calc(50% - 300px)) 30px;
-  position: relative;
-}
-#news:target {
-  animation: 400ms linear 200ms flash;
-}
-#news > * {
-  position: relative;
-}
-#news > :not(h2, :last-child) {
-  margin-bottom: 1rem;
-}
-@keyframes news-d-animation {
-  from { translate: -30px -17px; }
-  to { translate: 0px 0px; }
-}
-#news .d {
-  animation: 1ms ease-out both news-d-animation;
-  animation-timeline: view(50% 0%);
-  background-color: #d54640;
-  clip-path: path("M0,0 h50 a50,50,0,0,1,0,100 h-50 z");
-  height: 100px;
-  left: calc(50% - 50px - 30px);
-  mix-blend-mode: multiply;
-  position: absolute;
-  rotate: 30deg;
-  top: calc(50% - 50px - 17px);
-  width: 100px;
-}
-@keyframes news-o-animation {
-  from { scale: 0.5; }
-  to { scale: 1.0; }
-}
-#news .o {
-  animation: 1ms ease-out both news-o-animation;
-  animation-timeline: view(50% 0%);
-  background-color: #6274be;
-  clip-path: circle(50%);
-  height: 100px;
-  left: calc(50% - 50px + 30px);
-  mix-blend-mode: multiply;
-  position: absolute;
-  top: calc(50% - 50px + 17px);
-  width: 100px;
-}
-#news h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
-}
-#news article {
-  background-color: #ffffffc0;
-  box-shadow: 0 0 0 1px #d0d0d0;
-  border-radius: 12px;
-  padding: 20px;
-}
-#news article > :not(:last-child) {
-  margin-bottom: 1rem;
-}
-#news h3 {
-  font-size: 1rem;
-  font-weight: bold;
-}
-#news h3 time {
-  color: #707070;
-  font-weight: normal;
-  margin-right: 8px;
-}
-#news hr {
-  border: 0;
-  border-bottom: 1px dashed #d0d0d0;
-  margin-inline: -20px;
-  width: calc(100% + 40px);
-}
-#news a {
-  color: inherit;
-  word-break: break-all;
-}
-#news dl {
-  display: grid;
-  column-gap: 4px;
-  grid-template-columns: 24px auto auto;
-  row-gap: 4px;
-}
-#news dt {
-  grid-column: 1;
-}
-#news dt img {
-  height: 24px;
-  padding: 2px;
-  width: 24px;
-}
-#news dd h4 {
-  color: #707070;
-  font-weight: normal;
-}
-#news dd ul {
-  margin-bottom: 4px;
-  padding-left: 0;
-  list-style: none;
-}
-#news dd li {
-  margin-bottom: -4px;
-}
-#news .tiles {
-  display: grid;
-  grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-}
-#news .tile {
-  aspect-ratio: 1 / 1;
-  background-clip: padding-box;
-  background-color: #d0d0d0;
-  border: 1px solid transparent;
-  display: block;
-  overflow: hidden;
-}
-#news a.tile:hover {
-  opacity: 0.7;
-}
-#news .tile3x2 {
-  aspect-ratio: 3 / 2;
-  grid-column: span 3;
-  grid-row: span 2;
-}
-#news .tile2x2 {
-  aspect-ratio: 2 / 2;
-  grid-column: span 2;
-  grid-row: span 2;
-}
-#news .tile1x2 {
-  aspect-ratio: 1 / 2;
-  grid-column: span 1;
-  grid-row: span 2;
-}
-#news .tile2x1 {
-  aspect-ratio: 2 / 1;
-  grid-column: span 2;
-  grid-row: span 1;
-}
-#news .tile img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-#news .more {
-  background-color: white;
-  box-shadow: 0 0 0 1px #d0d0d0;
-  border-radius: 20px;
-  display: block;
-  margin: 0 auto;
-  padding: 8px 20px 8px;
-  text-decoration: none;
-  width: fit-content;
-}
-#news .more:hover {
-  background-color: #f0f0f0;
 }
 
 #release {
