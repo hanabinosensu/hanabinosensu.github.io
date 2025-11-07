@@ -140,16 +140,24 @@ h1 small {
   writing-mode: vertical-rl;
   z-index: 1;
 }
-#wasedasai-25 img {
-  background-color: #d0d0d0;
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
 #wasedasai-25 figure {
   margin-inline: auto;
   max-width: 100%;
   width: 400px;
+}
+#wasedasai-25 figure figcaption {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  text-align: center;
+}
+#wasedasai-25 figure img {
+  background-clip: padding-box;
+  background-color: #d0d0d0;
+  border: 1px solid transparent;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 #wasedasai-25 .subfigure2,
 #wasedasai-25 .subfigure3,
@@ -159,28 +167,17 @@ h1 small {
   grid-auto-flow: dense;
   grid-template-columns: 1fr 1fr;
 }
-#wasedasai-25 figcaption {
-  grid-column: 1 / -1;
-  margin-top: 2px;
-  text-align: center;
-}
-/* <subfigure> is not a W3C HTML5 standard tag. */
-#wasedasai-25 subfigure {
-  border: 1px solid transparent;
-  display: block;
-  overflow: hidden;
-}
-#wasedasai-25 .subfigure2 subfigure {
+#wasedasai-25 .subfigure2 img {
   aspect-ratio: 7 / 8;
 }
-#wasedasai-25 .subfigure3 subfigure {
+#wasedasai-25 .subfigure3 img {
   aspect-ratio: 7 / 4;
   &.tall {
     aspect-ratio: 7 / 8;
     grid-row: span 2;
   }
 }
-#wasedasai-25 .subfigure4 subfigure {
+#wasedasai-25 .subfigure4 img {
   aspect-ratio: 2 / 1;
 }
 @keyframes wasedasai-25-d {
