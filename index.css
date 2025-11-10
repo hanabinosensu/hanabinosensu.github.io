@@ -390,7 +390,7 @@ h1 small {
   grid-auto-rows: 100px;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 }
-#discography a {
+#discography .tile {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 0 0 1px #d0d0d0;
@@ -399,10 +399,10 @@ h1 small {
   position: relative;
   text-decoration: none;
 }
-#discography a:hover {
+#discography a.tile:hover {
   opacity: 0.5;
 }
-#discography a img {
+#discography .tile img {
   filter: opacity(0.4);
   height: 100%;
   left: 0;
@@ -411,13 +411,13 @@ h1 small {
   top: 0;
   width: 100%;
 }
-#discography a small {
+#discography .tile small {
   bottom: 30px;
   font-size: 0.9rem;
   left: 16px;
   position: absolute;
 }
-#discography a h3 {
+#discography .tile h3 {
   bottom: 8px;
   font-size: 1rem;
   font-weight: bold;
