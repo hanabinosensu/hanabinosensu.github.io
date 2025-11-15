@@ -114,7 +114,7 @@ h1 small {
 #mugen {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
-  height: 430px;
+  height: 400px;
   overflow: clip;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
   perspective: 1000px;
@@ -138,21 +138,20 @@ h1 small {
   animation: 5s linear infinite torifuda-animation;
   background-color: white;
   bottom: 80px;
-  box-shadow: 0 0 0 1px #258559, 0 0 0 10px #26a269, 0 0 0 11px #258559;
+  box-shadow: 0 0 0 1px #258559, 0 0 0 8px #26a269, 0 0 0 9px #8bd1b1, 0 0 0 10px #258559;
   color: black;
   direction: rtl;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr 1fr 0;
   grid-template-rows: repeat(5, 1fr);
-  font-size: 20px;
-  height: 170px;
+  height: 140px;
   left: 50%;
   line-height: 1;
-  padding: 16px 12px;
+  padding: 16px 14px;
   position: absolute;
   translate: -50%;
-  width: 120px;
+  width: 100px;
   z-index: 0;
 }
 #mugen #torifuda span {
