@@ -92,6 +92,9 @@ h1 small {
   margin-inline: clamp(-30px, 50% - 300px, 0px);
   width: min(600px, 100vw);
 }
+#synopsis a {
+  color: inherit;
+}
 
 @keyframes mugen-torifuda {
     0% { opacity: 0; transform: rotateZ(0deg) rotateY(-90deg) translateY(30px); }
