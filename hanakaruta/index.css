@@ -93,35 +93,27 @@ h1 small {
   width: min(600px, 100vw);
 }
 
-@keyframes torifuda-animation {
-  0% {
-    transform: rotateZ(0deg) rotateY(-90deg) translateY(30px);
-    opacity: 0;
-  }
-  10% {
-    transform: rotateZ(4deg) rotateY(-20deg) translateY(20px);
-    opacity: 1;
-  }
-  90% {
-    transform: rotateZ(-4deg) rotateY(20deg) translateY(0px);
-    opacity: 1;
-  }
-  100% {
-    transform: rotateZ(-4deg) rotateY(90deg) translateY(-50px);
-    opacity: 0;
-  }
+@keyframes mugen-torifuda {
+    0% { opacity: 0; transform: rotateZ(0deg) rotateY(-90deg) translateY(30px); }
+   10% { opacity: 1; transform: rotateZ(4deg) rotateY(-20deg) translateY(20px); }
+   90% { opacity: 1; transform: rotateZ(-4deg) rotateY(20deg) translateY(0px); }
+  100% { opacity: 0; transform: rotateZ(-4deg) rotateY(90deg) translateY(-50px); }
+}
+@keyframes mugen-caption {
+    0% { opacity: 0; translate: 0 3px; }
+    8% { opacity: 1; translate: 0 0; }
+   92% { opacity: 1; translate: 0 0; }
+  100% { opacity: 0; translate: 0 -6px; }
 }
 #mugen {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
-  height: 400px;
+  color: black;
   overflow: clip;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
   perspective: 1000px;
-  position: relative;
 }
 #mugen h2 {
-  color: black;
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 1.3rem;
@@ -130,14 +122,12 @@ h1 small {
   z-index: 1;
 }
 #mugen p {
-  color: black;
   position: relative;
   z-index: 1;
 }
-#mugen #torifuda {
-  animation: 5s linear infinite torifuda-animation;
+#mugen .torifuda {
+  animation: 5s linear infinite mugen-torifuda;
   background-color: white;
-  bottom: 80px;
   box-shadow: 0 0 0 1px #258559, 0 0 0 8px #26a269, 0 0 0 9px #8bd1b1, 0 0 0 10px #258559;
   color: black;
   direction: rtl;
@@ -148,15 +138,24 @@ h1 small {
   height: 140px;
   left: 50%;
   line-height: 1;
+  margin: 30px 0 40px;
   padding: 16px 14px;
-  position: absolute;
+  position: relative;
   translate: -50%;
   width: 100px;
   z-index: 0;
 }
-#mugen #torifuda span {
+#mugen .torifuda span {
   align-content: center;
   text-align: center;
+}
+#mugen .caption {
+  animation: 5s linear infinite mugen-caption;
+  text-align: center;
+}
+#mugen.off .torifuda,
+#mugen.off .caption {
+  animation-play-state: paused;
 }
 
 #album {
