@@ -163,7 +163,7 @@ h1 small {
   border: 1px solid transparent;
 
   display: block;
-  overflow: hidden;
+  overflow: clip;
 }
 #album .tile:hover {
   opacity: 0.7;
