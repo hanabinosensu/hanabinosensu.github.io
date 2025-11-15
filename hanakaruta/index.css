@@ -19,7 +19,7 @@ html {
   top: -70px;
   transition: top 200ms ease-out;
   width: 100%;
-  z-index: 1;
+  z-index: 9;
 }
 @media (min-height: 420px) {
   #nav.on {
@@ -91,6 +91,67 @@ h1 small {
   display: block;
   margin-inline: clamp(-30px, 50% - 300px, 0px);
   width: min(600px, 100vw);
+}
+
+@keyframes torifuda-animation {
+  0% {
+    transform: rotateZ(0deg) rotateY(-90deg) translateY(30px);
+    opacity: 0;
+  }
+  10% {
+    transform: rotateZ(4deg) rotateY(-20deg) translateY(20px);
+    opacity: 1;
+  }
+  90% {
+    transform: rotateZ(-4deg) rotateY(20deg) translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(-4deg) rotateY(90deg) translateY(-50px);
+    opacity: 0;
+  }
+}
+#infinite {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  height: 350px;
+  overflow: clip;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  perspective: 1000px;
+  position: relative;
+}
+#infinite h2 {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+#infinite #torifuda {
+  animation: 5s linear infinite torifuda-animation;
+  background-color: white;
+  bottom: 80px;
+  box-shadow: 0 0 0 1px #258559, 0 0 0 10px #26a269, 0 0 0 11px #258559;
+  color: black;
+  direction: rtl;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr 0;
+  grid-template-rows: repeat(5, 1fr);
+  font-size: 20px;
+  height: 170px;
+  left: 50%;
+  line-height: 1;
+  padding: 16px 12px;
+  position: absolute;
+  translate: -50%;
+  width: 120px;
+  z-index: 0;
+}
+#infinite #torifuda span {
+  align-content: center;
+  text-align: center;
 }
 
 #album {
