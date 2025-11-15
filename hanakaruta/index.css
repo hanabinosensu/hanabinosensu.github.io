@@ -114,7 +114,7 @@ h1 small {
 #infinite {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
-  height: 350px;
+  height: 430px;
   overflow: clip;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
   perspective: 1000px;
@@ -124,8 +124,14 @@ h1 small {
   color: black;
   font-size: 1.3rem;
   font-weight: bold;
+  margin-bottom: 1.3rem;
   position: relative;
   text-align: center;
+  z-index: 1;
+}
+#infinite p {
+  color: black;
+  position: relative;
   z-index: 1;
 }
 #infinite #torifuda {
