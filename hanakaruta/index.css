@@ -111,7 +111,7 @@ h1 small {
     opacity: 0;
   }
 }
-#infinite {
+#mugen {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   height: 430px;
@@ -120,7 +120,7 @@ h1 small {
   perspective: 1000px;
   position: relative;
 }
-#infinite h2 {
+#mugen h2 {
   color: black;
   font-size: 1.3rem;
   font-weight: bold;
@@ -129,12 +129,12 @@ h1 small {
   text-align: center;
   z-index: 1;
 }
-#infinite p {
+#mugen p {
   color: black;
   position: relative;
   z-index: 1;
 }
-#infinite #torifuda {
+#mugen #torifuda {
   animation: 5s linear infinite torifuda-animation;
   background-color: white;
   bottom: 80px;
@@ -155,7 +155,7 @@ h1 small {
   width: 120px;
   z-index: 0;
 }
-#infinite #torifuda span {
+#mugen #torifuda span {
   align-content: center;
   text-align: center;
 }

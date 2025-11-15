@@ -18,7 +18,7 @@ new IntersectionObserver((entries, _) => {
   } else {
     torifuda.style.animationPlayState = "paused";
   }
-}, {}).observe(document.getElementById("infinite"));
+}, {}).observe(document.getElementById("mugen"));
 
 /* Update #torifuda at the exact moment when it is facing sideways */
 document.getElementById("torifuda").addEventListener("animationiteration", e => {
