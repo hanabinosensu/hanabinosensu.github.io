@@ -515,17 +515,19 @@ h1 small {
   text-decoration: none;
 }
 #discography .tile img {
-  filter: opacity(0.5) saturate(0);
   height: 100%;
   left: 0;
   object-fit: cover;
+  opacity: 0.5;
   position: absolute;
+  scale: 1.0;
   top: 0;
-  transition: filter 60ms linear 0ms;
+  transition: opacity 100ms ease-out, scale 100ms ease-out;
   width: 100%;
 }
 #discography a.tile:hover img {
-  filter: opacity(1) saturate(1);
+  opacity: 1.0;
+  scale: 1.1;
 }
 #discography .tile small {
   bottom: 30px;
