@@ -1,8 +1,8 @@
-/* Show #nav bar only after #unofficial banner leaves the viewport */
-new IntersectionObserver((entries, _) => {
+/* Show #nav bar after #unofficial banner leaves the viewport */
+new IntersectionObserver(([unofficial, ..._]) => {
   const nav = document.getElementById("nav");
 
-  if (entries[0].isIntersecting) {
+  if (unofficial.isIntersecting) {
     nav.classList.remove("on");
   } else {
     nav.classList.add("on");
@@ -10,13 +10,11 @@ new IntersectionObserver((entries, _) => {
 }, {}).observe(document.getElementById("unofficial"));
 
 /* Stop #mugen animations when out of viewport */
-new IntersectionObserver((entries, _) => {
-  const mugen = entries[0].target;
-
-  if (entries[0].isIntersecting) {
-    mugen.classList.remove("off");
+new IntersectionObserver(([mugen, ..._]) => {
+  if (mugen.isIntersecting) {
+    mugen.target.classList.remove("off");
   } else {
-    mugen.classList.add("off");
+    mugen.target.classList.add("off");
   }
 }, {}).observe(document.getElementById("mugen"));
 
