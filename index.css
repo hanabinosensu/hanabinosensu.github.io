@@ -525,7 +525,7 @@ h1 small {
   transition: opacity 100ms ease-out, scale 100ms ease-out;
   width: 100%;
 }
-#discography a.tile:hover img {
+#discography .tile:hover img {
   opacity: 1.0;
   scale: 1.1;
 }
