@@ -534,6 +534,7 @@ h1 small {
   font-size: 0.9rem;
   left: 16px;
   position: absolute;
+  text-shadow: 0 0 5px white;
 }
 #discography .tile h3 {
   bottom: 8px;
@@ -541,6 +542,7 @@ h1 small {
   font-weight: bold;
   left: 16px;
   position: absolute;
+  text-shadow: 0 0 10px white;
 }
 
 #verse {
