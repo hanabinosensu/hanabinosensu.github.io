@@ -94,7 +94,7 @@ html {
 #pickup li {
   animation: 5s linear 0s both paused pickup-li;
   overflow: clip;
-  padding-inline: max(30px, calc(50% - 300px)) 11px;
+  padding-inline: max(30px, calc(50% - 300px));
   text-overflow: ellipsis;
   white-space: nowrap;
 }
