@@ -54,6 +54,16 @@ html {
   color: inherit;
 }
 
+#unofficial {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 9px max(30px, calc(50% - 300px)) 11px;
+}
+#unofficial a {
+  color: inherit;
+}
+
 @keyframes pickup-li {
   /* Do not use translate property as it breaks .scrollTo() method */
   0% { opacity: 0; padding-block: 12px 8px; }
@@ -89,16 +99,6 @@ html {
   white-space: nowrap;
 }
 #pickup a {
-  color: inherit;
-}
-
-#unofficial {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-  padding: 9px max(30px, calc(50% - 300px)) 11px;
-}
-#unofficial a {
   color: inherit;
 }
 

@@ -1,13 +1,13 @@
-/* Show #nav bar after #unofficial banner leaves the viewport */
-new IntersectionObserver(([unofficial, ..._]) => {
+/* Show #nav bar after #pickup leaves the viewport */
+new IntersectionObserver(([pickup, ..._]) => {
   const nav = document.getElementById("nav");
 
-  if (unofficial.isIntersecting) {
+  if (pickup.isIntersecting) {
     nav.classList.remove("on");
   } else {
     nav.classList.add("on");
   }
-}, {}).observe(document.getElementById("unofficial"));
+}, {}).observe(document.getElementById("pickup"));
 
 /* Show #i18n banner if user does not understand Japanese at all */
 if (!navigator.languages.includes("ja")) {
