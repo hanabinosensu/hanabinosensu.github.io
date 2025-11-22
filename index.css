@@ -54,6 +54,44 @@ html {
   color: inherit;
 }
 
+@keyframes pickup-li {
+  /* Do not use translate property as it breaks .scrollTo() method */
+  0% { opacity: 0; padding-block: 12px 8px; }
+  5% { opacity: 1; padding-block: 9px 11px; }
+  95% { opacity: 1; padding-block: 9px 11px; }
+  100% { opacity: 0; padding-block: 6px 14px; }
+}
+#pickup {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  height: 44px;
+  list-style: none;
+  /*
+   * "overflow: clip" is generally preferred but we wanna scroll
+   * #pickup so use "overflow: hidden" to create scroll container.
+   */
+  overflow: hidden;
+  padding-left: 0;
+}
+#pickup noscript {
+  display: block;
+  overflow: clip;
+  padding: 9px max(30px, calc(50% - 300px)) 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#pickup li {
+  animation: 5s linear 0s both paused pickup-li;
+  overflow: clip;
+  padding-inline: max(30px, calc(50% - 300px)) 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#pickup a {
+  color: inherit;
+}
+
 #unofficial {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
@@ -73,7 +111,7 @@ h1 {
   color: black;
   font-size: 3rem;
   line-height: 1;
-  padding: 400px 30px 40px;
+  padding: 350px 30px 40px;
   text-align: center;
   width: 100%;
 }
