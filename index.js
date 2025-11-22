@@ -14,6 +14,27 @@ if (!navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
+/* Show next event and stage in #pickup */
+const now = Date.now();
+
+if (now < Date.parse("2025-11-23T00:00+09:00")) {
+  console.error("now < Date.parse('2025-11-23T00:00+09:00')");
+} else if (now < Date.parse("2025-11-23T11:00+09:00")) {
+  document.getElementById("next").innerHTML = `次のお祭り: <a href="#kuroshio-25">黒潮よさこい（本日）</a>`;
+} else if (now < Date.parse("2025-11-23T12:25+09:00")) {
+  document.getElementById("next").innerHTML = `次の演舞: <a href="#kuroshio-25">シンボルロード会場（12:20）</a>`;
+} else if (now < Date.parse("2025-11-23T13:25+09:00")) {
+  document.getElementById("next").innerHTML = `次の演舞: <a href="#kuroshio-25">市役所会場（13:20）</a>`;
+} else if (now < Date.parse("2025-11-23T14:25+09:00")) {
+  document.getElementById("next").innerHTML = `次の演舞: <a href="#kuroshio-25">利根川会場（14:20）</a>`;
+} else if (now < Date.parse("2025-11-23T19:00+09:00")) {
+  document.getElementById("next").innerHTML = `次のお祭り: <a href="#kuroshio-25">黒潮よさこい（本日）</a>`;
+} else if (now < Date.parse("2025-12-15T00:00+09:00")) {
+  document.getElementById("next").innerHTML = `次のお祭り: バサラカーニバル（12/13–14）`;
+} else {
+  console.error("now >= Date.parse('2025-12-15T00:00+09:00')");
+}
+
 /* Infinite #pickup slideshow */
 document.getElementById("pickup").scrollTo(0, 0);
 
