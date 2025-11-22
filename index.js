@@ -55,7 +55,7 @@ document.querySelectorAll("#pickup li").forEach((li, i, lis) => {
   });
 });
 
-document.getElementById("next").getAnimations().forEach(animation => {
+document.querySelector("#pickup li").getAnimations().forEach(animation => {
   animation.play();
 });
 
