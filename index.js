@@ -22,7 +22,11 @@ document.querySelectorAll("#pickup li").forEach((li, i, lis) => {
     const pickup = document.getElementById("pickup");
     const next = lis.item((i + 1) % lis.length);
 
-    pickup.scrollTo({ top: next.offsetTop, behavior: "instant" });
+    pickup.scrollTo({
+      top: next.offsetTop - pickup.offsetTop,
+      behavior: "instant",
+    });
+
     next.getAnimations().forEach(animation => animation.play());
   });
 });
