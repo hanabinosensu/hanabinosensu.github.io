@@ -92,7 +92,8 @@ html {
   white-space: nowrap;
 }
 #pickup li {
-  animation: 5s linear 0s both paused pickup-li;
+  /* animationstart event does not fire reliably without 1ms delay */
+  animation: 5s linear 1ms both paused pickup-li;
   overflow: clip;
   padding-inline: max(30px, calc(50% - 300px));
   text-overflow: ellipsis;
