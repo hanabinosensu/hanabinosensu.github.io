@@ -38,7 +38,7 @@ html {
   aspect-ratio: 1 / 1;
   height: 100%;
 }
-#nav a.year {
+#nav a.toc {
   color: inherit;
   padding: 20px 8px;
   text-decoration: none;
