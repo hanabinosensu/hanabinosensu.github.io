@@ -64,14 +64,14 @@ html {
   color: inherit;
 }
 
-@keyframes pickup-li {
+@keyframes topics-li {
   /* Do not use translate property as it breaks .scrollTo() method */
   0% { opacity: 0; padding-block: 12px 8px; }
   5% { opacity: 1; padding-block: 9px 11px; }
   95% { opacity: 1; padding-block: 9px 11px; }
   100% { opacity: 0; padding-block: 6px 14px; }
 }
-#pickup {
+#topics {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
@@ -79,27 +79,27 @@ html {
   list-style: none;
   /*
    * "overflow: clip" is generally preferred but we wanna scroll
-   * #pickup so use "overflow: hidden" to create scroll container.
+   * #topics so use "overflow: hidden" to create scroll container.
    */
   overflow: hidden;
   padding-left: 0;
 }
-#pickup noscript {
+#topics noscript {
   display: block;
   overflow: clip;
   padding: 9px max(30px, calc(50% - 300px)) 11px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-#pickup li {
+#topics li {
   /* animationstart event does not fire reliably without 1ms delay */
-  animation: 5s linear 1ms both paused pickup-li;
+  animation: 5s linear 1ms both paused topics-li;
   overflow: clip;
   padding-inline: max(30px, calc(50% - 300px));
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-#pickup a {
+#topics a {
   color: inherit;
 }
 
