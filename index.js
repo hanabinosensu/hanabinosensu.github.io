@@ -35,13 +35,13 @@ document.querySelector("#topics li").getAnimations().forEach(animation => {
   animation.play();
 });
 
-/* Let users to choose video for #mustsee */
-const mustseeSelect = document.getElementById("mustsee-select");
+/* Let users to choose video for #pickup */
+const pickupSelect = document.getElementById("pickup-select");
 
-mustseeSelect.addEventListener("change", _ => {
-  document.getElementById("mustsee-iframe").src = mustseeSelect.value;
+pickupSelect.addEventListener("change", _ => {
+  document.getElementById("pickup-iframe").src = pickupSelect.value;
 });
 
 /* Recommend video randomly */
-mustseeSelect.selectedIndex = Math.floor(Math.random() * mustseeSelect.length);
-mustseeSelect.dispatchEvent(new Event("change"));
+pickupSelect.selectedIndex = Math.floor(Math.random() * pickupSelect.length);
+pickupSelect.dispatchEvent(new Event("change"));
