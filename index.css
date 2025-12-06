@@ -429,22 +429,22 @@ h1 small {
   color: inherit;
 }
 
-#mustsee {
+#pickup {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
   padding: 30px max(30px, calc(50% - 300px)) 30px;
 }
-#mustsee > :not(h2, :last-child) {
+#pickup > :not(h2, :last-child) {
   margin-bottom: 1rem;
 }
-#mustsee h2 {
+#pickup h2 {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 1.3rem;
   text-align: center;
 }
-#mustsee select {
+#pickup select {
   background-color: transparent;
   border: 0;
   border-radius: 0;
@@ -452,7 +452,7 @@ h1 small {
   padding: 0;
   width: 100%;
 }
-#mustsee iframe {
+#pickup iframe {
   background-color: #d0d0d0;
   border: 0;
   display: block;
