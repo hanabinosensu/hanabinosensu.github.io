@@ -8,3 +8,10 @@ new IntersectionObserver(([unofficial, ..._]) => {
     nav.classList.add("on");
   }
 }, {}).observe(document.getElementById("unofficial"));
+
+/* Replay animation when h1 tag is clicked */
+document.querySelector("h1").addEventListener("click", e => {
+  e.target.getAnimations({ subtree: true }).forEach(animation => {
+    animation.play();
+  });
+});
