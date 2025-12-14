@@ -1,0 +1,223 @@
+html {
+  font-family: serif;
+  font-feature-settings: "palt";
+  font-size: 1rem;
+  scroll-padding-top: 200px;
+  text-align: justify;
+  -webkit-text-size-adjust: 100%;
+}
+
+#nav {
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  display: flex;
+  height: 70px;
+  padding: 0 max(30px, calc(50% - 300px));
+  position: fixed;
+  top: -70px;
+  transition: top 200ms ease-out;
+  width: 100%;
+  z-index: 9;
+}
+@media (min-height: 420px) {
+  #nav.on {
+    top: 0;
+  }
+}
+#nav a:hover {
+  opacity: 0.5;
+}
+#nav a.top {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+}
+#nav a.prev,
+#nav a.next {
+  color: inherit;
+  padding: 20px 8px;
+  text-decoration: none;
+}
+#nav a.prev::before {
+  content: "〈 ";
+}
+#nav a.next::after {
+  content: " 〉";
+}
+
+#unofficial {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 9px max(30px, calc(50% - 300px)) 11px;
+}
+#unofficial a {
+  color: inherit;
+}
+
+h1 {
+  background-color: #d0d0d0;
+  background-image: url("/fujimusubi/hero.avif");
+  background-position: 50% 30%;
+  background-size: cover;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 410px 30px 40px;
+  text-align: center;
+  width: 100%;
+}
+h1 small {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  transform: translate(-20px, -5px);
+}
+
+#synopsis {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#synopsis > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#synopsis iframe {
+  background-color: #d0d0d0;
+  border: 0;
+  display: block;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  width: min(600px, 100vw);
+}
+#synopsis a {
+  color: inherit;
+}
+
+#album {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#album > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#album h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#album a {
+  color: inherit;
+}
+#album .tiles {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+#album .tile {
+  aspect-ratio: 1 / 1;
+  background-clip: padding-box;
+  background-color: #d0d0d0;
+
+  /*
+   * "border: 1px solid transparent" has similar effect to "gap: 2px".
+   * However, the gap property yields broken grid when rectangular tiles
+   * are present. Indeed, the aspect ratio of a tile spanning over three
+   * columns and two rows is not 3:2 due to gaps. The border property is
+   * free of this problem.
+   */
+  border: 1px solid transparent;
+
+  display: block;
+  overflow: clip;
+}
+#album .tile:hover {
+  opacity: 0.7;
+}
+#album .tile3x2 {
+  aspect-ratio: 3 / 2;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+#album .tile2x2 {
+  aspect-ratio: 2 / 2;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#album .tile1x2 {
+  aspect-ratio: 1 / 2;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#album .tile2x1 {
+  aspect-ratio: 2 / 1;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+#album .tile img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+#album .youtube {
+  position: relative;
+}
+#album .youtube::before {
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' viewBox='0 0 68 48' xmlns='http://www.w3.org/2000/svg'><path d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='%23f03'/><path d='M 45,24 27,14 27,34' fill='%23fff'/></svg>");
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 8px;
+  content: "";
+  height: 24px;  /* Keep aspect ratio to 68:48 */
+  position: absolute;
+  right: 8px;
+  width: 34px;
+}
+
+#lyrics {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#lyrics > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#lyrics h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+
+#credit {
+  background-color: white;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#credit > :not(h2, h3, :last-child) {
+  margin-bottom: 1rem;
+}
+#credit h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#credit h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+#credit ul {
+  display: inline-flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+}
