@@ -144,9 +144,11 @@ h1 small {
 #tokiakari iframe {
   background-color: #d0d0d0;
   border: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #d0d0d0;
   display: block;
-  margin-inline: clamp(-30px, 50% - 300px, 0px);
-  width: min(600px, 100vw);
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
 }
 #tokiakari .spoiler {
   color: transparent;
@@ -306,9 +308,11 @@ h1 small {
 #ironowa iframe {
   background-color: #d0d0d0;
   border: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #d0d0d0;
   display: block;
-  margin-inline: clamp(-30px, 50% - 300px, 0px);
-  width: min(600px, 100vw);
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
 }
 #ironowa ruby {
   display: inline-flex;
@@ -354,9 +358,11 @@ h1 small {
 #pickup iframe {
   background-color: #d0d0d0;
   border: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #d0d0d0;
   display: block;
-  margin-inline: clamp(-30px, 50% - 300px, 0px);
-  width: min(600px, 100vw);
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
 }
 
 #about {
@@ -414,6 +420,7 @@ h1 small {
   background-color: #d0d0d0;
   border: 0;
   border-radius: 10px;
+  box-shadow: 0 0 0 1px #d0d0d0;
   display: block;
   height: 150px;
   width: 100%;
