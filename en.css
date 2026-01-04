@@ -91,6 +91,48 @@ h1 small {
   transform: translateY(-3px);
 }
 
+#about {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 2rem max(30px, calc(50% - 300px)) 2rem;
+}
+#about:target {
+  animation: 400ms linear 200ms flash;
+}
+#about > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#about h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#about a {
+  color: inherit;
+}
+#about figure {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  padding: 1rem 20px;
+}
+#about figure img {
+  margin-inline: auto;
+  width: 100%;
+}
+#about figure figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+#about figure blockquote::before {
+  content: "“";
+  margin-right: -3px;
+}
+#about figure blockquote::after {
+  content: "”";
+  margin-left: -3px;
+}
+
 #ironowa {
   background-color: #fff8f8;
   border-bottom: 1px solid #d0d0d0;
@@ -143,39 +185,6 @@ h1 small {
   display: block;
   margin-inline: clamp(-30px, 50% - 300px, 0px);
   width: min(600px, 100vw);
-}
-
-#about {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-  padding: 2rem max(30px, calc(50% - 300px)) 2rem;
-}
-#about:target {
-  animation: 400ms linear 200ms flash;
-}
-#about > :not(:last-child) {
-  margin-bottom: 1rem;
-}
-#about h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-#about a {
-  color: inherit;
-}
-#about i {
-  font-style: italic;
-}
-#about figure {
-  margin-inline: auto;
-  max-width: 100%;
-}
-#about figure img {
-  margin-bottom: 4px;
-}
-#about figure figcaption {
-  text-align: center;
 }
 
 #release {
