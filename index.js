@@ -34,14 +34,3 @@ document.querySelectorAll("#topics li").forEach((li, i, lis) => {
 document.querySelector("#topics li").getAnimations().forEach(animation => {
   animation.play();
 });
-
-/* Let users to choose video for #pickup */
-const pickupSelect = document.getElementById("pickup-select");
-
-pickupSelect.addEventListener("change", _ => {
-  document.getElementById("pickup-iframe").src = pickupSelect.value;
-});
-
-/* Recommend video randomly */
-pickupSelect.selectedIndex = Math.floor(Math.random() * pickupSelect.length);
-pickupSelect.dispatchEvent(new Event("change"));
