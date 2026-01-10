@@ -209,18 +209,19 @@ h1 small {
   font-size: 2rem;
   font-weight: bold;
 }
-#release a {
-  color: inherit;
+#release ul {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
 }
-#release iframe {
-  background-color: #f0f0f0;
-  border: 0;
+#release li {
   border-radius: 12px;
   box-shadow: 0 0 0 1px #d0d0d0;
-  display: block;
-  margin-inline: clamp(-20px, 50% - 300px, 0px);
-  height: 150px;
-  width: min(600px, 100vw - 20px);
+  height: 48px;
+  overflow: hidden;
+  width: 48px;
 }
 
 #amatsukasa {
