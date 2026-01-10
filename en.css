@@ -152,6 +152,12 @@ h1 small {
   font-weight: bold;
   -webkit-text-fill-color: transparent;
 }
+#ironowa h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+}
 #ironowa iframe {
   background-color: #f0f0f0;
   border: 0;
@@ -244,7 +250,7 @@ h1 small {
 #amatsukasa h3 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 3rem;
+  margin-top: 2rem;
   text-align: center;
 }
 #amatsukasa h4 {
