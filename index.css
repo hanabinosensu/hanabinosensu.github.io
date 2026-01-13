@@ -393,6 +393,9 @@ h1 small {
   overflow: hidden;
   width: 48px;
 }
+#release li:hover {
+  opacity: 0.6;
+}
 
 #discography {
   background-color: white;
