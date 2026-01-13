@@ -133,7 +133,7 @@ h1 small {
   display: block;
   overflow: clip;
 }
-#album .tile:hover {
+#album a.tile:hover {
   opacity: 0.7;
 }
 #album .tile3x2 {
