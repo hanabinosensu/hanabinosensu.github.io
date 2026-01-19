@@ -123,40 +123,6 @@ h1 small {
   transform: translate(-40px, -5px);
 }
 
-#tokiakari {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
-  color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
-}
-#tokiakari:target {
-  animation: 400ms linear 200ms flash;
-}
-#tokiakari > :not(h2, :last-child) {
-  margin-bottom: 1rem;
-}
-#tokiakari h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
-}
-#tokiakari iframe {
-  background-color: #f0f0f0;
-  border: 0;
-  border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
-  display: block;
-  margin-inline: clamp(-20px, 50% - 300px, 0px);
-  width: min(600px, 100vw - 20px);
-}
-#tokiakari .spoiler {
-  color: transparent;
-}
-#tokiakari .spoiler:active {
-  color: inherit;
-}
-
 #news {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
@@ -329,6 +295,40 @@ h1 small {
   content: "）";
 }
 #ironowa a {
+  color: inherit;
+}
+
+#tokiakari {
+  background-color: white;
+  border-bottom: 1px solid #d0d0d0;
+  color: black;
+  padding: 30px max(30px, calc(50% - 300px)) 30px;
+}
+#tokiakari:target {
+  animation: 400ms linear 200ms flash;
+}
+#tokiakari > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#tokiakari h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#tokiakari iframe {
+  background-color: #f0f0f0;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  display: block;
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
+}
+#tokiakari .spoiler {
+  color: transparent;
+}
+#tokiakari .spoiler:active {
   color: inherit;
 }
 
