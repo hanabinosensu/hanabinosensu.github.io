@@ -50,12 +50,12 @@ html {
 }
 
 @keyframes h1-before {
-  from { translate: -15px -9px; }
-  to { translate: 0px 0px; }
+  from { translate: 0px 0px; }
+  to { translate: -15px -9px; }
 }
 @keyframes h1-after {
-  from { translate: 15px 9px; }
-  to { translate: 0px 0px; }
+  from { translate: 0px 0px; }
+  to { translate: 15px 9px; }
 }
 h1 {
   background-color: white;
@@ -68,7 +68,7 @@ h1 {
   width: 100%;
 }
 h1::before {
-  animation: 600ms ease-in-out 100ms both h1-before;
+  animation: 600ms ease-in-out 100ms 2 alternate both h1-before;
   background-color: #d54640;
   clip-path: path("M0,0 h30 a30,30,0,0,1,0,60 h-30 z");
   content: "";
@@ -82,7 +82,7 @@ h1::before {
   z-index: 0;
 }
 h1::after {
-  animation: 600ms ease-in-out 100ms both h1-after;
+  animation: 600ms ease-in-out 100ms 2 alternate both h1-after;
   background-color: #6274be;
   clip-path: circle(50%);
   content: "";
