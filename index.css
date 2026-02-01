@@ -194,12 +194,42 @@ h1 small {
   margin-inline: auto;
   max-width: 100%;
   width: 400px;
-  /* figure has mutiple subfigures */
-  &:has(img + img) {
+  /* <figure> has mutiple subfigures */
+  &:has(.lr, .lrl, .lrr, .lrlr) {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: 1fr 1fr;
   }
+}
+#kisaragisai-2026 figure .lr,
+#kisaragisai-2026 figure .lrl,
+#kisaragisai-2026 figure .lrr,
+#kisaragisai-2026 figure .lrlr {
+  border: 1px solid transparent;
+}
+/* one subfigure on left, one on right */
+#kisaragisai-2026 figure .lr {
+  aspect-ratio: 7 / 8;
+}
+/* two subfigures on left, one on right */
+#kisaragisai-2026 figure .lrl {
+  aspect-ratio: 7 / 4;
+}
+#kisaragisai-2026 figure :nth-child(2 of .lrl) {
+  aspect-ratio: 7 / 8;
+  grid-row: span 2;
+}
+/* one subfigure on left, two on right */
+#kisaragisai-2026 figure .lrr {
+  aspect-ratio: 7 / 4;
+}
+#kisaragisai-2026 figure :nth-child(1 of .lrr) {
+  aspect-ratio: 7 / 8;
+  grid-row: span 2;
+}
+/* two subfigures on left, two on right */
+#kisaragisai-2026 figure .lrlr {
+  aspect-ratio: 2 / 1;
 }
 #kisaragisai-2026 figure figcaption {
   grid-column: 1 / -1;
@@ -209,27 +239,9 @@ h1 small {
 #kisaragisai-2026 figure img {
   background-clip: padding-box;
   background-color: #d0d0d0;
-  border: 1px solid transparent;
-  display: block;
   height: 100%;
   object-fit: cover;
   width: 100%;
-  /* one subfigure on left, one on right */
-  &.lr {
-    aspect-ratio: 7 / 8;
-  }
-  /* two subfigures on left, one on right */
-  &.lrl {
-    aspect-ratio: 7 / 4;
-  }
-  &.lrl:nth-of-type(2) {
-    aspect-ratio: 7 / 8;
-    grid-row: span 2;
-  }
-  /* two subfigures on left, two on right */
-  &.lrlr {
-    aspect-ratio: 2 / 1;
-  }
 }
 
 #news {
