@@ -19,7 +19,7 @@ html {
   color: black;
   display: flex;
   height: 70px;
-  padding: 0 max(30px, calc(50% - 300px));
+  padding: 0 max(30px, 50% - 300px);
   position: fixed;
   top: -70px;
   transition: top 200ms ease-out;
@@ -48,7 +48,7 @@ html {
   border-bottom: 1px solid #d0d0d0;
   color: black;
   display: none;
-  padding: 11px max(30px, calc(50% - 300px)) 9px;
+  padding: 11px max(30px, 50% - 300px) 9px;
 }
 #i18n a {
   color: inherit;
@@ -58,7 +58,7 @@ html {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 9px max(30px, calc(50% - 300px)) 11px;
+  padding: 9px max(30px, 50% - 300px) 11px;
 }
 #unofficial a {
   color: inherit;
@@ -132,7 +132,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #kisaragisai-2026:target {
   animation: 400ms linear 200ms flash;
@@ -251,7 +251,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(10px, calc(50% - 300px)) 30px;
+  padding: 30px max(10px, 50% - 300px) 30px;
 }
 #news:target {
   animation: 400ms linear 200ms flash;
@@ -379,7 +379,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #ironowa:target {
   animation: 400ms linear 200ms flash;
@@ -424,7 +424,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #tokiakari:target {
   animation: 400ms linear 200ms flash;
@@ -458,7 +458,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #about > :not(h2, :last-child) {
   margin-bottom: 1rem;
@@ -487,7 +487,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #release:target {
   animation: 400ms linear 200ms flash;
@@ -523,7 +523,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #discography:target {
   animation: 400ms linear 200ms flash;
@@ -587,7 +587,7 @@ h1 small {
   background-color: black;
   border-bottom: 1px solid #d0d0d0;
   color: white;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #verse > :not(:last-child) {
   margin-bottom: 1rem;
@@ -609,7 +609,7 @@ h1 small {
 #stickers {
   background-color: white;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #stickers:target {
   animation: 400ms linear 200ms flash;
@@ -635,7 +635,7 @@ h1 small {
   bottom: 20px;
   display: block;
   position: fixed;
-  right: max(20px, calc(50% - 380px));
+  right: max(20px, 50% - 380px);
 }
 #fab:hover {
   opacity: 0.7;
