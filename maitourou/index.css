@@ -116,35 +116,8 @@ h1 small {
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
 }
-#album .tile {
+#album .tile1x1 {
   aspect-ratio: 1 / 1;
-  background-clip: padding-box;
-  background-color: #d0d0d0;
-
-  /*
-   * "border: 1px solid transparent" has similar effect to "gap: 2px".
-   * However, the gap property yields broken grid when rectangular tiles
-   * are present. Indeed, the aspect ratio of a tile spanning over three
-   * columns and two rows is not 3:2 due to gaps. The border property is
-   * free of this problem.
-   */
-  border: 1px solid transparent;
-
-  display: block;
-  overflow: clip;
-}
-#album a.tile:hover {
-  opacity: 0.7;
-}
-#album .tile3x2 {
-  aspect-ratio: 3 / 2;
-  grid-column: span 3;
-  grid-row: span 2;
-}
-#album .tile2x2 {
-  aspect-ratio: 2 / 2;
-  grid-column: span 2;
-  grid-row: span 2;
 }
 #album .tile1x2 {
   aspect-ratio: 1 / 2;
@@ -156,10 +129,26 @@ h1 small {
   grid-column: span 2;
   grid-row: span 1;
 }
-#album .tile img {
+#album .tile2x2 {
+  aspect-ratio: 2 / 2;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#album .tile3x2 {
+  aspect-ratio: 3 / 2;
+  grid-column: span 3;
+  grid-row: span 2;
+}
+#album .tiles img {
+  background-clip: content-box;
+  background-color: #d0d0d0;
   height: 100%;
   object-fit: cover;
+  padding: 1px;
   width: 100%;
+}
+#album .tiles a:hover {
+  opacity: 0.7;
 }
 #album .youtube {
   position: relative;
