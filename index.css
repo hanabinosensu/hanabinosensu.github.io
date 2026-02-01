@@ -201,12 +201,6 @@ h1 small {
     grid-template-columns: 1fr 1fr;
   }
 }
-#kisaragisai-2026 figure .lr,
-#kisaragisai-2026 figure .lrl,
-#kisaragisai-2026 figure .lrr,
-#kisaragisai-2026 figure .lrlr {
-  border: 1px solid transparent;
-}
 /* one subfigure on left, one on right */
 #kisaragisai-2026 figure .lr {
   aspect-ratio: 7 / 8;
@@ -239,9 +233,13 @@ h1 small {
 #kisaragisai-2026 figure img {
   background-clip: padding-box;
   background-color: #d0d0d0;
+  border: 1px solid transparent;
   height: 100%;
   object-fit: cover;
   width: 100%;
+}
+#kisaragisai-2026 figure a:hover {
+  opacity: 0.7;
 }
 
 #news {
