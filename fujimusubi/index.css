@@ -14,7 +14,7 @@ html {
   color: black;
   display: flex;
   height: 70px;
-  padding: 0 max(30px, calc(50% - 300px));
+  padding: 0 max(30px, 50% - 300px);
   position: fixed;
   top: -70px;
   transition: top 200ms ease-out;
@@ -50,7 +50,7 @@ html {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 9px max(30px, calc(50% - 300px)) 11px;
+  padding: 9px max(30px, 50% - 300px) 11px;
 }
 #unofficial a {
   color: inherit;
@@ -80,7 +80,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #synopsis > :not(:last-child) {
   margin-bottom: 1rem;
@@ -100,7 +100,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #album > :not(h2, :last-child) {
   margin-bottom: 1rem;
@@ -172,7 +172,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #lyrics > :not(h2, :last-child) {
   margin-bottom: 1rem;
@@ -187,7 +187,7 @@ h1 small {
 #credit {
   background-color: white;
   color: black;
-  padding: 30px max(30px, calc(50% - 300px)) 30px;
+  padding: 30px max(30px, 50% - 300px) 30px;
 }
 #credit > :not(h2, h3, :last-child) {
   margin-bottom: 1rem;

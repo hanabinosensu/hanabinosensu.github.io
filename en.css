@@ -26,7 +26,7 @@ html {
   color: black;
   display: flex;
   height: 70px;
-  padding: 0 max(30px, calc(50% - 300px));
+  padding: 0 max(30px, 50% - 300px);
   position: fixed;
   top: -70px;
   transition: top 200ms ease-out;
@@ -55,7 +55,7 @@ html {
   border-bottom: 1px solid #d0d0d0;
   color: black;
   display: none;
-  padding: 10px max(30px, calc(50% - 300px)) 10px;
+  padding: 10px max(30px, 50% - 300px) 10px;
 }
 #i18n a {
   color: inherit;
@@ -65,7 +65,7 @@ html {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 10px max(30px, calc(50% - 300px)) 10px;
+  padding: 10px max(30px, 50% - 300px) 10px;
 }
 #unofficial a {
   color: inherit;
@@ -95,7 +95,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 2rem max(30px, calc(50% - 300px)) 2rem;
+  padding: 2rem max(30px, 50% - 300px) 2rem;
 }
 #about:target {
   animation: 400ms linear 200ms flash;
@@ -139,7 +139,7 @@ h1 small {
   background-color: #fff8f8;
   border-bottom: 1px solid #d0d0d0;
   color: #623239;
-  padding: 2rem max(30px, calc(50% - 300px)) 3rem;
+  padding: 2rem max(30px, 50% - 300px) 3rem;
 }
 #ironowa > :not(:last-child) {
   margin-bottom: 1rem;
@@ -172,7 +172,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 2rem max(30px, calc(50% - 300px)) 3rem;
+  padding: 2rem max(30px, 50% - 300px) 3rem;
 }
 #pickup > :not(:last-child) {
   margin-bottom: 1rem;
@@ -203,7 +203,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #d0d0d0;
   color: black;
-  padding: 2rem max(30px, calc(50% - 300px)) 3rem;
+  padding: 2rem max(30px, 50% - 300px) 3rem;
 }
 #release:target {
   animation: 400ms linear 200ms flash;
@@ -234,7 +234,7 @@ h1 small {
   background-color: #f8faff;
   border-bottom: 1px solid #d0d0d0;
   color: #00125b;
-  padding: 2rem max(30px, calc(50% - 300px)) 2rem;
+  padding: 2rem max(30px, 50% - 300px) 2rem;
 }
 #amatsukasa > :not(h4, :last-child) {
   margin-bottom: 1rem;
@@ -284,7 +284,7 @@ h1 small {
 #stickers {
   background-color: white;
   color: black;
-  padding: 2rem max(30px, calc(50% - 300px)) 2rem;
+  padding: 2rem max(30px, 50% - 300px) 2rem;
 }
 #stickers:target {
   animation: 400ms linear 200ms flash;
@@ -310,7 +310,7 @@ h1 small {
   bottom: 20px;
   display: block;
   position: fixed;
-  right: max(20px, calc(50% - 380px));
+  right: max(20px, 50% - 380px);
 }
 #fab:hover {
   opacity: 0.7;
