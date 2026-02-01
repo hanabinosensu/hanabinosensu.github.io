@@ -18,15 +18,11 @@ if (!navigator.languages.includes("ja")) {
 document.getElementById("topics").scrollTo(0, 0);
 
 document.querySelectorAll("#topics li").forEach((li, i, lis) => {
+  const topics = document.getElementById("topics");
+  const next = lis.item((i + 1) % lis.length);
+
   li.addEventListener("animationend", _ => {
-    const topics = document.getElementById("topics");
-    const next = lis.item((i + 1) % lis.length);
-
-    topics.scrollTo({
-      top: next.offsetTop - topics.offsetTop,
-      behavior: "instant",
-    });
-
+    topics.scrollTo({ top: next.offsetTop, behavior: "instant" });
     next.getAnimations().forEach(animation => animation.play());
   });
 });

@@ -73,21 +73,25 @@ html {
 }
 #topics {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #d0d0d0;
   color: black;
   height: 44px;
   list-style: none;
+  margin: 10px max(10px, 50% - 320px);
   /*
    * "overflow: clip" is generally preferred but we wanna scroll
    * #topics so use "overflow: hidden" to create scroll container.
    */
   overflow: hidden;
   padding-left: 0;
+  position: relative;
+  z-index: 1;
 }
 #topics noscript {
   display: block;
   overflow: clip;
-  padding: 9px max(30px, calc(50% - 300px)) 11px;
+  padding: 9px 20px 11px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -95,7 +99,7 @@ html {
   /* animationstart event does not fire reliably without 1ms delay */
   animation: 5s linear 1ms both paused topics-li;
   overflow: clip;
-  padding-inline: max(30px, calc(50% - 300px));
+  padding-inline: 20px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -112,7 +116,8 @@ h1 {
   color: black;
   font-size: 3rem;
   line-height: 1;
-  padding: 350px 30px 40px;
+  margin-top: -64px;
+  padding: 390px 30px 40px;
   text-align: center;
   width: 100%;
 }
