@@ -139,29 +139,13 @@ main figure {
     grid-template-columns: 1fr 1fr;
   }
 }
-/* one subfigure on left, one on right */
-main figure .lr {
-  aspect-ratio: 7 / 8;
-}
 /* two subfigures on left, one on right */
-main figure .lrl {
-  aspect-ratio: 7 / 4;
-}
 main figure :nth-child(2 of .lrl) {
-  aspect-ratio: 7 / 8;
   grid-row: span 2;
 }
 /* one subfigure on left, two on right */
-main figure .lrr {
-  aspect-ratio: 7 / 4;
-}
 main figure :nth-child(1 of .lrr) {
-  aspect-ratio: 7 / 8;
   grid-row: span 2;
-}
-/* two subfigures on left, two on right */
-main figure .lrlr {
-  aspect-ratio: 2 / 1;
 }
 main figure figcaption {
   grid-column: 1 / -1;
