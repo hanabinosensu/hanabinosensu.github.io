@@ -14,10 +14,15 @@ html {
 body {
   line-height: 1.5;
 }
-img, picture, video, canvas, svg, iframe {
+img, picture, video, canvas, svg {
   display: block;
   height: auto;
   max-width: 100%;
+  width: auto;
+}
+iframe {
+  display: block;
+  height: auto;
   width: auto;
 }
 input, button, textarea, select {
