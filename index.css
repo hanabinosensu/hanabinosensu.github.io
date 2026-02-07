@@ -7,14 +7,14 @@ html {
 }
 
 @keyframes flash {
-  from { background-color: #d0d0d0; }
+  from { background-color: #e0e0e0; }
   to { background-color: white; }
 }
 
 #nav {
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   display: flex;
   height: 70px;
@@ -44,7 +44,7 @@ html {
 
 #i18n {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   display: none;
   padding: 11px max(30px, 50% - 300px) 9px;
@@ -55,7 +55,7 @@ html {
 
 #unofficial {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 9px max(30px, 50% - 300px) 11px;
 }
@@ -73,7 +73,7 @@ html {
 #topics {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   color: black;
   height: 44px;
   list-style: none;
@@ -107,11 +107,11 @@ html {
 }
 
 h1 {
-  background-color: #d0d0d0;
+  background-color: #f0f0f0;
   background-image: url("/hero.avif");
   background-position: 50% 30%;
   background-size: cover;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   font-size: 3rem;
   line-height: 1;
@@ -129,7 +129,7 @@ h1 small {
 
 #kisaragisai-2026 {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -164,13 +164,13 @@ h1 small {
 }
 #kisaragisai-2026 hr {
   border: 0;
-  border-bottom: 1px dashed #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   margin: 24px -30px;
   width: calc(100% + 60px);
 }
 #kisaragisai-2026 dl {
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   column-gap: 4px;
   display: grid;
   grid-template-columns: 24px auto auto;
@@ -196,7 +196,7 @@ h1 small {
 }
 #kisaragisai-2026 figure {
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   margin-inline: auto;
   max-width: 100%;
   overflow: clip;
@@ -226,7 +226,7 @@ h1 small {
   text-shadow: 0 0 5px black, 0 0 5px black;
 }
 #kisaragisai-2026 figure img {
-  background-color: #d0d0d0;
+  background-color: #f0f0f0;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -236,8 +236,8 @@ h1 small {
 }
 
 #news {
-  background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(10px, 50% - 300px) 30px;
 }
@@ -255,7 +255,7 @@ h1 small {
 }
 #news article {
   background-color: white;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   border-radius: 12px;
   padding: 20px;
 }
@@ -276,7 +276,7 @@ h1 small {
 }
 #news hr {
   border: 0;
-  border-bottom: 1px dashed #d0d0d0;
+  border-bottom: 1px dashed #e0e0e0;
   margin-inline: -20px;
   width: calc(100% + 40px);
 }
@@ -333,7 +333,7 @@ h1 small {
   grid-row: span 2;
 }
 #news .tiles img {
-  background-color: #d0d0d0;
+  background-color: #f0f0f0;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -344,7 +344,7 @@ h1 small {
 #news .more {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   padding: 8px 20px 8px;
   text-align: center;
@@ -352,12 +352,12 @@ h1 small {
   width: 100%;
 }
 #news .more:hover {
-  background-color: #f0f0f0;
+  opacity: 0.5;
 }
 
 #ironowa {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -377,7 +377,7 @@ h1 small {
   background-color: #f0f0f0;
   border: 0;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
@@ -402,7 +402,7 @@ h1 small {
 
 #tokiakari {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -422,7 +422,7 @@ h1 small {
   background-color: #f0f0f0;
   border: 0;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
@@ -436,7 +436,7 @@ h1 small {
 
 #about {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -465,7 +465,7 @@ h1 small {
 
 #release {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -490,7 +490,7 @@ h1 small {
 }
 #release li {
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   height: 48px;
   overflow: hidden;
   width: 48px;
@@ -501,7 +501,7 @@ h1 small {
 
 #discography {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -526,7 +526,7 @@ h1 small {
 #discography .tile {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   color: inherit;
   overflow: clip;
   position: relative;
@@ -565,7 +565,7 @@ h1 small {
 
 #verse {
   background-color: black;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: white;
   padding: 30px max(30px, 50% - 300px) 30px;
 }

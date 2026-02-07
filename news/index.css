@@ -7,14 +7,14 @@ html {
 }
 
 @keyframes flash {
-  from { background-color: #d0d0d0; }
+  from { background-color: #e0e0e0; }
   to { background-color: white; }
 }
 
 #nav {
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   display: flex;
   height: 70px;
@@ -45,7 +45,7 @@ html {
 
 #unofficial {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 9px max(30px, 50% - 300px) 11px;
 }
@@ -58,7 +58,7 @@ h1 {
   background-image: url("/news/hero.avif");
   background-position: center;
   background-size: cover;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: white;
   font-size: 2rem;
   line-height: 1;
@@ -85,7 +85,7 @@ section h2 {
 
 article {
   background-color: white;
-  box-shadow: 0 0 0 1px #d0d0d0;
+  box-shadow: 0 0 0 1px #e0e0e0;
   border-radius: 12px;
   padding: 20px;
 }
@@ -106,7 +106,7 @@ article h3 time {
 }
 article hr {
   border: 0;
-  border-bottom: 1px dashed #d0d0d0;
+  border-bottom: 1px dashed #e0e0e0;
   margin-inline: -20px;
   width: calc(100% + 40px);
 }
@@ -163,7 +163,7 @@ article .tile3x2 {
   grid-row: span 2;
 }
 article .tiles img {
-  background-color: #d0d0d0;
+  background-color: #f0f0f0;
   height: 100%;
   object-fit: cover;
   width: 100%;
