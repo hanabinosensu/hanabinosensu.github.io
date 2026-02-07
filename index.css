@@ -195,8 +195,11 @@ h1 small {
   margin-bottom: -4px;
 }
 #kisaragisai-2026 figure {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #d0d0d0;
   margin-inline: auto;
   max-width: 100%;
+  overflow: clip;
   width: 400px;
   /* <figure> has multiple subfigures */
   &:has(.lr, .lrl, .lrr, .lrlr) {
@@ -215,9 +218,12 @@ h1 small {
   grid-row: span 2;
 }
 #kisaragisai-2026 figure figcaption {
+  color: white;
   grid-column: 1 / -1;
-  margin-top: 2px;
+  margin-top: -40px;
+  padding: 8px;
   text-align: center;
+  text-shadow: 0 0 5px black, 0 0 5px black;
 }
 #kisaragisai-2026 figure img {
   background-color: #d0d0d0;
