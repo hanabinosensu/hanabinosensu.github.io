@@ -9,7 +9,7 @@ html {
 #nav {
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   display: flex;
   height: 70px;
@@ -47,7 +47,7 @@ html {
 
 #unofficial {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 9px max(30px, 50% - 300px) 11px;
 }
@@ -74,7 +74,7 @@ html {
 }
 #hero {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   height: 500px;
   width: 100%;
 }
@@ -103,7 +103,7 @@ h1 small {
 
 #synopsis {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -139,7 +139,7 @@ h1 small {
   writing-mode: vertical-rl;
 }
 #synopsis iframe {
-  background-color: #d0d0d0;
+  background-color: #f0f0f0;
   border: 0;
   display: block;
   margin-inline: clamp(-30px, 50% - 300px, 0px);
@@ -148,7 +148,7 @@ h1 small {
 
 #lyrics {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -178,7 +178,7 @@ h1 small {
 
 #translation {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -199,7 +199,7 @@ h1 small {
 }
 #translation details {
   background-color: white;
-  border-top: 1px dashed #d0d0d0;
+  border-top: 1px solid #e0e0e0;
 }
 #translation details summary {
   cursor: pointer;
@@ -228,7 +228,7 @@ h1 small {
 
 #album {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
@@ -267,7 +267,7 @@ h1 small {
   grid-row: span 2;
 }
 #album .tiles img {
-  background-color: #d0d0d0;
+  background-color: #f0f0f0;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -292,7 +292,7 @@ h1 small {
 
 #prizes {
   background-color: white;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
