@@ -140,17 +140,52 @@ main figure {
     grid-template-columns: 1fr 1fr;
   }
 }
+/* no subfigure */
+main figure .single {
+  border-radius: 12px;
+  overflow: clip;
+}
+/* one subfigure on left, another on right */
+main figure .lr {
+  overflow: clip;
+}
+main figure :nth-child(1 of .lr) {
+  border-radius: 12px 0 0 12px;
+}
+main figure :nth-child(2 of .lr) {
+  border-radius: 0 12px 12px 0;
+}
 /* two subfigures on left, one on right */
+main figure .lrl {
+  overflow: clip;
+}
+main figure :nth-child(1 of .lrl) {
+  border-radius: 12px 0 0 0;
+}
 main figure :nth-child(2 of .lrl) {
+  border-radius: 0 12px 12px 0;
   grid-row: span 2;
 }
+main figure :nth-child(3 of .lrl) {
+  border-radius: 0 0 0 12px;
+}
 /* one subfigure on left, two on right */
+main figure .lrr {
+  overflow: clip;
+}
 main figure :nth-child(1 of .lrr) {
+  border-radius: 12px 0 0 12px;
   grid-row: span 2;
+}
+main figure :nth-child(2 of .lrr) {
+  border-radius: 0 12px 0 0;
+}
+main figure :nth-child(3 of .lrr) {
+  border-radius: 0 0 12px 0;
 }
 main figure figcaption {
   grid-column: 1 / -1;
-  margin-top: 2px;
+  margin: 3px 0 5px;
   text-align: center;
 }
 main figure img {
