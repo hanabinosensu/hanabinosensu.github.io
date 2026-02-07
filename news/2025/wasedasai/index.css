@@ -135,6 +135,7 @@ main figure {
   /* <figure> has multiple subfigures */
   &:has(.lr, .lrl, .lrr, .lrlr) {
     display: grid;
+    gap: 2px;
     grid-auto-flow: dense;
     grid-template-columns: 1fr 1fr;
   }
@@ -153,11 +154,9 @@ main figure figcaption {
   text-align: center;
 }
 main figure img {
-  background-clip: content-box;
   background-color: #d0d0d0;
   height: 100%;
   object-fit: cover;
-  padding: 1px;
   width: 100%;
 }
 main figure a:hover {
