@@ -194,6 +194,45 @@ h1 small {
 #kisaragisai-2026 dd li {
   margin-bottom: -4px;
 }
+#kisaragisai-2026 .merchs {
+  display: flex;
+  gap: 1rem;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  overflow-x: scroll;
+  padding: 1px clamp(1px, 300px - 50%, 30px);
+  scroll-snap-type: x mandatory;
+  width: min(600px, 100vw);
+}
+#kisaragisai-2026 .merch {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 250px;
+  overflow: clip;
+  position: relative;
+  scroll-snap-align: center;
+  width: 200px;
+}
+#kisaragisai-2026 .merch img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#kisaragisai-2026 .merch small {
+  bottom: 38px;
+  font-size: 1rem;  /* not small actually */
+  left: 1rem;
+  position: absolute;
+}
+#kisaragisai-2026 .merch b {
+  bottom: 16px;
+  left: 1rem;
+  position: absolute;
+}
 #kisaragisai-2026 figure {
   margin-inline: auto;
   max-width: 100%;
