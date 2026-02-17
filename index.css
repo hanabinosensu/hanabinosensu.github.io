@@ -195,6 +195,8 @@ h1 small {
   margin-bottom: -4px;
 }
 #kisaragisai-2026 .merchs {
+  anchor-name: --kisaragisai-2026-merchs;
+  anchor-scope: all;
   display: flex;
   gap: 1rem;
   margin-inline: clamp(-30px, 50% - 300px, 0px);
@@ -202,6 +204,38 @@ h1 small {
   padding: 1px clamp(1px, 300px - 50%, 30px);
   scroll-snap-type: x mandatory;
   width: min(600px, 100vw);
+}
+#kisaragisai-2026 .merchs::scroll-button(*) {
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 50%;
+  height: 40px;
+  margin: 10px;
+  padding: 0;
+  position: absolute;
+  position-anchor: --kisaragisai-2026-merchs;
+  touch-action: manipulation;
+  width: 40px;
+}
+#kisaragisai-2026 .merchs::scroll-button(*):hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+#kisaragisai-2026 .merchs::scroll-button(*):disabled {
+  cursor: unset;
+  opacity: 0.4;
+}
+#kisaragisai-2026 .merchs::scroll-button(left) {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px'><path d='m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z' fill='%23000'/></svg>");
+  content: "";
+  position-area: center span-inline-end;
+}
+#kisaragisai-2026 .merchs::scroll-button(right) {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px'><path d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z' fill='%23000'/></svg>");
+  content: "";
+  position-area: center span-inline-start;
 }
 #kisaragisai-2026 .merch {
   border-radius: 12px;
