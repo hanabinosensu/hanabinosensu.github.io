@@ -112,7 +112,7 @@ main h2 time {
   color: white;
   display: inline-block;
   font-size: 1rem;
-  margin-inline-end: 8px;
+  margin-inline-end: 4px;
   padding-inline: 8px;
   &.mon, &.tue, &.wed, &.thu, &.fri { background-color: black; }
   &.sat { background-color: #6274be; }
