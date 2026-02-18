@@ -149,13 +149,13 @@ h1 small {
   font-size: 1rem;
   font-weight: bold;
 }
-#kisaragisai-2026 h3 .badge {
+#kisaragisai-2026 h3 small {
   background-color: black;
   border-radius: 12px;
   color: white;
-  display: inline-block;
+  font-size: 1rem;  /* not small actually */
   font-weight: normal;
-  margin-inline-end: 8px;
+  margin-inline-end: 4px;
   padding-inline: 8px;
 }
 #kisaragisai-2026 a {
@@ -374,7 +374,7 @@ h1 small {
 #news h3 time {
   color: #707070;
   font-weight: normal;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 #news hr {
   border: 0;
