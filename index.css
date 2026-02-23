@@ -243,8 +243,11 @@ h1 small {
   position: absolute;
 }
 #kisaragisai-2026 figure {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #e0e0e0;
   margin-inline: auto;
   max-width: 100%;
+  overflow: clip;
   width: 400px;
   /* <figure> has multiple subfigures */
   &:has(.lr, .lrl, .lrr, .lrlr) {
@@ -254,52 +257,17 @@ h1 small {
     grid-template-columns: 1fr 1fr;
   }
 }
-/* no subfigure */
-#kisaragisai-2026 figure .single {
-  border-radius: 12px;
-  overflow: clip;
-}
-/* one subfigure on left, another on right */
-#kisaragisai-2026 figure .lr {
-  overflow: clip;
-}
-#kisaragisai-2026 figure :nth-child(1 of .lr) {
-  border-radius: 12px 0 0 12px;
-}
-#kisaragisai-2026 figure :nth-child(2 of .lr) {
-  border-radius: 0 12px 12px 0;
-}
 /* two subfigures on left, one on right */
-#kisaragisai-2026 figure .lrl {
-  overflow: clip;
-}
-#kisaragisai-2026 figure :nth-child(1 of .lrl) {
-  border-radius: 12px 0 0 0;
-}
 #kisaragisai-2026 figure :nth-child(2 of .lrl) {
-  border-radius: 0 12px 12px 0;
   grid-row: span 2;
-}
-#kisaragisai-2026 figure :nth-child(3 of .lrl) {
-  border-radius: 0 0 0 12px;
 }
 /* one subfigure on left, two on right */
-#kisaragisai-2026 figure .lrr {
-  overflow: clip;
-}
 #kisaragisai-2026 figure :nth-child(1 of .lrr) {
-  border-radius: 12px 0 0 12px;
   grid-row: span 2;
-}
-#kisaragisai-2026 figure :nth-child(2 of .lrr) {
-  border-radius: 0 12px 0 0;
-}
-#kisaragisai-2026 figure :nth-child(3 of .lrr) {
-  border-radius: 0 0 12px 0;
 }
 #kisaragisai-2026 figure figcaption {
   grid-column: 1 / -1;
-  margin: 3px 0 5px;
+  padding: 3px 0 5px;
   text-align: center;
 }
 #kisaragisai-2026 figure img {
