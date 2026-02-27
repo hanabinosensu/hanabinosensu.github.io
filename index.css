@@ -6,9 +6,13 @@ html {
   text-align: justify;
 }
 
-@keyframes flash {
+@keyframes flash-ffffff {
   from { background-color: #e0e0e0; }
-  to { background-color: white; }
+  to { background-color: #ffffff; }
+}
+@keyframes flash-f0f0f0 {
+  from { background-color: #d0d0d0; }
+  to { background-color: #f0f0f0; }
 }
 
 #nav {
@@ -134,7 +138,7 @@ h1 small {
   padding: 30px max(30px, 50% - 300px) 30px;
 }
 #kisaragisai-2026:target {
-  animation: 400ms linear 200ms flash;
+  animation: 400ms linear 200ms flash-ffffff;
 }
 #kisaragisai-2026 > :not(h2, dl, hr, :last-child) {
   margin-bottom: 1rem;
@@ -287,7 +291,7 @@ h1 small {
   padding: 30px max(10px, 50% - 300px) 30px;
 }
 #news:target {
-  animation: 400ms linear 200ms flash;
+  animation: 400ms linear 200ms flash-f0f0f0;
 }
 #news > :not(h2, :last-child) {
   margin-bottom: 1rem;
@@ -305,7 +309,7 @@ h1 small {
   padding: 20px;
 }
 #news article:target {
-  animation: 400ms linear 200ms flash;
+  animation: 400ms linear 200ms flash-ffffff;
 }
 #news article > :not(:last-child) {
   margin-bottom: 1rem;
@@ -407,7 +411,7 @@ h1 small {
   padding: 30px max(30px, 50% - 300px) 30px;
 }
 #ironowa:target {
-  animation: 400ms linear 200ms flash;
+  animation: 400ms linear 200ms flash-ffffff;
 }
 #ironowa > :not(h2, :last-child) {
   margin-bottom: 1rem;
@@ -452,7 +456,7 @@ h1 small {
   padding: 30px max(30px, 50% - 300px) 30px;
 }
 #tokiakari:target {
-  animation: 400ms linear 200ms flash;
+  animation: 400ms linear 200ms flash-ffffff;
 }
 #tokiakari > :not(h2, :last-child) {
   margin-bottom: 1rem;
@@ -515,7 +519,7 @@ h1 small {
   padding: 30px max(30px, 50% - 300px) 30px;
 }
 #release:target {
-  animation: 400ms linear 200ms flash;
+  animation: 400ms linear 200ms flash-ffffff;
 }
 #release > :not(h2, :last-child) {
   margin-bottom: 1rem;
@@ -551,7 +555,7 @@ h1 small {
   padding: 30px max(30px, 50% - 300px) 30px;
 }
 #discography:target {
-  animation: 400ms linear 200ms flash;
+  animation: 400ms linear 200ms flash-ffffff;
 }
 #discography > :not(h2, :last-child) {
   margin-bottom: 1rem;
@@ -637,7 +641,7 @@ h1 small {
   padding: 30px max(30px, 50% - 300px) 30px;
 }
 #stickers:target {
-  animation: 400ms linear 200ms flash;
+  animation: 400ms linear 200ms flash-ffffff;
 }
 #stickers > :not(:last-child) {
   margin-bottom: 1rem;
