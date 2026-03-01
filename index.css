@@ -173,18 +173,19 @@ h1 small {
   margin: 24px -30px;
   width: calc(100% + 60px);
 }
-#kisaragisai-2026 .merchs {
-  anchor-name: --kisaragisai-2026-merchs;
+#kisaragisai-2026 .carousel {
+  anchor-name: --kisaragisai-2026-carousel;
   anchor-scope: all;
   display: flex;
   gap: 1rem;
+  list-style: none;
   margin-inline: clamp(-30px, 50% - 300px, 0px);
   overflow-x: scroll;
   padding: 1px clamp(1px, 300px - 50%, 30px);
   scroll-snap-type: x mandatory;
   width: min(600px, 100vw);
 }
-#kisaragisai-2026 .merchs::scroll-button(*) {
+#kisaragisai-2026 .carousel::scroll-button(*) {
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -194,29 +195,29 @@ h1 small {
   margin: 10px;
   padding: 0;
   position: absolute;
-  position-anchor: --kisaragisai-2026-merchs;
+  position-anchor: --kisaragisai-2026-carousel;
   touch-action: manipulation;
   width: 40px;
 }
-#kisaragisai-2026 .merchs::scroll-button(*):hover {
+#kisaragisai-2026 .carousel::scroll-button(*):hover {
   cursor: pointer;
   opacity: 0.4;
 }
-#kisaragisai-2026 .merchs::scroll-button(*):disabled {
+#kisaragisai-2026 .carousel::scroll-button(*):disabled {
   cursor: unset;
   opacity: 0.4;
 }
-#kisaragisai-2026 .merchs::scroll-button(left) {
+#kisaragisai-2026 .carousel::scroll-button(left) {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px'><path d='m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z' fill='%23000'/></svg>");
   content: "";
   position-area: center span-inline-end;
 }
-#kisaragisai-2026 .merchs::scroll-button(right) {
+#kisaragisai-2026 .carousel::scroll-button(right) {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px'><path d='M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z' fill='%23000'/></svg>");
   content: "";
   position-area: center span-inline-start;
 }
-#kisaragisai-2026 .merch {
+#kisaragisai-2026 .carousel li {
   border-radius: 12px;
   box-shadow: 0 0 0 1px #e0e0e0;
   flex-grow: 0;
@@ -227,7 +228,7 @@ h1 small {
   scroll-snap-align: center;
   width: 200px;
 }
-#kisaragisai-2026 .merch img {
+#kisaragisai-2026 .carousel img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -235,13 +236,13 @@ h1 small {
   top: 0;
   width: 100%;
 }
-#kisaragisai-2026 .merch small {
+#kisaragisai-2026 .carousel small {
   bottom: 38px;
   font-size: 1rem;  /* not small actually */
   left: 1rem;
   position: absolute;
 }
-#kisaragisai-2026 .merch b {
+#kisaragisai-2026 .carousel b {
   bottom: 16px;
   left: 1rem;
   position: absolute;
