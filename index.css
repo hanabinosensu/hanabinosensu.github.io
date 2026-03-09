@@ -567,22 +567,44 @@ h1 small {
   margin-bottom: 1.3rem;
   text-align: center;
 }
-#discography .tiles {
+#discography ul {
   display: grid;
   gap: 10px;
   grid-auto-rows: 100px;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  list-style: none;
+  padding-left: 0;
 }
-#discography .tile {
+#discography li {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 0 0 1px #e0e0e0;
-  color: inherit;
   overflow: clip;
+}
+#discography li a {
+  color: inherit;
+  display: block;
+  height: 100%;
   position: relative;
   text-decoration: none;
+  width: 100%;
 }
-#discography .tile img {
+#discography li small {
+  bottom: 30px;
+  font-size: 0.9rem;
+  left: 16px;
+  position: absolute;
+  text-shadow: 0 0 5px white;
+  z-index: 1;
+}
+#discography li b {
+  bottom: 8px;
+  left: 16px;
+  position: absolute;
+  text-shadow: 0 0 10px white;
+  z-index: 1;
+}
+#discography li img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -592,25 +614,11 @@ h1 small {
   top: 0;
   transition: opacity 100ms ease-out, scale 100ms ease-out;
   width: 100%;
+  z-index: 0;
 }
-#discography .tile:hover img {
+#discography li:hover img {
   opacity: 1.0;
   scale: 1.1;
-}
-#discography .tile small {
-  bottom: 30px;
-  font-size: 0.9rem;
-  left: 16px;
-  position: absolute;
-  text-shadow: 0 0 5px white;
-}
-#discography .tile h3 {
-  bottom: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  left: 16px;
-  position: absolute;
-  text-shadow: 0 0 10px white;
 }
 
 #verse {
