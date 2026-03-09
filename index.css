@@ -131,6 +131,29 @@ h1 small {
   transform: translate(-40px, -5px);
 }
 
+#join {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  padding: 30px max(30px, 50% - 300px) 30px;
+}
+#join > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#join h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#join ul {
+  padding-left: 20px;
+}
+#join a {
+  color: inherit;
+  word-break: break-all;
+}
+
 #kisaragisai-2026 {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
