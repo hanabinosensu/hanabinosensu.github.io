@@ -1,5 +1,5 @@
 # imported from https://github.com/actions/jekyll-build-pages#usage
-name: Build Jekyll site
+name: jekyll-gh-pages
 on:
   push:
     branches: ["main"]
