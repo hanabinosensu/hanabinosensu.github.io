@@ -30,3 +30,14 @@ document.querySelectorAll("#topics li").forEach((li, i, lis) => {
 document.querySelector("#topics li").getAnimations().forEach(animation => {
   animation.play();
 });
+
+/* Let users to choose video for #pickup */
+const select = document.querySelector("#pickup select");
+
+select.addEventListener("change", _ => {
+  document.querySelector("#pickup iframe").src = select.value;
+});
+
+/* Choose initial #pickup video randomly */
+select.selectedIndex = Math.floor(Math.random() * select.length);
+select.dispatchEvent(new Event("change"));
