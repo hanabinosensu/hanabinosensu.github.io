@@ -273,6 +273,35 @@ h1 small {
   word-break: break-all;
 }
 
+#about {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  padding: 30px max(30px, 50% - 300px) 30px;
+}
+#about > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#about h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#about b {
+  font-weight: bold;
+}
+#about figure {
+  margin-inline: auto;
+  max-width: 100%;
+}
+#about figure img {
+  margin-bottom: 4px;
+}
+#about figure figcaption {
+  text-align: center;
+}
+
 #ironowa {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
@@ -350,35 +379,6 @@ h1 small {
 }
 #tokiakari .spoiler:active {
   color: inherit;
-}
-
-#about {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
-  color: black;
-  padding: 30px max(30px, 50% - 300px) 30px;
-}
-#about > :not(h2, :last-child) {
-  margin-bottom: 1rem;
-}
-#about h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
-}
-#about b {
-  font-weight: bold;
-}
-#about figure {
-  margin-inline: auto;
-  max-width: 100%;
-}
-#about figure img {
-  margin-bottom: 4px;
-}
-#about figure figcaption {
-  text-align: center;
 }
 
 #release {
