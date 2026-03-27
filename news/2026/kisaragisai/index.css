@@ -167,6 +167,7 @@ main .carousel li::scroll-marker {
   border-radius: 50%;
   content: "";
   height: 6px;
+  transition: background-color 200ms;
   width: 6px;
 }
 main .carousel li::scroll-marker:target-current {
