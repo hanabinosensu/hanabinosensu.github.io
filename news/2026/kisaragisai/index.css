@@ -162,6 +162,16 @@ main .carousel li {
   scroll-snap-align: center;
   width: 200px;
 }
+main .carousel li::scroll-marker {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  width: 6px;
+}
+main .carousel li::scroll-marker:target-current {
+  background-color: black;
+}
 main .carousel img {
   height: 100%;
   left: 0;
