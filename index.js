@@ -1,11 +1,29 @@
-/* Show #nav bar after #topics leaves the viewport */
-new IntersectionObserver(([topics, ..._]) => {
-  const nav = document.getElementById("nav");
+/* Show #nav iff window height >= 420px and #topics is outside viewport */
+const debounce = f => { let t; return () => { clearTimeout(t); t = setTimeout(f, 50); }; };
 
-  if (topics.isIntersecting) {
-    nav.classList.remove("on");
+window.addEventListener("resize", debounce(() => {
+  const nav = document.getElementById("nav");
+  const topics = document.getElementById("topics");
+
+  if (window.innerHeight < 420) {
+    nav.style.top = "";  // hide
+  } else if (topics.getBoundingClientRect().bottom > 0) {
+    nav.style.top = "";  // hide
   } else {
-    nav.classList.add("on");
+    nav.style.top = "0px";  // show
+  }
+}));
+
+new IntersectionObserver(entries => {
+  const nav = document.getElementById("nav");
+  const topics = entries[0];
+
+  if (window.innerHeight < 420) {
+    nav.style.top = "";  // hide
+  } else if (topics.isIntersecting) {
+    nav.style.top = "";  // hide
+  } else {
+    nav.style.top = "0px";  // show
   }
 }, {}).observe(document.getElementById("topics"));
 
