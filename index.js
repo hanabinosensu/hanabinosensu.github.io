@@ -48,12 +48,14 @@ document.querySelector("#topics li").getAnimations().forEach(animation => {
 });
 
 /* Let users to choose video for #pickup */
-const select = document.querySelector("#pickup select");
+const pickup = {
+  select: document.getElementById("pickup-select"),
+  iframe: document.getElementById("pickup-iframe"),
+};
 
-select.addEventListener("change", _ => {
-  document.querySelector("#pickup iframe").src = select.value;
+pickup.select.addEventListener("change", _ => {
+  pickup.iframe.src = pickup.select.value;
 });
 
-/* Choose initial #pickup video randomly */
-select.selectedIndex = Math.floor(Math.random() * select.length);
-select.dispatchEvent(new Event("change"));
+pickup.select.selectedIndex = Math.floor(Math.random() * pickup.select.length);
+pickup.select.dispatchEvent(new Event("change"));
