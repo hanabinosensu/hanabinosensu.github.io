@@ -18,7 +18,7 @@ html {
   top: -70px;  /* controlled by js */
   transition: top 200ms ease-out;
   width: 100%;
-  z-index: 9;
+  z-index: 1;
 }
 #nav a:hover {
   opacity: 0.5;
