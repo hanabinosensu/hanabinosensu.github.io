@@ -1,0 +1,207 @@
+html {
+  font-family: serif;
+  font-feature-settings: "palt";
+  font-size: 1rem;
+  scroll-padding-top: 200px;
+  text-align: justify;
+}
+
+#nav {
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  display: flex;
+  height: 70px;
+  padding: 0 max(30px, 50% - 300px);
+  position: fixed;
+  top: -70px;  /* controlled by js */
+  transition: top 200ms ease-out;
+  width: 100%;
+  z-index: 1;
+}
+#nav a:hover {
+  opacity: 0.5;
+}
+#nav a.top {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+}
+#nav a.prev,
+#nav a.next {
+  color: inherit;
+  padding: 20px 8px;
+  text-decoration: none;
+}
+#nav a.prev::before {
+  content: "〈 ";
+}
+#nav a.next::after {
+  content: " 〉";
+}
+
+#unofficial {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  padding: 9px max(30px, 50% - 300px) 11px;
+}
+#unofficial a {
+  color: inherit;
+}
+
+h1 {
+  background-color: #f0f0f0;
+  background-image: url("/kasane/hero.avif");
+  background-position: 50% 30%;
+  background-size: cover;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 410px 30px 40px;
+  text-align: center;
+  width: 100%;
+}
+h1 small {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  transform: translate(-30px, -5px);
+}
+
+#synopsis {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  padding: 30px max(30px, 50% - 300px) 30px;
+}
+#synopsis > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+#synopsis iframe {
+  background-color: #f0f0f0;
+  border: 0;
+  display: block;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  width: min(600px, 100vw);
+}
+
+#budokan {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  padding: 30px max(30px, 50% - 300px) 30px;
+}
+#budokan > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#budokan h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#budokan iframe {
+  background-color: #f0f0f0;
+  border: 0;
+  display: block;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  width: min(600px, 100vw);
+}
+
+#naruko {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  padding: 30px max(30px, 50% - 300px) 30px;
+}
+#naruko > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#naruko h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#naruko img {
+  margin-inline: auto;
+  width: 300px;
+}
+
+#album {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  padding: 30px max(30px, 50% - 300px) 30px;
+}
+#album > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#album h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#album .tiles {
+  display: grid;
+  gap: 2px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+#album .tile1x2 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+#album .tile2x1 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+#album .tile2x2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#album .tile3x2 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+#album .tiles img {
+  background-color: #f0f0f0;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+#album .tiles a:hover {
+  opacity: 0.7;
+}
+
+#lyrics {
+  background-color: white;
+  color: black;
+  padding: 30px max(30px, 50% - 300px) 30px;
+}
+#lyrics > :not(h2, :last-child) {
+  margin-bottom: 1rem;
+}
+#lyrics h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+#lyrics ruby {
+  display: inline-flex;
+}
+#lyrics ruby rt {
+  font-size: 1rem;
+  font-variant: normal;
+  line-height: inherit;
+}
+#lyrics ruby rt::before {
+  content: "（";
+}
+#lyrics ruby rt::after {
+  content: "）";
+}
