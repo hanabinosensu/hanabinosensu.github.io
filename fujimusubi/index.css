@@ -105,9 +105,6 @@ h1 small {
   margin-bottom: 1.3rem;
   text-align: center;
 }
-#album a {
-  color: inherit;
-}
 #album .tiles {
   display: grid;
   gap: 2px;
