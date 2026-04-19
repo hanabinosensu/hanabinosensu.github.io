@@ -21,7 +21,6 @@ html {
 #nav {
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   display: flex;
   height: 70px;
@@ -46,7 +45,6 @@ html {
 
 #i18n {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   display: none;
   padding: 10px max(30px, 50% - 300px) 10px;
@@ -57,7 +55,6 @@ html {
 
 #unofficial {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 10px max(30px, 50% - 300px) 10px;
 }
@@ -66,11 +63,10 @@ html {
 }
 
 h1 {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   background-image: url("/hero.avif");
   background-position: 50% 30%;
   background-size: cover;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   font-size: 2rem;
   line-height: 1;
@@ -87,14 +83,13 @@ h1 small {
 
 #about {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
-  padding: 2rem max(30px, 50% - 300px) 2rem;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
 #about:target {
   animation: 400ms linear 200ms flash;
 }
-#about > :not(:last-child) {
+#about > * {
   margin-bottom: 1rem;
 }
 #about h2 {
@@ -105,9 +100,8 @@ h1 small {
   color: inherit;
 }
 #about figure {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   padding: 1rem 20px;
   width: min(600px, 100vw - 20px);
@@ -131,11 +125,10 @@ h1 small {
 
 #ironowa {
   background-color: #fff8f8;
-  border-bottom: 1px solid #e0e0e0;
   color: #623239;
-  padding: 2rem max(30px, 50% - 300px) 3rem;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
-#ironowa > :not(:last-child) {
+#ironowa > * {
   margin-bottom: 1rem;
 }
 #ironowa h2 {
@@ -146,17 +139,10 @@ h1 small {
   font-weight: bold;
   -webkit-text-fill-color: transparent;
 }
-#ironowa h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-top: 2rem;
-  text-align: center;
-}
 #ironowa iframe {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   border: 0;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
@@ -164,11 +150,10 @@ h1 small {
 
 #pickup {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
-  padding: 2rem max(30px, 50% - 300px) 3rem;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
-#pickup > :not(:last-child) {
+#pickup > * {
   margin-bottom: 1rem;
 }
 #pickup h2 {
@@ -184,25 +169,23 @@ h1 small {
   width: 100%;
 }
 #pickup iframe {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   border: 0;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
 }
 
 #release {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
-  color: black;
-  padding: 2rem max(30px, 50% - 300px) 3rem;
+  background-color: #f8fff8;
+  color: #002906;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
 #release:target {
   animation: 400ms linear 200ms flash;
 }
-#release > :not(:last-child) {
+#release > * {
   margin-bottom: 1rem;
 }
 #release h2 {
@@ -218,19 +201,20 @@ h1 small {
 }
 #release li {
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   height: 48px;
   overflow: hidden;
   width: 48px;
 }
+#release li:hover {
+  opacity: 0.6;
+}
 
 #amatsukasa {
   background-color: #f8faff;
-  border-bottom: 1px solid #e0e0e0;
   color: #00125b;
-  padding: 2rem max(30px, 50% - 300px) 2rem;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
-#amatsukasa > :not(h4, :last-child) {
+#amatsukasa > * {
   margin-bottom: 1rem;
 }
 #amatsukasa h2 {
@@ -244,8 +228,7 @@ h1 small {
 #amatsukasa h3 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-top: 2rem;
-  text-align: center;
+  margin-top: 24px;
 }
 #amatsukasa h4 {
   font-size: 1rem;
@@ -256,10 +239,9 @@ h1 small {
   color: inherit;
 }
 #amatsukasa iframe {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   border: 0;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
@@ -278,18 +260,17 @@ h1 small {
 #stickers {
   background-color: white;
   color: black;
-  padding: 2rem max(30px, 50% - 300px) 2rem;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
 #stickers:target {
   animation: 400ms linear 200ms flash;
 }
-#stickers > :not(:last-child) {
+#stickers > * {
   margin-bottom: 1rem;
 }
 #stickers a {
   background-color: #06c755;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #00b543;
   color: white;
   display: block;
   padding: 8px 10px;
