@@ -67,7 +67,7 @@ h1 small {
   display: block;
   font-size: 1rem;
   font-weight: normal;
-  transform: translate(-30px, -5px);
+  translate: -30px -5px;
 }
 
 #synopsis {
@@ -76,7 +76,7 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#synopsis > :not(:last-child) {
+#synopsis > * {
   margin-bottom: 1rem;
 }
 #synopsis iframe {
@@ -93,20 +93,16 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#budokan > :not(h2, :last-child) {
+#budokan > * {
   margin-bottom: 1rem;
 }
 #budokan h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #budokan iframe {
   background-color: #f0f0f0;
   border: 0;
   display: block;
-  filter: contrast(1.5);
   margin-inline: clamp(-30px, 50% - 300px, 0px);
   width: min(600px, 100vw);
 }
@@ -117,14 +113,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#naruko > :not(h2, :last-child) {
+#naruko > * {
   margin-bottom: 1rem;
 }
 #naruko h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #naruko img {
   margin-inline: auto;
@@ -137,14 +130,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#album > :not(h2, :last-child) {
+#album > * {
   margin-bottom: 1rem;
 }
 #album h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #album .tiles {
   display: grid;
@@ -183,14 +173,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#lyrics > :not(h2, :last-child) {
+#lyrics > * {
   margin-bottom: 1rem;
 }
 #lyrics h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #lyrics ruby {
   display: inline-flex;

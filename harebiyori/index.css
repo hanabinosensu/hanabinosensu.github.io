@@ -67,7 +67,7 @@ h1 small {
   display: block;
   font-size: 1rem;
   font-weight: normal;
-  transform: translate(-40px, -5px);
+  translate: -40px -5px;
 }
 
 #synopsis {
@@ -76,7 +76,7 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#synopsis > :not(:last-child) {
+#synopsis > * {
   margin-bottom: 1rem;
 }
 #synopsis iframe {
@@ -93,14 +93,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#catchy > :not(h2, :last-child) {
+#catchy > * {
   margin-bottom: 1rem;
 }
 #catchy h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 
 #lyrics {
@@ -109,14 +106,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#lyrics > :not(h2, :last-child) {
+#lyrics > * {
   margin-bottom: 1rem;
 }
 #lyrics h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 
 #album {
@@ -125,14 +119,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#album > :not(h2, :last-child) {
+#album > * {
   margin-bottom: 1rem;
 }
 #album h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #album .tiles {
   display: grid;
@@ -186,14 +177,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#prizes > :not(h2, :last-child) {
+#prizes > * {
   margin-bottom: 1rem;
 }
 #prizes h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #prizes ul {
   padding-left: 20px;
@@ -204,18 +192,14 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#credit > :not(h2, h3, :last-child) {
+#credit > * {
   margin-bottom: 1rem;
 }
 #credit h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #credit h3 {
   font-size: 1rem;
-  font-weight: bold;
   margin-bottom: 2px;
 }
 #credit a {

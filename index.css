@@ -119,7 +119,7 @@ h1 small {
   display: block;
   font-size: 1rem;
   font-weight: normal;
-  transform: translate(-40px, -5px);
+  translate: -40px -5px;
 }
 
 #news {
@@ -131,14 +131,12 @@ h1 small {
 #news:target {
   animation: 400ms linear 200ms flash;
 }
-#news > :not(h2, :last-child) {
+#news > * {
   margin-bottom: 1rem;
 }
 #news h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
+  padding-inline: 20px;
 }
 #news article {
   background-color: white;
@@ -154,7 +152,6 @@ h1 small {
 }
 #news h3 {
   font-size: 1rem;
-  font-weight: bold;
 }
 #news h3 time {
   color: #707070;
@@ -248,14 +245,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#pickup > :not(h2, :last-child) {
+#pickup > * {
   margin-bottom: 1rem;
 }
 #pickup h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #pickup select {
   background-color: transparent;
@@ -281,17 +275,11 @@ h1 small {
   color: black;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#about > :not(h2, :last-child) {
+#about > * {
   margin-bottom: 1rem;
 }
 #about h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
-}
-#about b {
-  font-weight: bold;
+  font-size: 1.7rem;
 }
 #about figure {
   margin-inline: auto;
@@ -313,14 +301,11 @@ h1 small {
 #ironowa:target {
   animation: 400ms linear 200ms flash;
 }
-#ironowa > :not(h2, :last-child) {
+#ironowa > * {
   margin-bottom: 1rem;
 }
 #ironowa h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #ironowa iframe {
   background-color: #f0f0f0;
@@ -358,14 +343,11 @@ h1 small {
 #release:target {
   animation: 400ms linear 200ms flash;
 }
-#release > :not(h2, :last-child) {
+#release > * {
   margin-bottom: 1rem;
 }
 #release h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #release ul {
   display: flex;
@@ -394,14 +376,11 @@ h1 small {
 #discography:target {
   animation: 400ms linear 200ms flash;
 }
-#discography > :not(h2, :last-child) {
+#discography > * {
   margin-bottom: 1rem;
 }
 #discography h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  text-align: center;
+  font-size: 1.7rem;
 }
 #discography ul {
   display: grid;
@@ -463,8 +442,11 @@ h1 small {
   color: white;
   padding: 30px max(30px, 50% - 300px) 30px;
 }
-#verse > :not(:last-child) {
+#verse > * {
   margin-bottom: 1rem;
+}
+#verse h2 {
+  font-size: 1.7rem;
 }
 #verse blockquote {
   display: flex;
@@ -473,11 +455,6 @@ h1 small {
   justify-content: center;
   width: 100%;
   writing-mode: vertical-rl;
-}
-#verse h2 {
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 2.6;
 }
 
 #stickers {
@@ -488,7 +465,7 @@ h1 small {
 #stickers:target {
   animation: 400ms linear 200ms flash;
 }
-#stickers > :not(:last-child) {
+#stickers > * {
   margin-bottom: 1rem;
 }
 #stickers a {
