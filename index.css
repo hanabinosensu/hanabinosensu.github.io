@@ -42,7 +42,7 @@ html {
   border-bottom: 1px solid #e0e0e0;
   color: black;
   display: none;
-  padding: 11px max(30px, 50% - 300px) 9px;
+  padding: 9px max(30px, 50% - 300px) 11px;
 }
 #i18n a {
   color: inherit;
