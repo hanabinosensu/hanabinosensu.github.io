@@ -65,10 +65,11 @@ h1 {
 
 section {
   background-color: white;
+  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 24px max(10px, 50% - 300px) 24px;
 }
-section > :not(:last-child) {
+section > * {
   margin-bottom: 1rem;
 }
 section h2 {
