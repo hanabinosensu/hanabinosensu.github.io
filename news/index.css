@@ -66,7 +66,7 @@ h1 {
 section {
   background-color: white;
   color: black;
-  padding: 15px max(10px, 50% - 300px) 15px;
+  padding: 24px max(10px, 50% - 300px) 24px;
 }
 section > :not(:last-child) {
   margin-bottom: 1rem;

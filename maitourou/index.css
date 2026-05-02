@@ -74,7 +74,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
   color: black;
-  padding: 30px max(30px, 50% - 300px) 30px;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
 #synopsis > * {
   margin-bottom: 1rem;
@@ -91,7 +91,7 @@ h1 small {
   background-color: white;
   border-bottom: 1px solid #e0e0e0;
   color: black;
-  padding: 30px max(30px, 50% - 300px) 30px;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
 #album > * {
   margin-bottom: 1rem;
@@ -148,7 +148,7 @@ h1 small {
 #lyrics {
   background-color: white;
   color: black;
-  padding: 30px max(30px, 50% - 300px) 30px;
+  padding: 24px max(30px, 50% - 300px) 24px;
 }
 #lyrics > * {
   margin-bottom: 1rem;
