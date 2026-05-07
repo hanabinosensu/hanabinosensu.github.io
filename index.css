@@ -7,14 +7,13 @@ html {
 }
 
 @keyframes flash {
-  from { background-color: #e0e0e0; }
-  to { background-color: white; }
+  from { opacity: 0.3; }
+  to { opacity: 1.0; }
 }
 
 #nav {
   align-items: center;
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   display: flex;
   height: 70px;
@@ -38,8 +37,7 @@ html {
 }
 
 #i18n {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   display: none;
   padding: 9px max(30px, 50% - 300px) 11px;
@@ -49,8 +47,7 @@ html {
 }
 
 #unofficial {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   padding: 9px max(30px, 50% - 300px) 11px;
 }
@@ -66,9 +63,8 @@ html {
   100% { opacity: 0; padding-block: 6px 14px; }
 }
 #topics {
-  background-color: white;
+  background-color: #f4f4f4;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   color: black;
   height: 44px;
   list-style: none;
@@ -120,7 +116,6 @@ html {
 }
 #hero {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   height: 500px;
   margin-top: -64px;
   width: 100%;
@@ -149,8 +144,7 @@ h1 small {
 }
 
 #news {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(10px, 50% - 300px) 24px;
 }
@@ -166,7 +160,6 @@ h1 small {
 }
 #news article {
   background-color: white;
-  box-shadow: 0 0 0 1px #e0e0e0;
   border-radius: 12px;
   padding: 20px;
 }
@@ -186,7 +179,7 @@ h1 small {
 }
 #news hr {
   border: 0;
-  border-bottom: 1px dashed #e0e0e0;
+  border-bottom: 1px solid #f4f4f4;
   margin-inline: -20px;
   width: calc(100% + 40px);
 }
@@ -243,7 +236,7 @@ h1 small {
   grid-row: span 2;
 }
 #news .tiles img {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -254,7 +247,6 @@ h1 small {
 #news .more {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   padding: 8px 20px 8px;
   text-align: center;
@@ -267,7 +259,6 @@ h1 small {
 
 #pickup {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -286,18 +277,16 @@ h1 small {
   width: 100%;
 }
 #pickup iframe {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   border: 0;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
 }
 
 #about {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -320,7 +309,6 @@ h1 small {
 
 #ironowa {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -334,10 +322,9 @@ h1 small {
   font-size: 1.7rem;
 }
 #ironowa iframe {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   border: 0;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
@@ -361,8 +348,7 @@ h1 small {
 }
 
 #release {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -384,7 +370,6 @@ h1 small {
 }
 #release li {
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   height: 48px;
   overflow: hidden;
   width: 48px;
@@ -393,9 +378,28 @@ h1 small {
   opacity: 0.6;
 }
 
-#discography {
+#verse {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#verse > * {
+  margin-bottom: 1rem;
+}
+#verse h2 {
+  font-size: 1.7rem;
+}
+#verse blockquote {
+  display: flex;
+  flex-direction: column;
+  font-feature-settings: normal;
+  justify-content: center;
+  width: 100%;
+  writing-mode: vertical-rl;
+}
+
+#discography {
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -419,7 +423,6 @@ h1 small {
 #discography li {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   overflow: clip;
 }
 #discography li a {
@@ -460,27 +463,6 @@ h1 small {
 #discography li:hover img {
   opacity: 1.0;
   scale: 1.1;
-}
-
-#verse {
-  background-color: black;
-  border-bottom: 1px solid #e0e0e0;
-  color: white;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#verse > * {
-  margin-bottom: 1rem;
-}
-#verse h2 {
-  font-size: 1.7rem;
-}
-#verse blockquote {
-  display: flex;
-  flex-direction: column;
-  font-feature-settings: normal;
-  justify-content: center;
-  width: 100%;
-  writing-mode: vertical-rl;
 }
 
 #stickers {
