@@ -47,6 +47,13 @@ document.querySelector("#topics li").getAnimations().forEach(animation => {
   animation.play();
 });
 
+/* Replay animation when #hero image is clicked */
+document.getElementById("hero").addEventListener("click", function (_) {
+  this.getAnimations({ subtree: true }).forEach(animation => {
+    animation.play();
+  });
+});
+
 /* Let users to choose video for #pickup */
 const pickup = {
   select: document.getElementById("pickup-select"),
