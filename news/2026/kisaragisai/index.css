@@ -8,8 +8,7 @@ html {
 
 #nav {
   align-items: center;
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   display: flex;
   height: 70px;
@@ -34,8 +33,7 @@ html {
 }
 
 #unofficial {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   padding: 9px max(30px, 50% - 300px) 11px;
 }
@@ -48,7 +46,6 @@ h1 {
   background-image: url("/news/2026/kisaragisai/hero.avif");
   background-position: 50% 30%;
   background-size: cover;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   font-size: 2rem;
   padding: 410px 30px 40px;
@@ -56,74 +53,82 @@ h1 {
   width: 100%;
 }
 
-main {
-  background-color: white;
+section {
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
-main > * {
+section > * {
   margin-bottom: 1rem;
 }
-main h2 {
-  font-size: 1.2rem;
-}
-main h2 small {
-  background-color: black;
-  border-radius: 12px;
-  color: white;
-  display: inline-block;
-  font-size: 1rem;
-  margin-inline-end: 4px;
-  padding-inline: 8px;
-}
-main hr {
-  border: 0;
-  border-bottom: 1px solid #e0e0e0;
-  margin: 24px -30px;
-  width: calc(100% + 60px);
-}
-main a {
+section a {
   color: inherit;
   word-break: break-all;
 }
-main figure {
+
+#merchandise {
+  background-color: #f4f4f4;
+}
+#kisaragisai {
+  background-color: white;
+}
+#whistlecafe {
+  background-color: #f4f4f4;
+}
+#orangecat {
+  background-color: white;
+}
+#crowdfunding {
+  background-color: #f4f4f4;
+}
+#paradox21 {
+  background-color: white;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h2 small {
+  font-size: 1rem;
+}
+
+figure {
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   margin-inline: auto;
   max-width: 100%;
   overflow: clip;
   width: 400px;
-  /* <figure> has multiple subfigures */
-  &:has(.lr, .lrl, .lrr, .lrlr) {
-    display: grid;
-    gap: 2px;
-    grid-auto-flow: dense;
-    grid-template-columns: 1fr 1fr;
-  }
+}
+/* <figure> has multiple subfigures */
+figure:has(.lr, .lrl, .lrr, .lrlr) {
+  display: grid;
+  gap: 2px;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr 1fr;
 }
 /* two subfigures on left, one on right */
-main figure :nth-child(2 of .lrl) {
+figure :nth-child(2 of .lrl) {
   grid-row: span 2;
 }
 /* one subfigure on left, two on right */
-main figure :nth-child(1 of .lrr) {
+figure :nth-child(1 of .lrr) {
   grid-row: span 2;
 }
-main figure figcaption {
+figure figcaption {
   grid-column: 1 / -1;
   padding: 3px 0 5px;
   text-align: center;
 }
-main figure img {
+figure img {
   background-color: #f0f0f0;
   height: 100%;
   object-fit: cover;
   width: 100%;
 }
-main figure a:hover {
+figure a:hover {
   opacity: 0.7;
 }
-main .carousel {
+
+.carousel {
   anchor-name: --carousel;
   anchor-scope: all;
   display: flex;
@@ -137,7 +142,7 @@ main .carousel {
   scroll-snap-type: x mandatory;
   width: min(600px, 100vw);
 }
-main .carousel::scroll-marker-group {
+.carousel::scroll-marker-group {
   display: flex;
   gap: 6px;
   padding: 16px;
@@ -145,9 +150,9 @@ main .carousel::scroll-marker-group {
   position-anchor: --carousel;
   position-area: bottom center;
 }
-main .carousel li {
+.carousel li {
+  background-color: white;
   border-radius: 12px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   flex-grow: 0;
   flex-shrink: 0;
   height: 250px;
@@ -156,7 +161,7 @@ main .carousel li {
   scroll-snap-align: center;
   width: 200px;
 }
-main .carousel li::scroll-marker {
+.carousel li::scroll-marker {
   background-color: #e0e0e0;
   border-radius: 50%;
   content: "";
@@ -164,10 +169,10 @@ main .carousel li::scroll-marker {
   transition: background-color 200ms;
   width: 6px;
 }
-main .carousel li::scroll-marker:target-current {
+.carousel li::scroll-marker:target-current {
   background-color: black;
 }
-main .carousel img {
+.carousel img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -175,13 +180,13 @@ main .carousel img {
   top: 0;
   width: 100%;
 }
-main .carousel small {
+.carousel small {
   bottom: 38px;
   font-size: 1rem;  /* not small actually */
   left: 1rem;
   position: absolute;
 }
-main .carousel b {
+.carousel b {
   bottom: 16px;
   left: 1rem;
   position: absolute;
