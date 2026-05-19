@@ -67,7 +67,7 @@ html {
 }
 #hero img {
   animation: 300ms ease-out both hero-img;
-  animation-delay: calc(500ms + 200ms * sibling-index());
+  animation-delay: calc(300ms + 150ms * sibling-index());
   border-radius: 12px;
   box-shadow: 0 0 0 1px white;
   rotate: 10deg;
