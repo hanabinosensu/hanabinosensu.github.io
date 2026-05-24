@@ -30,6 +30,13 @@ if (navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
+/* Replay #hero image animation upon click */
+document.getElementById("hero").addEventListener("click", function (_) {
+  this.getAnimations({ subtree: true }).forEach(animation => {
+    animation.play();
+  });
+});
+
 /* Let users to choose video for #pickup */
 const pickupSelect = document.getElementById("pickup-select");
 

@@ -62,15 +62,41 @@ html {
   color: inherit;
 }
 
+@keyframes hero-animation {
+  0% {
+    fill: transparent;
+    stroke-dashoffset: 660;
+    stroke-width: 1.2px;
+  }
+  70% {
+    fill: transparent;
+    stroke-dashoffset: 0;
+    stroke-width: 1.2px;
+  }
+  100% {
+    fill: black;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+  }
+}
+#hero {
+  background-color: white;
+  height: 500px;
+  width: 100%;
+}
+#hero path {
+  animation: 4s ease-in 0s both hero-animation;
+  stroke-dasharray: 660;
+  stroke: black;
+}
+
 h1 {
-  background-color: #f4f4f4;
-  background-image: url("/hero.avif");
-  background-position: 50% 30%;
-  background-size: cover;
+  background-color: transparent;
   color: black;
   font-size: 2rem;
   line-height: 1;
-  padding: 400px 30px 40px;
+  margin-top: -128px;  /* 40px + 1rem + 2rem + 40px */
+  padding: 40px 30px;
   text-align: center;
   width: 100%;
 }
