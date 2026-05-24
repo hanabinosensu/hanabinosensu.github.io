@@ -100,13 +100,13 @@ html {
 @keyframes hero-animation {
   0% {
     fill: transparent;
-    stroke-dashoffset: 1150;
-    stroke-width: 2.5px;
+    stroke-dashoffset: 660;
+    stroke-width: 1.2px;
   }
-  75% {
+  70% {
     fill: transparent;
     stroke-dashoffset: 0;
-    stroke-width: 2.5px;
+    stroke-width: 1.2px;
   }
   100% {
     fill: black;
@@ -121,8 +121,8 @@ html {
   width: 100%;
 }
 #hero path {
-  animation: 3s ease-in 0s both hero-animation;
-  stroke-dasharray: 1150;
+  animation: 4s ease-in 0s both hero-animation;
+  stroke-dasharray: 660;
   stroke: black;
 }
 
