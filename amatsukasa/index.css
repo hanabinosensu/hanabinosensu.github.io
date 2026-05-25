@@ -9,7 +9,6 @@ html {
 #nav {
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   display: flex;
   height: 70px;
@@ -42,7 +41,6 @@ html {
 
 #unofficial {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 9px max(30px, 50% - 300px) 11px;
 }
@@ -62,26 +60,25 @@ html {
     stroke-width: 2.5px;
   }
   100% {
-    fill: black;
+    fill: white;
     stroke-dashoffset: 0;
     stroke-width: 0;
   }
 }
 #hero {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: black;
   height: 500px;
   width: 100%;
 }
 #hero path {
   animation: 4s ease-in 0s both hero-animation;
   stroke-dasharray: 2500;
-  stroke: black;
+  stroke: white;
 }
 
 h1 {
   background-color: transparent;
-  color: black;
+  color: white;
   font-size: 2rem;
   line-height: 1;
   margin-top: -128px;  /* 40px + 1rem + 2rem + 40px */
@@ -98,7 +95,6 @@ h1 small {
 
 #synopsis {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -134,7 +130,7 @@ h1 small {
   writing-mode: vertical-rl;
 }
 #synopsis iframe {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   border: 0;
   display: block;
   margin-inline: clamp(-30px, 50% - 300px, 0px);
@@ -142,8 +138,7 @@ h1 small {
 }
 
 #lyrics {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -170,7 +165,6 @@ h1 small {
 
 #translation {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -188,7 +182,6 @@ h1 small {
   text-align: left;
 }
 #translation details {
-  background-color: white;
   border-top: 1px solid #e0e0e0;
 }
 #translation details summary {
@@ -199,7 +192,7 @@ h1 small {
   padding: 12px 0;
 }
 #translation details summary:hover {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
 }
 #translation details summary::before {
   background-color: black;
@@ -217,8 +210,7 @@ h1 small {
 }
 
 #album {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -251,7 +243,7 @@ h1 small {
   grid-row: span 2;
 }
 #album .tiles img {
-  background-color: #f0f0f0;
+  background-color: white;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -276,7 +268,6 @@ h1 small {
 
 #prizes {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -291,7 +282,7 @@ h1 small {
 }
 
 #credit {
-  background-color: white;
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
