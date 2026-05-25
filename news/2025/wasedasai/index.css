@@ -8,8 +8,7 @@ html {
 
 #nav {
   align-items: center;
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   display: flex;
   height: 70px;
@@ -34,8 +33,7 @@ html {
 }
 
 #unofficial {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
   color: black;
   padding: 9px max(30px, 50% - 300px) 11px;
 }
@@ -53,7 +51,6 @@ html {
 }
 h1 {
   background-color: white;
-  border-bottom: 1px solid #e0e0e0;
   color: black;
   font-size: 2rem;
   padding: 410px 30px 40px;
@@ -90,115 +87,125 @@ h1::after {
   z-index: 0;
 }
 
-main {
+#ce {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#ce > * {
+  margin-bottom: 1rem;
+}
+
+#eve {
   background-color: white;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
-main > * {
+#eve > * {
   margin-bottom: 1rem;
 }
-main h2 {
-  font-size: 1.2rem;
-}
-main h2 time {
-  border-radius: 12px;
-  color: white;
-  display: inline-block;
-  font-size: 1rem;
-  margin-inline-end: 4px;
-  padding-inline: 8px;
-  &.mon, &.tue, &.wed, &.thu, &.fri { background-color: black; }
-  &.sat { background-color: #6274be; }
-  &.sun { background-color: #d54640; }
-}
-main hr {
-  border: 0;
-  border-bottom: 1px solid #e0e0e0;
-  margin: 24px -30px;
-  width: calc(100% + 60px);
-}
-main a {
+#eve a {
   color: inherit;
   word-break: break-all;
 }
-main figure {
+
+#day1 {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#day1 > * {
+  margin-bottom: 1rem;
+}
+
+#day2 {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#day2 > * {
+  margin-bottom: 1rem;
+}
+
+#afterword {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#afterword > * {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h2 small {
+  font-size: 1rem;
+}
+
+figure {
   margin-inline: auto;
   max-width: 100%;
   width: 400px;
-  /* <figure> has multiple subfigures */
-  &:has(.lr, .lrl, .lrr, .lrlr) {
-    display: grid;
-    gap: 2px;
-    grid-auto-flow: dense;
-    grid-template-columns: 1fr 1fr;
-  }
+}
+/* <figure> has multiple subfigures */
+figure:has(.lr, .lrl, .lrr, .lrlr) {
+  display: grid;
+  gap: 2px;
+  grid-auto-flow: dense;
+  grid-template-columns: 1fr 1fr;
 }
 /* no subfigure */
-main figure .single {
+figure .single {
   border-radius: 12px;
-  overflow: clip;
 }
 /* one subfigure on left, another on right */
-main figure .lr {
-  overflow: clip;
-}
-main figure :nth-child(1 of .lr) {
+figure :nth-child(1 of .lr) {
   border-radius: 12px 0 0 12px;
 }
-main figure :nth-child(2 of .lr) {
+figure :nth-child(2 of .lr) {
   border-radius: 0 12px 12px 0;
 }
 /* two subfigures on left, one on right */
-main figure .lrl {
-  overflow: clip;
-}
-main figure :nth-child(1 of .lrl) {
+figure :nth-child(1 of .lrl) {
   border-radius: 12px 0 0 0;
 }
-main figure :nth-child(2 of .lrl) {
+figure :nth-child(2 of .lrl) {
   border-radius: 0 12px 12px 0;
   grid-row: span 2;
 }
-main figure :nth-child(3 of .lrl) {
+figure :nth-child(3 of .lrl) {
   border-radius: 0 0 0 12px;
 }
 /* one subfigure on left, two on right */
-main figure .lrr {
-  overflow: clip;
-}
-main figure :nth-child(1 of .lrr) {
+figure :nth-child(1 of .lrr) {
   border-radius: 12px 0 0 12px;
   grid-row: span 2;
 }
-main figure :nth-child(2 of .lrr) {
+figure :nth-child(2 of .lrr) {
   border-radius: 0 12px 0 0;
 }
-main figure :nth-child(3 of .lrr) {
+figure :nth-child(3 of .lrr) {
   border-radius: 0 0 12px 0;
 }
-main figure figcaption {
+figure figcaption {
   grid-column: 1 / -1;
-  margin: 3px 0 5px;
+  margin: 3px 0;
   text-align: center;
 }
-main figure img {
-  background-color: #f0f0f0;
+figure img {
+  background-color: #f4f4f4;
   height: 100%;
   object-fit: cover;
   width: 100%;
 }
-main figure a:hover {
-  opacity: 0.7;
-}
-main blockquote {
+
+blockquote {
   display: flex;
   flex-direction: column;
   font-feature-settings: normal;
   justify-content: center;
   margin-top: 1.5rem;
-  position: relative;
   width: 100%;
   writing-mode: vertical-rl;
-  z-index: 1;
 }
