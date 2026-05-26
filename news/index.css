@@ -120,7 +120,7 @@ article h3 time {
 }
 article hr {
   border: 0;
-  border-bottom: 1px dashed #e0e0e0;
+  border-bottom: 1px solid #f4f4f4;
   margin-inline: -20px;
   width: calc(100% + 40px);
 }
@@ -177,7 +177,7 @@ article .tile3x2 {
   grid-row: span 2;
 }
 article .tiles img {
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   height: 100%;
   object-fit: cover;
   width: 100%;

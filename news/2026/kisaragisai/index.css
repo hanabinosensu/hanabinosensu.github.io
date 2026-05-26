@@ -53,37 +53,6 @@ h1 {
   width: 100%;
 }
 
-section {
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-section > * {
-  margin-bottom: 1rem;
-}
-section a {
-  color: inherit;
-  word-break: break-all;
-}
-
-#merchandise {
-  background-color: #f4f4f4;
-}
-#kisaragisai {
-  background-color: white;
-}
-#whistlecafe {
-  background-color: #f4f4f4;
-}
-#orangecat {
-  background-color: white;
-}
-#crowdfunding {
-  background-color: #f4f4f4;
-}
-#paradox21 {
-  background-color: white;
-}
-
 h2 {
   font-size: 1.5rem;
 }
@@ -119,7 +88,6 @@ figure figcaption {
   text-align: center;
 }
 figure img {
-  background-color: #f0f0f0;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -190,4 +158,75 @@ figure a:hover {
   bottom: 16px;
   left: 1rem;
   position: absolute;
+}
+
+#merchandise {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#merchandise > * {
+  margin-bottom: 1rem;
+}
+
+#kisaragisai {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#kisaragisai > * {
+  margin-bottom: 1rem;
+}
+#kisaragisai figure img {
+  background-color: #f4f4f4;
+}
+
+#whistlecafe {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#whistlecafe > * {
+  margin-bottom: 1rem;
+}
+#whistlecafe figure img {
+  background-color: white;
+}
+
+#orangecat {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#orangecat > * {
+  margin-bottom: 1rem;
+}
+#orangecat figure img {
+  background-color: #f4f4f4;
+}
+
+#crowdfunding {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#crowdfunding > * {
+  margin-bottom: 1rem;
+}
+#crowdfunding a {
+  color: inherit;
+  word-break: break-all;
+}
+
+#paradox21 {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#paradox21 > * {
+  margin-bottom: 1rem;
+}
+#paradox21 a {
+  color: inherit;
+  word-break: break-all;
 }

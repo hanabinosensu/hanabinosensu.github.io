@@ -87,55 +87,6 @@ h1::after {
   z-index: 0;
 }
 
-#ce {
-  background-color: #f4f4f4;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#ce > * {
-  margin-bottom: 1rem;
-}
-
-#eve {
-  background-color: white;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#eve > * {
-  margin-bottom: 1rem;
-}
-#eve a {
-  color: inherit;
-  word-break: break-all;
-}
-
-#day1 {
-  background-color: #f4f4f4;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#day1 > * {
-  margin-bottom: 1rem;
-}
-
-#day2 {
-  background-color: white;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#day2 > * {
-  margin-bottom: 1rem;
-}
-
-#afterword {
-  background-color: #f4f4f4;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#afterword > * {
-  margin-bottom: 1rem;
-}
-
 h2 {
   font-size: 1.5rem;
 }
@@ -194,7 +145,6 @@ figure figcaption {
   text-align: center;
 }
 figure img {
-  background-color: #f4f4f4;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -208,4 +158,62 @@ blockquote {
   margin-top: 1.5rem;
   width: 100%;
   writing-mode: vertical-rl;
+}
+
+#ce {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#ce > * {
+  margin-bottom: 1rem;
+}
+
+#eve {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#eve > * {
+  margin-bottom: 1rem;
+}
+#eve a {
+  color: inherit;
+  word-break: break-all;
+}
+#eve figure img {
+  background-color: #f4f4f4;
+}
+
+#day1 {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#day1 > * {
+  margin-bottom: 1rem;
+}
+#day1 figure img {
+  background-color: white;
+}
+
+#day2 {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#day2 > * {
+  margin-bottom: 1rem;
+}
+#day2 figure img {
+  background-color: #f4f4f4;
+}
+
+#afterword {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#afterword > * {
+  margin-bottom: 1rem;
 }
