@@ -30,6 +30,38 @@ if (!navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
+/* Live update #next */
+document.getElementById("next").addEventListener("animationstart", e => {
+  const next = e.target;
+  const now = Date.now();
+
+  if (now < Date.parse("2026-06-02T00:00+09:00")) {
+    console.error(`now < Date.parse("2026-06-02T00:00+09:00")`);
+  } else if (now < Date.parse("2026-06-03T00:00+09:00")) {
+    next.innerHTML = `<a href="#shonan-2026">湘南よさこい</a>まであと5日 （06/07）`;
+  } else if (now < Date.parse("2026-06-04T00:00+09:00")) {
+    next.innerHTML = `<a href="#shonan-2026">湘南よさこい</a>まであと4日 （06/07）`;
+  } else if (now < Date.parse("2026-06-05T00:00+09:00")) {
+    next.innerHTML = `<a href="#shonan-2026">湘南よさこい</a>まであと3日 （06/07）`;
+  } else if (now < Date.parse("2026-06-06T00:00+09:00")) {
+    next.innerHTML = `<a href="#shonan-2026">湘南よさこい</a>まであと2日 （06/07）`;
+  } else if (now < Date.parse("2026-06-07T00:00+09:00")) {
+    next.innerHTML = `<a href="#shonan-2026">湘南よさこい</a>まであと1日 （06/07）`;
+  } else if (now < Date.parse("2026-06-07T10:00+09:00")) {
+    next.innerHTML = `次のお祭り: <a href="#shonan-2026">第21回湘南よさこい祭り （本日）</a>`;
+  } else if (now < Date.parse("2026-06-07T12:56+09:00")) {
+    next.innerHTML = `次の演舞: <a href="#shonan-2026">ストリート演舞 （12:51）</a>`;
+  } else if (now < Date.parse("2026-06-07T15:15+09:00")) {
+    next.innerHTML = `次の演舞: <a href="#shonan-2026">ステージ演舞 （15:10）</a>`;
+  } else if (now < Date.parse("2026-06-07T17:00+09:00")) {
+    next.innerHTML = `次のお祭り: <a href="#shonan-2026">第21回湘南よさこい祭り （本日）</a>`;
+  } else if (now < Date.parse("2026-06-18T00:00+09:00")) {
+    next.innerHTML = `次のお祭り: よさこい×和太鼓パフォーマンス （06/17）`;
+  } else {
+    console.error(`now >= Date.parse("2026-06-18T00:00+09:00")`);
+  }
+});
+
 /* Infinite #topics slideshow */
 document.getElementById("topics").scrollTo(0, 0);
 
