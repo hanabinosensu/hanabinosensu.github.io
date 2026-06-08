@@ -143,6 +143,51 @@ h1 small {
   translate: -40px -5px;
 }
 
+#tokiakari {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#tokiakari > * {
+  margin-bottom: 1rem;
+}
+#tokiakari h2 {
+  font-size: 1.7rem;
+}
+#tokiakari img {
+  border-radius: 12px;
+  margin-inline: auto;
+  width: 400px;
+}
+
+#pickup {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#pickup > * {
+  margin-bottom: 1rem;
+}
+#pickup h2 {
+  font-size: 1.7rem;
+}
+#pickup select {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  padding: 0;
+  width: 100%;
+}
+#pickup iframe {
+  background-color: #f4f4f4;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
+}
+
 #news {
   background-color: #f4f4f4;
   color: black;
@@ -257,36 +302,8 @@ h1 small {
   opacity: 0.5;
 }
 
-#pickup {
-  background-color: white;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#pickup > * {
-  margin-bottom: 1rem;
-}
-#pickup h2 {
-  font-size: 1.7rem;
-}
-#pickup select {
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  color: inherit;
-  padding: 0;
-  width: 100%;
-}
-#pickup iframe {
-  background-color: #f4f4f4;
-  border: 0;
-  border-radius: 12px;
-  display: block;
-  margin-inline: clamp(-20px, 50% - 300px, 0px);
-  width: min(600px, 100vw - 20px);
-}
-
 #about {
-  background-color: #f4f4f4;
+  background-color: white;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -305,46 +322,6 @@ h1 small {
 }
 #about figure figcaption {
   text-align: center;
-}
-
-#ironowa {
-  background-color: white;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#ironowa:target {
-  animation: 400ms linear 200ms flash;
-}
-#ironowa > * {
-  margin-bottom: 1rem;
-}
-#ironowa h2 {
-  font-size: 1.7rem;
-}
-#ironowa iframe {
-  background-color: #f4f4f4;
-  border: 0;
-  border-radius: 12px;
-  display: block;
-  margin-inline: clamp(-20px, 50% - 300px, 0px);
-  width: min(600px, 100vw - 20px);
-}
-#ironowa ruby {
-  display: inline-flex;
-}
-#ironowa ruby rt {
-  font-size: 1rem;
-  font-variant: normal;
-  line-height: inherit;
-}
-#ironowa ruby rt::before {
-  content: "（";
-}
-#ironowa ruby rt::after {
-  content: "）";
-}
-#ironowa a {
-  color: inherit;
 }
 
 #release {
