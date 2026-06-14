@@ -154,10 +154,25 @@ h1 small {
 #tokiakari h2 {
   font-size: 1.7rem;
 }
-#tokiakari img {
+#tokiakari iframe {
+  background-color: white;
+  border: 0;
   border-radius: 12px;
-  margin-inline: auto;
-  width: 400px;
+  display: block;
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
+}
+#tokiakari figure {
+  margin-inline: max(-20px, 50% - 200px);
+  width: min(400px, 100vw - 20px);
+}
+#tokiakari figcaption {
+  margin: 3px 0;
+  text-align: center;
+}
+#tokiakari img {
+  background-color: white;
+  border-radius: 12px;
 }
 
 #pickup {
