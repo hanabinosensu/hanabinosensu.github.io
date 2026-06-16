@@ -78,9 +78,10 @@ h1 small {
 #synopsis iframe {
   background-color: white;
   border: 0;
+  border-radius: 12px;
   display: block;
-  margin-inline: clamp(-30px, 50% - 300px, 0px);
-  width: min(600px, 100vw);
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
 }
 
 #lyrics {
