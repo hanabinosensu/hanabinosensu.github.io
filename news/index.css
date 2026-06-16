@@ -2,7 +2,11 @@ html {
   font-family: serif;
   font-feature-settings: "palt";
   font-size: 1rem;
-  scroll-padding-top: 200px;
+  /*
+   * All other pages have 74px scroll padding but
+   * we don't because section has 4px top margin.
+   */
+  scroll-padding-top: 70px;
   text-align: justify;
 }
 

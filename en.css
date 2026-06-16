@@ -10,7 +10,7 @@ html {
   font-family: "Google Sans Flex", sans-serif;
   font-feature-settings: "kern";
   font-size: 1rem;
-  scroll-padding-top: 200px;
+  scroll-padding-top: 74px;
 }
 
 @keyframes flash {
