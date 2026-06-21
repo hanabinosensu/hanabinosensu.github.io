@@ -30,24 +30,6 @@ if (!navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
-/* Unattended update #next */
-document.getElementById("next").addEventListener("animationstart", e => {
-  const next = e.target;
-  const now = Date.now();
-
-  if (now < Date.parse("2026-06-16T00:00+09:00")) {
-    console.error(`now < Date.parse("2026-06-16T00:00+09:00")`);
-  } else if (now < Date.parse("2026-06-17T19:00+09:00")) {
-    next.innerHTML = `次: <a href="#yosakoixwadaiko-2026">よさこい×和太鼓パフォーマンス （06/17）</a>`;
-  } else if (now < Date.parse("2026-06-26T19:30+09:00")) {
-    next.innerHTML = `次: <a href="#getappers-mugen">下駄単独公演『夢幻』コラボ （06/26）</a>`;
-  } else if (now < Date.parse("2026-07-19T20:00+09:00")) {
-    next.innerHTML = `次: <a href="#hikarigaoka-2026">よさこい祭りin光が丘公園 （07/18,19）</a>`;
-  } else {
-    console.error(`now >= Date.parse("2026-07-19T20:00+09:00")`);
-  }
-});
-
 /* Infinite #topics slideshow */
 document.getElementById("topics").scrollTo(0, 0);
 
