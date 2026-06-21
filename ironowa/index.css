@@ -203,5 +203,9 @@ h1 small {
   color: inherit;
 }
 #credit ul {
-  padding-left: 20px;
+  display: inline-flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
 }
