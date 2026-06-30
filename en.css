@@ -107,8 +107,28 @@ h1 small {
   transform: translateY(-3px);
 }
 
-#pickup {
+#tokiakari {
   background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#tokiakari > * {
+  margin-bottom: 1rem;
+}
+#tokiakari h2 {
+  font-size: 2rem;
+}
+#tokiakari iframe {
+  background-color: white;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
+}
+
+#pickup {
+  background-color: white;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -127,7 +147,7 @@ h1 small {
   width: 100%;
 }
 #pickup iframe {
-  background-color: white;
+  background-color: #f4f4f4;
   border: 0;
   border-radius: 12px;
   display: block;
@@ -136,7 +156,7 @@ h1 small {
 }
 
 #about {
-  background-color: white;
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
@@ -153,7 +173,7 @@ h1 small {
   color: inherit;
 }
 #about figure {
-  background-color: #f4f4f4;
+  background-color: white;
   border-radius: 12px;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   padding: 1rem 20px;
@@ -177,54 +197,48 @@ h1 small {
 }
 
 #ironowa {
-  background-color: #f4f4f4;
+  background-color: white;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
 #ironowa > * {
   margin-bottom: 1rem;
 }
+#ironowa summary {
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  padding-inline: clamp(0px, 300px - 50%, 30px);
+}
+#ironowa[open] summary {
+  margin-bottom: 1rem;
+}
+#ironowa summary::before {
+  background-color: black;
+  clip-path: polygon(7px 14px, 7px 21px, 0px 21px, 0px 27px, 7px 27px, 7px 34px, 13px 34px, 13px 27px, 20px 27px, 20px 21px, 13px 21px, 13px 14px);
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  height: 48px;
+  margin-right: 16px;
+  width: 20px;
+}
+#ironowa[open] summary::before {
+  clip-path: polygon(0px 21px, 0px 27px, 20px 27px, 20px 21px);
+}
 #ironowa h2 {
   font-size: 2rem;
+  flex: 1;
 }
 #ironowa iframe {
-  background-color: white;
+  background-color: #f4f4f4;
   border: 0;
   border-radius: 12px;
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
-}
-
-#release {
-  background-color: white;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#release:target {
-  animation: 400ms linear 200ms flash;
-}
-#release > * {
-  margin-bottom: 1rem;
-}
-#release h2 {
-  font-size: 2rem;
-}
-#release ul {
-  display: flex;
-  column-gap: 10px;
-  justify-content: center;
-  list-style: none;
-  padding-left: 0;
-}
-#release li {
-  border-radius: 12px;
-  height: 48px;
-  overflow: hidden;
-  width: 48px;
-}
-#release li:hover {
-  opacity: 0.6;
 }
 
 #amatsukasa {
@@ -234,6 +248,30 @@ h1 small {
 }
 #amatsukasa > * {
   margin-bottom: 1rem;
+}
+#amatsukasa summary {
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  margin-inline: clamp(-30px, 50% - 300px, 0px);
+  padding-inline: clamp(0px, 300px - 50%, 30px);
+}
+#amatsukasa[open] summary {
+  margin-bottom: 1rem;
+}
+#amatsukasa summary::before {
+  background-color: black;
+  clip-path: polygon(7px 14px, 7px 21px, 0px 21px, 0px 27px, 7px 27px, 7px 34px, 13px 34px, 13px 27px, 20px 27px, 20px 21px, 13px 21px, 13px 14px);
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  height: 48px;
+  margin-right: 16px;
+  width: 20px;
+}
+#amatsukasa[open] summary::before {
+  clip-path: polygon(0px 21px, 0px 27px, 20px 27px, 20px 21px);
 }
 #amatsukasa h2 {
   font-size: 2rem;
@@ -268,8 +306,39 @@ h1 small {
   content: ",";
 }
 
-#stickers {
+#release {
   background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#release:target {
+  animation: 400ms linear 200ms flash;
+}
+#release > * {
+  margin-bottom: 1rem;
+}
+#release h2 {
+  font-size: 2rem;
+}
+#release ul {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+#release li {
+  border-radius: 12px;
+  height: 48px;
+  overflow: hidden;
+  width: 48px;
+}
+#release li:hover {
+  opacity: 0.6;
+}
+
+#stickers {
+  background-color: #f4f4f4;
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
