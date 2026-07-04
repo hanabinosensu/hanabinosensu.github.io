@@ -172,22 +172,14 @@ h1 small {
 #about a {
   color: inherit;
 }
-#about figure {
-  background-color: white;
-  border-radius: 12px;
-  margin-inline: clamp(-20px, 50% - 300px, 0px);
-  padding: 1rem 20px;
-  width: min(600px, 100vw - 20px);
-}
-#about figure img {
+#about img {
   margin-inline: auto;
   width: 100%;
 }
-#about figure figcaption {
-  margin-top: 10px;
+#about figcaption {
   text-align: center;
 }
-#about figure figcaption::before {
+#about figcaption::before {
   content: "▲ ";
 }
 
