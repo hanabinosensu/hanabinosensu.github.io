@@ -187,13 +187,8 @@ h1 small {
   margin-top: 10px;
   text-align: center;
 }
-#about figure blockquote::before {
-  content: "“";
-  margin-right: -3px;
-}
-#about figure blockquote::after {
-  content: "”";
-  margin-left: -3px;
+#about figure figcaption::before {
+  content: "▲ ";
 }
 
 #ironowa {
