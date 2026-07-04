@@ -248,6 +248,9 @@ h1 small {
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
+#pickup:target {
+  animation: 400ms linear 200ms flash;
+}
 #pickup > * {
   margin-bottom: 1rem;
 }
