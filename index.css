@@ -143,72 +143,6 @@ h1 small {
   translate: -40px -5px;
 }
 
-#tokiakari {
-  background-color: #f4f4f4;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#tokiakari:target {
-  animation: 400ms linear 200ms flash;
-}
-#tokiakari > * {
-  margin-bottom: 1rem;
-}
-#tokiakari h2 {
-  font-size: 1.7rem;
-}
-#tokiakari iframe {
-  background-color: white;
-  border: 0;
-  border-radius: 12px;
-  display: block;
-  margin-inline: clamp(-20px, 50% - 300px, 0px);
-  width: min(600px, 100vw - 20px);
-}
-#tokiakari iframe:target {
-  animation: 400ms linear 200ms flash;
-}
-#tokiakari figure {
-  margin-inline: max(-20px, 50% - 200px);
-  width: min(400px, 100vw - 20px);
-}
-#tokiakari figcaption {
-  margin: 3px 0;
-  text-align: center;
-}
-#tokiakari img {
-  background-color: white;
-  border-radius: 12px;
-}
-
-#pickup {
-  background-color: white;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#pickup > * {
-  margin-bottom: 1rem;
-}
-#pickup h2 {
-  font-size: 1.7rem;
-}
-#pickup select {
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  color: inherit;
-  padding: 0;
-  width: 100%;
-}
-#pickup iframe {
-  background-color: #f4f4f4;
-  border: 0;
-  border-radius: 12px;
-  display: block;
-  margin-inline: clamp(-20px, 50% - 300px, 0px);
-  width: min(600px, 100vw - 20px);
-}
-
 #news {
   background-color: #f4f4f4;
   color: black;
@@ -321,6 +255,72 @@ h1 small {
 }
 #news .more:hover {
   opacity: 0.5;
+}
+
+#tokiakari {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#tokiakari:target {
+  animation: 400ms linear 200ms flash;
+}
+#tokiakari > * {
+  margin-bottom: 1rem;
+}
+#tokiakari h2 {
+  font-size: 1.7rem;
+}
+#tokiakari iframe {
+  background-color: #f4f4f4;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
+}
+#tokiakari iframe:target {
+  animation: 400ms linear 200ms flash;
+}
+#tokiakari figure {
+  margin-inline: max(-20px, 50% - 200px);
+  width: min(400px, 100vw - 20px);
+}
+#tokiakari figcaption {
+  margin: 3px 0;
+  text-align: center;
+}
+#tokiakari img {
+  background-color: #f4f4f4;
+  border-radius: 12px;
+}
+
+#pickup {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#pickup > * {
+  margin-bottom: 1rem;
+}
+#pickup h2 {
+  font-size: 1.7rem;
+}
+#pickup select {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  padding: 0;
+  width: 100%;
+}
+#pickup iframe {
+  background-color: white;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
 }
 
 #about {
