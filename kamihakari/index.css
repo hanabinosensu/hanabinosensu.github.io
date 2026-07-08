@@ -6,36 +6,36 @@ html {
   text-align: justify;
 }
 
-#nav {
+#header {
   align-items: center;
   background-color: #f4f4f4;
   color: black;
   display: flex;
   height: 70px;
-  padding: 0 max(22px, 50% - 300px);  /* #nav a adds 8px padding */
+  padding: 0 max(22px, 50% - 300px);  /* #header a adds 8px padding */
   position: fixed;
   top: -70px;  /* controlled by js */
   transition: top 200ms ease-out;
   width: 100%;
   z-index: 1;
 }
-#nav a:hover {
+#header a:hover {
   opacity: 0.5;
 }
-#nav a.top {
+#header a.top {
   aspect-ratio: 1 / 1;
   height: 100%;
 }
-#nav a.prev,
-#nav a.next {
+#header a.prev,
+#header a.next {
   color: inherit;
   padding: 20px 8px;
   text-decoration: none;
 }
-#nav a.prev::before {
+#header a.prev::before {
   content: "〈 ";
 }
-#nav a.next::after {
+#header a.next::after {
   content: " 〉";
 }
 

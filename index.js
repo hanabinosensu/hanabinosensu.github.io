@@ -1,27 +1,27 @@
-/* Show #nav iff window height >= 420px and #topics is outside viewport */
+/* Show #header iff window height >= 420px and #topics is outside viewport */
 window.matchMedia("(height < 420px)").addEventListener("change", e => {
-  const nav = document.getElementById("nav");
+  const header = document.getElementById("header");
   const topics = document.getElementById("topics");
 
   if (e.matches) {
-    nav.style.top = "";  // hide
+    header.style.top = "";  // hide
   } else if (topics.getBoundingClientRect().bottom > 0) {
-    nav.style.top = "";  // hide
+    header.style.top = "";  // hide
   } else {
-    nav.style.top = "0px";  // show
+    header.style.top = "0px";  // show
   }
 });
 
 new IntersectionObserver(entries => {
-  const nav = document.getElementById("nav");
+  const header = document.getElementById("header");
   const topics = entries[0];
 
   if (window.innerHeight < 420) {
-    nav.style.top = "";  // hide
+    header.style.top = "";  // hide
   } else if (topics.isIntersecting) {
-    nav.style.top = "";  // hide
+    header.style.top = "";  // hide
   } else {
-    nav.style.top = "0px";  // show
+    header.style.top = "0px";  // show
   }
 }, {}).observe(document.getElementById("topics"));
 
