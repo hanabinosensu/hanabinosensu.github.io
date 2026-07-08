@@ -17,7 +17,7 @@ html {
   color: black;
   display: flex;
   height: 70px;
-  padding: 0 max(30px, 50% - 300px);
+  padding: 0 max(22px, 50% - 300px);  /* #nav a adds 8px padding */
   position: fixed;
   top: -70px;  /* controlled by js */
   transition: top 200ms ease-out;
