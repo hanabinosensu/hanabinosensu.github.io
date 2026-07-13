@@ -62,33 +62,37 @@ html {
   color: inherit;
 }
 
-@keyframes hero-animation {
-  0% {
-    fill: transparent;
-    stroke-dashoffset: 660;
-    stroke-width: 1.2px;
-  }
-  70% {
-    fill: transparent;
-    stroke-dashoffset: 0;
-    stroke-width: 1.2px;
-  }
-  100% {
-    fill: black;
-    stroke-dashoffset: 0;
-    stroke-width: 0;
-  }
-}
 #hero {
   background-color: white;
   height: 500px;
   width: 100%;
 }
-#hero path {
-  animation: 4s ease-in 0s both hero-animation;
-  stroke-dasharray: 660;
-  stroke: black;
-}
+@keyframes hero-01 { 0% { opacity: 0; translate: -8px 6px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-02 { 0% { opacity: 0; translate: -5px -1px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-03 { 0% { opacity: 0; translate: -1px -5px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-04 { 0% { translate: 2px 2px; } 100% { translate: 0 0; } }
+@keyframes hero-05 { 0% { opacity: 0; translate: -1px -5px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-06 { 0% { opacity: 0; translate: 3px 3px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-07 { 0% { opacity: 0; translate: 5px -1px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-08 { 0% { opacity: 0; translate: 3px -3px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-09 { 0% { opacity: 0; translate: -4px -2px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-10 { 0% { opacity: 0; translate: -3px 3px; } 100% { opacity: 1; translate: 0 0; } }
+@keyframes hero-11 { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes hero-12 { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes hero-13 { 0% { opacity: 0; } 100% { opacity: 1; } }
+#hero-01 { animation: hero-01 both ease-out 400ms 0ms; }
+#hero-02 { animation: hero-02 both ease-out 400ms 100ms; }
+#hero-03 { animation: hero-03 both ease-out 400ms 300ms; }
+#hero-04 { animation: hero-04 both ease-out 400ms 300ms; }
+#hero-05 { animation: hero-05 both ease-out 400ms 200ms; }
+#hero-06 { animation: hero-06 both ease-out 400ms 100ms; }
+#hero-07 { animation: hero-07 both ease-out 400ms 150ms; }
+#hero-08 { animation: hero-08 both ease-out 400ms 200ms; }
+#hero-09 { animation: hero-09 both ease-out 400ms 250ms; }
+#hero-10 { animation: hero-10 both ease-out 400ms 300ms; }
+#hero-11 { animation: hero-11 both ease-out 400ms 400ms; }
+#hero-12 { animation: hero-12 both ease-out 400ms 400ms; }
+#hero-13 { animation: hero-13 both ease-out 400ms 400ms; }
 
 h1 {
   background-color: transparent;
