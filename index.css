@@ -100,6 +100,7 @@ html {
 #hero {
   background-color: white;
   height: 500px;
+  isolation: isolate;
   margin-top: -64px;
   width: 100%;
 }
