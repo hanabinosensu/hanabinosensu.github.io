@@ -29,7 +29,7 @@ html {
   top: -70px;  /* controlled by js */
   transition: top 200ms ease-out;
   width: 100%;
-  z-index: 1;
+  z-index: 9;
 }
 #header img {
   height: 100%;
@@ -102,8 +102,10 @@ h1 {
   line-height: 1;
   margin-top: -128px;  /* 40px + 1rem + 2rem + 40px */
   padding: 40px 30px;
+  position: relative;
   text-align: center;
   width: 100%;
+  z-index: 1;
 }
 h1 small {
   display: block;
