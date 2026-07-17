@@ -30,6 +30,38 @@ if (!navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
+/* Live update #next */
+document.getElementById("next").addEventListener("animationstart", e => {
+  const next = e.target;
+  const now = Date.now();
+
+  if (now < Date.parse("2026-07-18T00:00+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">よさこい祭りin光が丘公園 （07/18,19）</a>`;
+  } else if (now < Date.parse("2026-07-18T10:00+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">よさこい祭りin光が丘公園 （本日）</a>`;
+  } else if (now < Date.parse("2026-07-18T12:35+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">YOSAKOIステージ （12:30）</a>`;
+  } else if (now < Date.parse("2026-07-18T13:29+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">ふれあいの径 （13:24）</a>`;
+  } else if (now < Date.parse("2026-07-18T14:23+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">いちょう並木 （14:18）</a>`;
+  } else if (now < Date.parse("2026-07-18T15:47+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">YOSAKOIステージ （15:42）</a>`;
+  } else if (now < Date.parse("2026-07-19T00:00+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">ふれあいの径 （翌日 10:24）</a>`;
+  } else if (now < Date.parse("2026-07-19T10:29+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">ふれあいの径 （10:24）</a>`;
+  } else if (now < Date.parse("2026-07-19T13:29+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">YOSAKOIステージ （13:24）</a>`;
+  } else if (now < Date.parse("2026-07-19T15:29+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">いちょう並木 （15:24）</a>`;
+  } else if (now < Date.parse("2026-07-20T00:00+09:00")) {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">よさこい祭りin光が丘公園 （本日）</a>`;
+  } else {
+    next.innerHTML = `次: <a href="#hikarigaoka-2026">よさこい祭りin光が丘公園 （07/18,19）</a>`;
+  }
+});
+
 /* Infinite #topics slideshow */
 document.getElementById("topics").scrollTo(0, 0);
 
