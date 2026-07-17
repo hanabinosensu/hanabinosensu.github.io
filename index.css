@@ -100,7 +100,6 @@ html {
 #hero {
   background-color: white;
   height: 500px;
-  isolation: isolate;
   margin-top: -64px;
   width: 100%;
 }
@@ -138,10 +137,8 @@ h1 {
   line-height: 1;
   margin-top: -144px;  /* 40px + 1rem + 3rem + 40px */
   padding: 40px 30px;
-  position: relative;
   text-align: center;
   width: 100%;
-  z-index: 1;
 }
 h1 small {
   display: block;

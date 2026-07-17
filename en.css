@@ -29,7 +29,7 @@ html {
   top: -70px;  /* controlled by js */
   transition: top 200ms ease-out;
   width: 100%;
-  z-index: 9;
+  z-index: 1;
 }
 #header img {
   height: 100%;
@@ -65,7 +65,6 @@ html {
 #hero {
   background-color: white;
   height: 500px;
-  isolation: isolate;
   width: 100%;
 }
 @keyframes hero-01 { 0% { opacity: 0; translate: -8px 6px; } 100% { opacity: 1; translate: 0 0; } }
@@ -102,10 +101,8 @@ h1 {
   line-height: 1;
   margin-top: -128px;  /* 40px + 1rem + 2rem + 40px */
   padding: 40px 30px;
-  position: relative;
   text-align: center;
   width: 100%;
-  z-index: 1;
 }
 h1 small {
   display: block;
