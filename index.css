@@ -147,122 +147,76 @@ h1 small {
   translate: -40px -5px;
 }
 
-#news {
+#kochi-2026 {
   background-color: #f4f4f4;
   color: black;
   padding: 24px max(10px, 50% - 300px) 24px;
 }
-#news:target {
+#kochi-2026:target {
   animation: 400ms linear 200ms flash;
 }
-#news > * {
+#kochi-2026 > * {
   margin-bottom: 1rem;
 }
-#news h2 {
+#kochi-2026 h2 {
   font-size: 1.7rem;
   padding-inline: 20px;
 }
-#news article {
+#kochi-2026 > p {
+  padding-inline: 20px;
+}
+#kochi-2026 article {
   background-color: white;
   border-radius: 12px;
   padding: 20px;
 }
-#news article:target {
-  animation: 400ms linear 200ms flash;
-}
-#news article > :not(:last-child) {
+#kochi-2026 article > :not(:last-child) {
   margin-bottom: 1rem;
 }
-#news h3 {
+#kochi-2026 h3 {
   font-size: 1rem;
 }
-#news h3 time {
+#kochi-2026 h3 time {
   color: #707070;
   font-weight: normal;
   margin-right: 4px;
 }
-#news hr {
+#kochi-2026 hr {
   border: 0;
   border-bottom: 1px solid #f4f4f4;
   margin-inline: -20px;
   width: calc(100% + 40px);
 }
-#news a {
+#kochi-2026 a {
   color: inherit;
   word-break: break-all;
 }
-#news dl {
+#kochi-2026 dl {
   display: grid;
-  column-gap: 4px;
+  gap: 4px;
   grid-template-columns: 24px auto auto;
-  row-gap: 4px;
 }
-#news dt {
+#kochi-2026 dt {
   grid-column: 1;
 }
-#news dt img {
+#kochi-2026 dt img {
   height: 24px;
   padding: 2px;
   width: 24px;
 }
-#news dd h4 {
+#kochi-2026 dd h4 {
   color: #707070;
   font-weight: normal;
 }
-#news dd ul {
+#kochi-2026 dd ul {
   margin-bottom: 4px;
   padding-left: 0;
   list-style: none;
 }
-#news dd li {
+#kochi-2026 dd li {
   margin-bottom: -4px;
 }
-#news .tiles {
-  display: grid;
-  gap: 2px;
-  grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-}
-#news .tile1x2 {
-  grid-column: span 1;
-  grid-row: span 2;
-}
-#news .tile2x1 {
-  grid-column: span 2;
-  grid-row: span 1;
-}
-#news .tile2x2 {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-#news .tile3x2 {
-  grid-column: span 3;
-  grid-row: span 2;
-}
-#news .tiles img {
-  background-color: #f4f4f4;
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-#news .tiles a:hover {
-  opacity: 0.7;
-}
-#news .youtube {
-  position: relative;
-}
-#news .youtube::before {
-  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' viewBox='0 0 68 48' xmlns='http://www.w3.org/2000/svg'><path d='M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z' fill='%23f03'/><path d='M 45,24 27,14 27,34' fill='%23fff'/></svg>");
-  background-position: center;
-  background-repeat: no-repeat;
-  bottom: 8px;
-  content: "";
-  height: 24px;  /* Keep aspect ratio to 68:48 */
-  position: absolute;
-  right: 8px;
-  width: 34px;
-}
-#news .more {
+#kochi-2026 .more {
   background-color: white;
   border-radius: 12px;
   display: block;
@@ -271,7 +225,7 @@ h1 small {
   text-decoration: none;
   width: 100%;
 }
-#news .more:hover {
+#kochi-2026 .more:hover {
   opacity: 0.5;
 }
 
@@ -296,9 +250,6 @@ h1 small {
   display: block;
   margin-inline: clamp(-20px, 50% - 300px, 0px);
   width: min(600px, 100vw - 20px);
-}
-#tokiakari iframe:target {
-  animation: 400ms linear 200ms flash;
 }
 #tokiakari figure {
   margin-inline: max(-20px, 50% - 200px);

@@ -102,6 +102,9 @@ section h2 {
   font-size: 1.7rem;
   padding-inline: 20px;
 }
+section > p {
+  padding-inline: 20px;
+}
 
 article {
   background-color: white;
