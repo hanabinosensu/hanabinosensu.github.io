@@ -30,6 +30,34 @@ if (!navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
+/* Live update #next */
+document.getElementById("next").addEventListener("animationstart", e => {
+  const next = e.target;
+  const now = Date.now();
+
+  if (now < Date.parse("2026-09-20T10:00+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">にいがた総踊り （09/20–21）</a>`;
+  } else if (now < Date.parse("2026-09-20T12:47+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">新潟ふるさと村 （12:42）</a>`;
+  } else if (now < Date.parse("2026-09-20T15:35+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">万代シテイ十字路 （15:30）</a>`;
+  } else if (now < Date.parse("2026-09-20T17:35+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">万代2Fシーキューブ未来広場 （17:30）</a>`;
+  } else if (now < Date.parse("2026-09-21T09:00+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">にいがた総踊り （09/20–21）</a>`;
+  } else if (now < Date.parse("2026-09-21T12:05+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">万代テラス （12:00）</a>`;
+  } else if (now < Date.parse("2026-09-21T14:05+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">ばかうけ展望室 （14:00）</a>`;
+  } else if (now < Date.parse("2026-09-21T16:05+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">万代シテイ十字路 （16:00）</a>`;
+  } else if (now < Date.parse("2026-09-21T22:00+09:00")) {
+    next.innerHTML = `次: <a href="#niigata-2026">にいがた総踊り （09/20–21）</a>`;
+  } else {
+    next.innerHTML = `次: 富山のよさこい祭り （09/26–27）`;
+  }
+});
+
 /* Infinite #topics slideshow */
 document.getElementById("topics").scrollTo(0, 0);
 
