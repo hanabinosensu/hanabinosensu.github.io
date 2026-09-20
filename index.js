@@ -54,7 +54,7 @@ document.getElementById("next").addEventListener("animationstart", e => {
   } else if (now < Date.parse("2026-09-21T22:00+09:00")) {
     next.innerHTML = `次: <a href="#niigata-2026">にいがた総踊り （09/20–21）</a>`;
   } else {
-    next.innerHTML = `次: 富山のよさこい祭り （09/26–27）`;
+    next.innerHTML = `次: <a href="#toyama-2026">富山のよさこい祭り （09/26–27）</a>`;
   }
 });
 
