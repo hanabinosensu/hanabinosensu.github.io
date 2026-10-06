@@ -30,6 +30,40 @@ if (!navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
+/* Live update #next */
+document.getElementById("next").addEventListener("animationstart", e => {
+  const next = e.target;
+  const now = Date.now();
+
+  if (now < Date.parse("2026-10-09T13:00+09:00")) {
+    next.innerHTML = `次: <a href="#museumlive-2026">Museum LIVE 2026 （10/09）</a>`;
+  } else if (now < Date.parse("2026-10-10T13:00+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">東京よさこい祭り （10/10–11）</a>`;
+  } else if (now < Date.parse("2026-10-10T15:59+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">駅前メイン （15:54）</a>`;
+  } else if (now < Date.parse("2026-10-10T16:23+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">池袋西口公園 （16:18）</a>`;
+  } else if (now < Date.parse("2026-10-10T17:11+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">アゼリア通り （17:06）</a>`;
+  } else if (now < Date.parse("2026-10-11T08:00+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">東京よさこい祭り （10/10–11）</a>`;
+  } else if (now < Date.parse("2026-10-11T10:41+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">池袋西口公園 （10:36）</a>`;
+  } else if (now < Date.parse("2026-10-11T11:05+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">駅前メイン （11:00）</a>`;
+  } else if (now < Date.parse("2026-10-11T11:41+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">四商店街 （11:36）</a>`;
+  } else if (now < Date.parse("2026-10-11T17:17+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">アゼリア通り （17:12）</a>`;
+  } else if (now < Date.parse("2026-10-11T17:59+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">駅前メイン （17:54）</a>`;
+  } else if (now < Date.parse("2026-10-11T20:00+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">東京よさこい祭り （10/10–11）</a>`;
+  } else {
+    next.innerHTML = `次: 所沢キャンパス祭 （10/25）`;
+  }
+});
+
 /* Infinite #topics slideshow */
 document.getElementById("topics").scrollTo(0, 0);
 
