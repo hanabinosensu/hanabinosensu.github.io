@@ -37,14 +37,20 @@ document.getElementById("next").addEventListener("animationstart", e => {
 
   if (now < Date.parse("2026-10-09T13:00+09:00")) {
     next.innerHTML = `次: <a href="#museumlive-2026">Museum LIVE 2026 （10/09）</a>`;
-  } else if (now < Date.parse("2026-10-10T13:00+09:00")) {
+  } else if (now < Date.parse("2026-10-10T08:00+09:00")) {
     next.innerHTML = `次: <a href="#tokyo-2026">東京よさこい祭り （10/10–11）</a>`;
+  } else if (now < Date.parse("2026-10-10T10:41+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">池袋西口公園 （かみはかり） （10:36）</a>`;
   } else if (now < Date.parse("2026-10-10T15:59+09:00")) {
     next.innerHTML = `次: <a href="#tokyo-2026">駅前メイン （15:54）</a>`;
   } else if (now < Date.parse("2026-10-10T16:23+09:00")) {
     next.innerHTML = `次: <a href="#tokyo-2026">池袋西口公園 （16:18）</a>`;
+  } else if (now < Date.parse("2026-10-10T16:59+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">アゼリア通り （かみはかり） （16:54）</a>`;
   } else if (now < Date.parse("2026-10-10T17:11+09:00")) {
     next.innerHTML = `次: <a href="#tokyo-2026">アゼリア通り （17:06）</a>`;
+  } else if (now < Date.parse("2026-10-10T17:29+09:00")) {
+    next.innerHTML = `次: <a href="#tokyo-2026">駅前メイン （かみはかり） （17:24）</a>`;
   } else if (now < Date.parse("2026-10-11T08:00+09:00")) {
     next.innerHTML = `次: <a href="#tokyo-2026">東京よさこい祭り （10/10–11）</a>`;
   } else if (now < Date.parse("2026-10-11T10:41+09:00")) {
