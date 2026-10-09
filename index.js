@@ -35,9 +35,7 @@ document.getElementById("next").addEventListener("animationstart", e => {
   const next = e.target;
   const now = Date.now();
 
-  if (now < Date.parse("2026-10-09T13:00+09:00")) {
-    next.innerHTML = `次: <a href="#museumlive-2026">Museum LIVE 2026 （10/09）</a>`;
-  } else if (now < Date.parse("2026-10-10T08:00+09:00")) {
+  if (now < Date.parse("2026-10-10T08:00+09:00")) {
     next.innerHTML = `次: <a href="#tokyo-2026">東京よさこい祭り （10/10–11）</a>`;
   } else if (now < Date.parse("2026-10-10T10:41+09:00")) {
     next.innerHTML = `次: <a href="#tokyo-2026">池袋西口公園 （かみはかり） （10:36）</a>`;
