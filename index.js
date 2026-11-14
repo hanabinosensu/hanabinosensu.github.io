@@ -30,32 +30,6 @@ if (!navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
-/* Live update #next */
-document.getElementById("next").addEventListener("animationstart", e => {
-  const next = e.target;
-  const now = Date.now();
-
-  if (now < Date.parse("2026-11-07T10:00+09:00")) {
-    next.innerHTML = `次: <a href="#wasedasai-2026">早稲田祭 2026 （11/07–08）</a>`;
-  } else if (now < Date.parse("2026-11-07T13:50+09:00")) {
-    next.innerHTML = `次: <a href="#wasedasai-2026">小野講堂 （13:05）</a>`;
-  } else if (now < Date.parse("2026-11-07T17:20+09:00")) {
-    next.innerHTML = `次: <a href="#wasedasai-2026">パレード （16:30）</a>`;
-  } else if (now < Date.parse("2026-11-07T17:45+09:00")) {
-    next.innerHTML = `次: <a href="#wasedasai-2026">Goal Fes. （17:20）</a>`;
-  } else if (now < Date.parse("2026-11-08T08:00+09:00")) {
-    next.innerHTML = `次: <a href="#wasedasai-2026">早稲田祭 2026 （11/07–08）</a>`;
-  } else if (now < Date.parse("2026-11-08T12:05+09:00")) {
-    next.innerHTML = `次: <a href="#wasedasai-2026">戸山カフェテリア （11:25）</a>`;
-  } else if (now < Date.parse("2026-11-08T15:40+09:00")) {
-    next.innerHTML = `次: <a href="#wasedasai-2026">理工展屋外ステージ （14:50）</a>`;
-  } else if (now < Date.parse("2026-11-08T18:00+09:00")) {
-    next.innerHTML = `次: <a href="#wasedasai-2026">早稲田祭 2026 （11/07–08）</a>`;
-  } else {
-    next.innerHTML = `次: 沼津秋祭り （11/22–23）`;
-  }
-});
-
 /* Infinite #topics slideshow */
 document.getElementById("topics").scrollTo(0, 0);
 

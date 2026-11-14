@@ -153,9 +153,6 @@ h1 small {
   color: black;
   padding: 24px max(30px, 50% - 300px) 24px;
 }
-#wasedasai-2026:target {
-  animation: 400ms linear 200ms flash;
-}
 #wasedasai-2026 > * {
   margin-bottom: 1rem;
 }
@@ -166,36 +163,44 @@ h1 small {
   color: inherit;
   word-break: break-all;
 }
-#wasedasai-2026 dl {
-  background-color: white;
+#wasedasai-2026 .carousel {
+  anchor-name: --wasedasai-2026-carousel;
+  anchor-scope: all;
   border-radius: 12px;
-  display: grid;
-  column-gap: 4px;
-  grid-template-columns: 24px auto auto;
-  margin-inline: -20px;
-  padding: 20px;
-  row-gap: 4px;
+  display: flex;
+  gap: 2px;
+  margin-inline: auto;
+  max-width: 100%;
+  overflow-x: scroll;
+  scroll-marker-group: after;
+  scroll-snap-type: x mandatory;
+  width: 400px;
 }
-#wasedasai-2026 dt {
-  grid-column: 1;
+#wasedasai-2026 .carousel::scroll-marker-group {
+  display: flex;
+  gap: 6px;
+  padding: 16px;
+  position: absolute;
+  position-anchor: --wasedasai-2026-carousel;
+  position-area: span-top center;
 }
-#wasedasai-2026 dt img {
-  height: 24px;
-  padding: 2px;
-  width: 24px;
+#wasedasai-2026 .carousel img {
+  background-color: white;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 100%;
+  scroll-snap-align: center;
 }
-#wasedasai-2026 dd h3 {
-  color: #707070;
-  font-size: 1rem;
-  font-weight: normal;
+#wasedasai-2026 .carousel img::scroll-marker {
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  transition: background-color 200ms;
+  width: 6px;
 }
-#wasedasai-2026 dd ul {
-  margin-bottom: 4px;
-  padding-left: 0;
-  list-style: none;
-}
-#wasedasai-2026 dd li {
-  margin-bottom: -4px;
+#wasedasai-2026 .carousel img::scroll-marker:target-current {
+  background-color: black;
 }
 
 #tokiakari {
