@@ -115,8 +115,8 @@ h1 small {
   anchor-scope: all;
   display: flex;
   gap: 1rem;
+  margin-bottom: 36px;
   margin-inline: clamp(-30px, 50% - 300px, 0px);
-  margin-bottom: 38px;  /* padding box height of ::scroll-marker-group */
   overflow-x: scroll;
   padding-inline: clamp(0px, 300px - 50%, 30px);
   scroll-marker-group: after;
@@ -126,7 +126,7 @@ h1 small {
 #fanart .carousel::scroll-marker-group {
   display: flex;
   gap: 6px;
-  padding: 16px;
+  padding: 12px;
   position: absolute;
   position-anchor: --fanart-carousel;
   position-area: bottom center;
@@ -140,7 +140,7 @@ h1 small {
   scroll-snap-align: center;
 }
 #fanart .carousel img::scroll-marker {
-  background-color: #e0e0e0;
+  background-color: #d0d0d0;
   border-radius: 50%;
   content: "";
   height: 6px;

@@ -169,6 +169,7 @@ h1 small {
   border-radius: 12px;
   display: flex;
   gap: 2px;
+  margin-bottom: 36px;
   margin-inline: auto;
   max-width: 100%;
   overflow-x: scroll;
@@ -179,10 +180,10 @@ h1 small {
 #wasedasai-2026 .carousel::scroll-marker-group {
   display: flex;
   gap: 6px;
-  padding: 16px;
+  padding: 12px;
   position: absolute;
   position-anchor: --wasedasai-2026-carousel;
-  position-area: span-top center;
+  position-area: bottom center;
 }
 #wasedasai-2026 .carousel img {
   background-color: white;
@@ -192,7 +193,7 @@ h1 small {
   scroll-snap-align: center;
 }
 #wasedasai-2026 .carousel img::scroll-marker {
-  background-color: #f4f4f4;
+  background-color: #d0d0d0;
   border-radius: 50%;
   content: "";
   height: 6px;

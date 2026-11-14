@@ -96,29 +96,37 @@ figure a:hover {
   opacity: 0.7;
 }
 
-.carousel {
-  anchor-name: --carousel;
+#merchandise {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#merchandise > * {
+  margin-bottom: 1rem;
+}
+#merchandise .carousel {
+  anchor-name: --merchandise-carousel;
   anchor-scope: all;
   display: flex;
   gap: 1rem;
   list-style: none;
+  margin-bottom: 36px;
   margin-inline: clamp(-30px, 50% - 300px, 0px);
-  margin-bottom: 38px;  /* padding box height of ::scroll-marker-group */
   overflow-x: scroll;
   padding-inline: clamp(0px, 300px - 50%, 30px);
   scroll-marker-group: after;
   scroll-snap-type: x mandatory;
   width: min(600px, 100vw);
 }
-.carousel::scroll-marker-group {
+#merchandise .carousel::scroll-marker-group {
   display: flex;
   gap: 6px;
-  padding: 16px;
+  padding: 12px;
   position: absolute;
-  position-anchor: --carousel;
+  position-anchor: --merchandise-carousel;
   position-area: bottom center;
 }
-.carousel li {
+#merchandise .carousel li {
   background-color: white;
   border-radius: 12px;
   flex-grow: 0;
@@ -129,18 +137,18 @@ figure a:hover {
   scroll-snap-align: center;
   width: 200px;
 }
-.carousel li::scroll-marker {
-  background-color: #e0e0e0;
+#merchandise .carousel li::scroll-marker {
+  background-color: #d0d0d0;
   border-radius: 50%;
   content: "";
   height: 6px;
   transition: background-color 200ms;
   width: 6px;
 }
-.carousel li::scroll-marker:target-current {
+#merchandise .carousel li::scroll-marker:target-current {
   background-color: black;
 }
-.carousel img {
+#merchandise .carousel img {
   height: 100%;
   left: 0;
   object-fit: cover;
@@ -148,25 +156,16 @@ figure a:hover {
   top: 0;
   width: 100%;
 }
-.carousel small {
+#merchandise .carousel small {
   bottom: 38px;
   font-size: 1rem;  /* not small actually */
   left: 1rem;
   position: absolute;
 }
-.carousel b {
+#merchandise .carousel b {
   bottom: 16px;
   left: 1rem;
   position: absolute;
-}
-
-#merchandise {
-  background-color: #f4f4f4;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#merchandise > * {
-  margin-bottom: 1rem;
 }
 
 #kisaragisai {
