@@ -1,0 +1,168 @@
+html {
+  font-family: serif;
+  font-feature-settings: "palt";
+  font-size: 1rem;
+  scroll-padding-top: 74px;
+  text-align: justify;
+}
+
+#header {
+  align-items: center;
+  background-color: #f4f4f4;
+  color: black;
+  display: flex;
+  height: 70px;
+  padding: 0 max(22px, 50% - 300px);  /* #header a adds 8px padding */
+  position: fixed;
+  top: -70px;  /* controlled by js */
+  transition: top 200ms ease-out;
+  width: 100%;
+  z-index: 1;
+}
+#header a:hover {
+  opacity: 0.5;
+}
+#header a.top {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+}
+#header a.up {
+  color: inherit;
+  padding: 20px 8px;
+  text-decoration: none;
+}
+
+#unofficial {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 9px max(30px, 50% - 300px) 11px;
+}
+#unofficial a {
+  color: inherit;
+}
+
+#hero {
+  background-color: white;
+  height: 500px;
+  width: 100%;
+}
+
+h1 {
+  background-color: transparent;
+  color: black;
+  font-size: 2rem;
+  line-height: 1;
+  margin-top: -112px;  /* 40px + 2rem + 40px */
+  padding: 40px 30px;
+  text-align: center;
+  width: 100%;
+}
+
+section {
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+section > * {
+  margin-bottom: 1rem;
+}
+section h2 {
+  font-size: 1.5rem;
+}
+section h2 small {
+  font-size: 1rem;
+}
+section a {
+  color: inherit;
+  word-break: break-all;
+}
+
+section .tiles {
+  border-radius: 12px;
+  display: grid;
+  gap: 2px;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  overflow: clip;
+}
+section .tile1x2 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+section .tile2x1 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+section .tile2x2 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+section .tile3x2 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+section .tiles img {
+  background-color: #00000010;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+section .tiles a:hover {
+  opacity: 0.7;
+}
+
+section .carousel {
+  anchor-name: --carousel;
+  anchor-scope: all;
+  border-radius: 12px;
+  display: flex;
+  gap: 2px;
+  margin-bottom: 36px;
+  margin-inline: auto;
+  max-width: 100%;
+  overflow-x: scroll;
+  scroll-marker-group: after;
+  scroll-snap-type: x mandatory;
+  width: 400px;
+}
+section .carousel::scroll-marker-group {
+  display: flex;
+  gap: 6px;
+  padding: 12px;
+  position: absolute;
+  position-anchor: --carousel;
+  position-area: bottom center;
+}
+section .carousel img {
+  background-color: #00000010;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 100%;
+  scroll-snap-align: center;
+}
+section .carousel img::scroll-marker {
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  transition: background-color 200ms;
+  width: 6px;
+}
+section .carousel img::scroll-marker:target-current {
+  background-color: black;
+}
+
+#countdown {
+  background-color: #f4f4f4;
+  color: black;
+}
+#eve {
+  background-color: white;
+  color: black;
+}
+#day1 {
+  background-color: #f4f4f4;
+  color: black;
+}
+#day2 {
+  background-color: white;
+  color: black;
+}
