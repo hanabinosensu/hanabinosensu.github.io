@@ -276,6 +276,59 @@ h1 small {
   opacity: 0.5;
 }
 
+#pickup {
+  background-color: white;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#pickup > * {
+  margin-bottom: 1rem;
+}
+#pickup h2 {
+  font-size: 1.7rem;
+}
+#pickup select {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  padding: 0;
+  width: 100%;
+}
+#pickup iframe {
+  background-color: #f4f4f4;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+  margin-inline: clamp(-20px, 50% - 300px, 0px);
+  width: min(600px, 100vw - 20px);
+}
+
+#about {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 24px max(30px, 50% - 300px) 24px;
+}
+#about:target {
+  animation: 400ms linear 200ms flash;
+}
+#about > * {
+  margin-bottom: 1rem;
+}
+#about h2 {
+  font-size: 1.7rem;
+}
+#about figure {
+  margin-inline: auto;
+  max-width: 100%;
+}
+#about figure img {
+  margin-bottom: 4px;
+}
+#about figure figcaption {
+  text-align: center;
+}
+
 #tokiakari {
   background-color: white;
   color: black;
@@ -309,56 +362,6 @@ h1 small {
 #tokiakari img {
   background-color: #f4f4f4;
   border-radius: 12px;
-}
-
-#pickup {
-  background-color: #f4f4f4;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#pickup > * {
-  margin-bottom: 1rem;
-}
-#pickup h2 {
-  font-size: 1.7rem;
-}
-#pickup select {
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  color: inherit;
-  padding: 0;
-  width: 100%;
-}
-#pickup iframe {
-  background-color: white;
-  border: 0;
-  border-radius: 12px;
-  display: block;
-  margin-inline: clamp(-20px, 50% - 300px, 0px);
-  width: min(600px, 100vw - 20px);
-}
-
-#about {
-  background-color: white;
-  color: black;
-  padding: 24px max(30px, 50% - 300px) 24px;
-}
-#about > * {
-  margin-bottom: 1rem;
-}
-#about h2 {
-  font-size: 1.7rem;
-}
-#about figure {
-  margin-inline: auto;
-  max-width: 100%;
-}
-#about figure img {
-  margin-bottom: 4px;
-}
-#about figure figcaption {
-  text-align: center;
 }
 
 #release {
