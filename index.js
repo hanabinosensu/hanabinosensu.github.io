@@ -30,28 +30,6 @@ if (!navigator.languages.includes("ja")) {
   document.getElementById("i18n").style.display = "block";
 }
 
-/* Live update #next */
-document.getElementById("next").addEventListener("animationstart", e => {
-  const next = e.target;
-  const now = Date.now();
-
-  if (now < Date.parse("2026-11-22T10:00+09:00")) {
-    next.innerHTML = `次: <a href="#numazu-2026">よさこい東海道 （11/22）</a>`;
-  } else if (now < Date.parse("2026-11-22T13:28+09:00")) {
-    next.innerHTML = `次: <a href="#numazu-2026">上本通り演舞場 （13:18）</a>`;
-  } else if (now < Date.parse("2026-11-22T14:28+09:00")) {
-    next.innerHTML = `次: <a href="#numazu-2026">上本通り演舞場 （14:18）</a>`;
-  } else if (now < Date.parse("2026-11-22T15:31+09:00")) {
-    next.innerHTML = `次: <a href="#numazu-2026">かのがわパーク （15:26）</a>`;
-  } else if (now < Date.parse("2026-11-22T16:30+09:00")) {
-    next.innerHTML = `次: <a href="#numazu-2026">アーケード名店街演舞場 （16:20）</a>`;
-  } else if (now < Date.parse("2026-11-22T17:58+09:00")) {
-    next.innerHTML = `次: <a href="#numazu-2026">かのがわパーク （17:53）</a>`;
-  } else {
-    next.innerHTML = `次: <a href="#numazu-2026">よさこい東海道 （11/22）</a>`;
-  }
-});
-
 /* Infinite #topics slideshow */
 document.getElementById("topics").scrollTo(0, 0);
 
